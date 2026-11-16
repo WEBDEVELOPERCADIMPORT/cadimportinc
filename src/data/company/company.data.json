@@ -1,0 +1,14 @@
+{
+  "name": "CAD Import Inc",
+  "address": {
+    "street": "650 Centerpoint Blvd",
+    "city": "New Castle",
+    "state": "DE",
+    "postal_code": "19720",
+    "country": "USA",
+    "formatted": "650 Centerpoint Blvd New Castle, DE 19720"
+  },
+  "website": "www.cadimportinc.com",
+  "website_url": "https://www.cadimportinc.com",
+  "phone": "+1 (302) 628-4178"
+}
