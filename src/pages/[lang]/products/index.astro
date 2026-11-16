@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import catalogContent from "../../../data/site-catalog-content.json";
+import { LANGUAGES, type Lang } from "../../../i18n/config.i18n";
+import { actions } from "astro:actions";
+import CatalogPageView from "../../../components/catalog/sections/CatalogPageView.astro";
+
+const lang = Astro.params.lang as Lang;
+
+if (!(lang in LANGUAGES) || !(lang in catalogContent)) {
+  return Astro.redirect("/404");
+}
+
+const content = (catalogContent as Record<string, any>)[lang];
+
+const { data: deptResponse } = await Astro.callAction(
+  actions.getDepartments,
+  {}
+);
+const departments = deptResponse?.data ?? [];
+---
+
+<Layout
+  title={content.meta?.title ?? "Product Catalog & Offerings | CAD Import Inc"}
+  lang={lang}
+  description={content.meta?.description}
+  canonicalPath="catalog"
+>
+  <CatalogPageView departments={departments} lang={lang} />
+</Layout>

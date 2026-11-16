@@ -1,0 +1,39 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import type { DepartmentItem } from "../../../actions/departments/getDepartments.action";
+import catalogContent from "../../../data/site-catalog-content.json";
+import Hero from "./Hero.astro";
+import CatalogBanner from "../../common/CatalogBanner.astro";
+import DepartmentsGrid from "./DepartmentsGrid.astro";
+import OfferingsAndContact from "./OfferingsAndContact.astro";
+
+interface Props {
+  departments: DepartmentItem[];
+  lang: Lang;
+}
+
+const { departments, lang } = Astro.props;
+const content = (catalogContent as Record<string, any>)[lang] ?? catalogContent.en;
+const card = content.downloadCard ?? {};
+---
+
+<main class="w-full">
+  <Hero lang={lang} />
+  <CatalogBanner
+    variant="large"
+    title={card.title ??
+      "The hispanic population in the U.S is over 62.1 million and growing."}
+    subtitle={card.subtitle ??
+      "Are you carrying the right products to reach this growing audience?"}
+    descriptionPrefix={lang === "es"
+      ? "Descargue una copia"
+      : "Download a copy"}
+    description={card.description ??
+      "of our product catalog for a complete listing of goods available form our retail and distribution partners, along with SKU numbers to place your bulk order today."}
+    buttonText={card.buttonText ??
+      (lang === "es" ? "DESCARGA NUESTRO CATÁLOGO" : "DOWNLOAD OUR CATALOG")}
+    lang={lang}
+  />
+  <DepartmentsGrid departments={departments} lang={lang} />
+  <OfferingsAndContact lang={lang} />
+</main>

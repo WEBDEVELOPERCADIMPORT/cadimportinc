@@ -1,5 +1,6 @@
 ---
 import type { Lang } from '../../../i18n/config.i18n';
+import { buildHref } from '../../../i18n/utils.i18n';
 import type { BrandItem } from '../../../actions/brands/getBrands.action';
 
 interface Props {
@@ -15,21 +16,25 @@ const { brands, lang } = Astro.props;
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-10 items-stretch">
       {brands.map((brand, index) => {
         const delay = ((index % 3) * 100).toString();
+        const isRedirect = Boolean(brand.isRedirect && brand.redirectUrl);
+        const ctaHref = isRedirect
+          ? brand.redirectUrl!
+          : buildHref(lang, `own-brands/${brand.slug}`);
+        const isExternalRedirect = isRedirect && /^https?:\/\//i.test(ctaHref);
         return (
         <div
           data-animate="bubble-pop"
           data-animate-delay={delay !== "0" ? delay : undefined}
-          class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-lg transition-all duration-300 p-8 flex flex-col items-center justify-between text-center group"
+          class="bg-transparent rounded-2xl transition-all duration-300 p-8 flex flex-col items-center justify-between text-center group"
         >
           
           <!-- Brand Logo Container -->
-          <div class="h-28 w-full flex items-center justify-center p-2 mb-6">
+          <div class="h-40 w-full flex items-center justify-center p-2 mb-6">
             <img
               src={brand.logo}
               alt={brand.name}
-              width="200"
-              height="80"
-              class="max-h-24 max-w-[190px] object-contain transition-transform duration-300 group-hover:scale-105"
+              width="350"
+              class="max-h-40 max-w-[400px] object-contain transition-transform duration-300 group-hover:scale-105"
               loading="lazy"
             />
           </div>
@@ -37,7 +42,9 @@ const { brands, lang } = Astro.props;
           <!-- Action Button in Brand Corporate Color -->
           <div class="w-full mt-auto">
             <a
-              href={`/${lang}/own-brands/${brand.slug}`}
+              href={ctaHref}
+              target={isExternalRedirect ? "_blank" : undefined}
+              rel={isExternalRedirect ? "noopener noreferrer" : undefined}
               style={`background-color: ${brand.badgeColor};`}
               class="w-full text-white font-bold text-xs uppercase tracking-widest py-3 px-6 rounded-md shadow-sm hover:opacity-90 transition-opacity inline-flex items-center justify-center"
             >

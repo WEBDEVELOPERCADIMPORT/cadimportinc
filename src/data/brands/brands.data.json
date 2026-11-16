@@ -4,7 +4,7 @@
       "id": "pharmadel",
       "slug": "pharmadel",
       "name": "Pharmadel",
-      "logo": "/images/brands/pharmadel.png",
+      "logo": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/0ffbd338-e5c7-4481-b8f6-d74cded0c549/Logo_Pharmadel.png",
       "badgeColor": "#1b8738",
       "description": {
         "es": "Líder en medicamentos de venta libre (OTC) y suplementos nutricionales de calidad farmacéutica comprobada, formulados para brindar bienestar a toda la familia latina en los Estados Unidos.",
@@ -14,13 +14,15 @@
         "es": "VER PRODUCTOS",
         "en": "SEE PRODUCTS"
       },
-      "catalogPdf": "/catalogs/catalog-2026.pdf"
+      "catalogPdf": "/catalogs/catalog-2026.pdf",
+      "isRedirect": true,
+      "redirectUrl": "https://pharmadel.com"
     },
     {
       "id": "titas",
       "slug": "titas",
       "name": "Tita's",
-      "logo": "/images/brands/titas.png",
+      "logo": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/acdb47b7-0fd8-4b38-aaf5-6a72c1047747/Logo_Titas.png",
       "badgeColor": "#0f4c81",
       "description": {
         "es": "Auténtica sazón y despensa tradicional con los mejores condimentos, sales marinas y alimentos que evocan el sabor del hogar para las familias hispanas.",
@@ -30,13 +32,15 @@
         "es": "VER PRODUCTOS",
         "en": "SEE PRODUCTS"
       },
-      "catalogPdf": "/catalogs/catalog-2026.pdf"
+      "catalogPdf": "/catalogs/catalog-2026.pdf",
+      "isRedirect": false,
+      "redirectUrl": ""
     },
     {
       "id": "guatelinda",
       "slug": "guatelinda",
       "name": "Guatelinda",
-      "logo": "/images/brands/guatelinda.png",
+      "logo": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/Logo_guatelinda.png",
       "badgeColor": "#d49b00",
       "description": {
         "es": "Alimentos nostálgicos y tradicionales de Centroamérica que conservan recetas ancestrales y sabores inconfundibles que conectan a la comunidad con sus raíces.",
@@ -46,13 +50,15 @@
         "es": "VER PRODUCTOS",
         "en": "SEE PRODUCTS"
       },
-      "catalogPdf": "/catalogs/catalog-2026.pdf"
+      "catalogPdf": "/catalogs/catalog-2026.pdf",
+      "isRedirect": false,
+      "redirectUrl": ""
     },
     {
       "id": "relox",
       "slug": "relox",
       "name": "Relox",
-      "logo": "/images/brands/relox.png",
+      "logo": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/94b25d4a-e657-4463-b2bf-7d50ff07a197/Logo_rolex.svg",
       "badgeColor": "#003876",
       "description": {
         "es": "Línea especializada en suplementos vitamínicos, defensas inmunitarias y complementos nutricionales esenciales con los más altos estándares de pureza y biodisponibilidad.",
@@ -62,13 +68,15 @@
         "es": "VER PRODUCTOS",
         "en": "SEE PRODUCTS"
       },
-      "catalogPdf": "/catalogs/catalog-2026.pdf"
+      "catalogPdf": "/catalogs/catalog-2026.pdf",
+      "isRedirect": false,
+      "redirectUrl": ""
     },
     {
       "id": "cancun",
-      "slug": "cancun",
+      "slug": "cancun-drink",
       "name": "Cancún",
-      "logo": "/images/brands/cancun.png",
+      "logo": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/Logo_cancun.svg",
       "badgeColor": "#cc0000",
       "description": {
         "es": "Una marca enfocada en bebidas tropicales y refrescantes inspiradas en la cultura latina, elaboradas con frutas naturales e ingredientes de primera calidad, diseñadas para llevar frescura, sabor y una experiencia única y auténtica al mercado latino en los Estados Unidos.",
@@ -78,13 +86,15 @@
         "es": "VER PRODUCTOS",
         "en": "SEE PRODUCTS"
       },
-      "catalogPdf": "/catalogs/catalog-2026.pdf"
+      "catalogPdf": "/catalogs/catalog-2026.pdf",
+      "isRedirect": false,
+      "redirectUrl": ""
     },
     {
       "id": "hidravit",
-      "slug": "hidravit",
+      "slug": "hidravit-usa",
       "name": "Hidravit",
-      "logo": "/images/brands/hidravit.png",
+      "logo": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/1b549f8f-793b-45c7-8ed4-3b4c2251cc4c/Logo_hidravit.png",
       "badgeColor": "#00a8e8",
       "description": {
         "es": "Soluciones avanzadas de rehidratación oral y sueros balanceados con electrolitos para recuperar la energía y vitalidad diaria en niños y adultos.",
@@ -94,13 +104,15 @@
         "es": "VER PRODUCTOS",
         "en": "SEE PRODUCTS"
       },
-      "catalogPdf": "/catalogs/catalog-2026.pdf"
+      "catalogPdf": "/catalogs/catalog-2026.pdf",
+      "isRedirect": false,
+      "redirectUrl": ""
     },
     {
       "id": "fixion",
       "slug": "fixion",
       "name": "Fixion Styling Gel",
-      "logo": "/images/brands/fixion.png",
+      "logo": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/5fd3eee4-43ea-4636-8749-1d2ac1dfde4b/Logo_Fixion.png",
       "badgeColor": "#1a1061",
       "description": {
         "es": "Geles estilizadores profesionales de fijación ultra resistente y brillo duradero, sin residuos ni alcohol, preferidos en salones y hogares de toda la nación.",
@@ -110,7 +122,9 @@
         "es": "VER PRODUCTOS",
         "en": "SEE PRODUCTS"
       },
-      "catalogPdf": "/catalogs/catalog-2026.pdf"
+      "catalogPdf": "/catalogs/catalog-2026.pdf",
+      "isRedirect": false,
+      "redirectUrl": ""
     }
   ]
 }

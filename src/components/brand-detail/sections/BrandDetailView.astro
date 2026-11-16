@@ -1,0 +1,19 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import type { BrandItem } from "../../../actions/brands/getBrands.action";
+import BrandHeader from "./BrandHeader.astro";
+import ProductsGrid from "./ProductsGrid.astro";
+
+interface Props {
+  brand: BrandItem;
+  products: any[];
+  lang: Lang;
+}
+
+const { brand, products, lang } = Astro.props;
+---
+
+<main class="w-full">
+  <BrandHeader brand={brand} lang={lang} />
+  <ProductsGrid products={products} lang={lang} />
+</main>

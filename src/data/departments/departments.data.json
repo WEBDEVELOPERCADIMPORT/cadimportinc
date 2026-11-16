@@ -27,9 +27,21 @@
         "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
         "en": "Trusted Brands To Keep Your Customers Returning For More"
       },
-      "image": "/images/departments/healthandbeauty.jpg",
+      "image": "/images/departments/healthandbeauty.png",
       "collageImage": "/images/departments/healthandbeauty-collage.png",
-      "featuredBrands": ["Dove", "Cicatricure", "Maite", "Moco de Gorila", "Jaloma", "Caprice", "Sedal", "Colgate", "Hinds", "Saba", "OpticView"],
+      "featuredBrands": [
+        "Dove",
+        "Cicatricure",
+        "Maite",
+        "Moco de Gorila",
+        "Jaloma",
+        "Caprice",
+        "Sedal",
+        "Colgate",
+        "Hinds",
+        "Saba",
+        "OpticView"
+      ],
       "items": {
         "es": [
           "Pasta Dental",
@@ -94,9 +106,16 @@
         "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
         "en": "Trusted Brands To Keep Your Customers Returning For More"
       },
-      "image": "/images/departments/household.jpg",
+      "image": "/images/departments/household.png",
       "collageImage": "/images/departments/household-collage.png",
-      "featuredBrands": ["Ace", "Axion", "Suavitel", "Downy", "Ambar", "Ariel"],
+      "featuredBrands": [
+        "Ace",
+        "Axion",
+        "Suavitel",
+        "Downy",
+        "Ambar",
+        "Ariel"
+      ],
       "items": {
         "es": [
           "Detergentes para Lavavajillas",
@@ -153,9 +172,20 @@
         "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
         "en": "Trusted Brands To Keep Your Customers Returning For More"
       },
-      "image": "/images/departments/overthecountermedicines.jpg",
+      "image": "/images/departments/overthecountermedicines.png",
       "collageImage": "/images/departments/overthecountermedicines-collage.png",
-      "featuredBrands": ["Theraflu", "Dolex", "SanaTos", "Motrin", "FlexSport", "Benadryl", "Antigrip", "Flanax", "Tylenol", "Vicks"],
+      "featuredBrands": [
+        "Theraflu",
+        "Dolex",
+        "SanaTos",
+        "Motrin",
+        "FlexSport",
+        "Benadryl",
+        "Antigrip",
+        "Flanax",
+        "Tylenol",
+        "Vicks"
+      ],
       "items": {
         "es": [
           "Analgésicos",
@@ -214,9 +244,15 @@
         "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
         "en": "Trusted Brands To Keep Your Customers Returning For More"
       },
-      "image": "/images/departments/vitaminsandsupplements.jpg",
+      "image": "/images/departments/vitaminsandsupplements.png",
       "collageImage": "/images/departments/vitaminsandsupplements-collage.png",
-      "featuredBrands": ["Pharmadel", "Relox", "Hidravit", "Therbal", "Plantimex"],
+      "featuredBrands": [
+        "Pharmadel",
+        "Relox",
+        "Hidravit",
+        "Therbal",
+        "Plantimex"
+      ],
       "items": {
         "es": [
           "Complejo B y Multivitamínicos",
@@ -263,9 +299,16 @@
         "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
         "en": "Trusted Brands To Keep Your Customers Returning For More"
       },
-      "image": "/images/departments/childrenandinfants.jpg",
+      "image": "/images/departments/childrenandinfants.png",
       "collageImage": "/images/departments/childrenandinfants-collage.png",
-      "featuredBrands": ["Bebelyn", "Broncolito", "Ricitos de Oro", "Mennen", "El Piojito", "Grisi"],
+      "featuredBrands": [
+        "Bebelyn",
+        "Broncolito",
+        "Ricitos de Oro",
+        "Mennen",
+        "El Piojito",
+        "Grisi"
+      ],
       "items": {
         "es": [
           "Biberones",
@@ -320,9 +363,18 @@
         "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
         "en": "Trusted Brands To Keep Your Customers Returning For More"
       },
-      "image": "/images/departments/grocery.jpg",
+      "image": "/images/departments/grocery.png",
       "collageImage": "/images/departments/grocery-collage.png",
-      "featuredBrands": ["La Helada", "Tortrix", "Guatelinda", "Eclipse", "Lucas", "FruVita", "Cancún", "Therbal"],
+      "featuredBrands": [
+        "La Helada",
+        "Tortrix",
+        "Guatelinda",
+        "Eclipse",
+        "Lucas",
+        "FruVita",
+        "Cancún",
+        "Therbal"
+      ],
       "items": {
         "es": [
           "Frituras y Botanas",

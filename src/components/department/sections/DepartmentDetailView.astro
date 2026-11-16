@@ -1,0 +1,38 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import type { DepartmentItem } from "../../../actions/departments/getDepartments.action";
+import Hero from "./Hero.astro";
+import CatalogBanner from "../../common/CatalogBanner.astro";
+import FeaturedBrands from "./FeaturedBrands.astro";
+
+interface Props {
+  department: DepartmentItem;
+  lang: Lang;
+}
+
+const { department, lang } = Astro.props;
+const departmentTitle = department.name[lang] || department.name.en;
+const dynamicTitle =
+  department.bannerTitle?.[lang] ||
+  department.bannerTitle?.en ||
+  (lang === "es"
+    ? `Abastézcase de los productos de ${departmentTitle.toLowerCase()} que sus clientes buscan.`
+    : `Supply the ${departmentTitle.toLowerCase()} your customers are seeking.`);
+---
+
+<main class="w-full">
+  <Hero department={department} lang={lang} />
+  <CatalogBanner
+    variant="compact"
+    title={dynamicTitle}
+    descriptionPrefix={lang === "es" ? "Descargue una copia" : "Download a copy"}
+    description={
+      lang === "es"
+        ? "de nuestro catálogo de productos para ver el listado completo de artículos disponibles para nuestros socios minoristas y de distribución, junto con los códigos SKU para realizar su pedido al por mayor."
+        : "of our product catalog for a complete listing of goods available for our retail and distribution partners, along with SKU numbers to place a bulk order today."
+    }
+    buttonText={lang === "es" ? "DESCARGAR NUESTRO CATÁLOGO" : "DOWNLOAD OUR CATALOG"}
+    lang={lang}
+  />
+  <FeaturedBrands department={department} lang={lang} />
+</main>

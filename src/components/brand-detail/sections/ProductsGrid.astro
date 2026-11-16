@@ -27,7 +27,7 @@ const { products, lang } = Astro.props;
           <article
             data-animate="fade-up"
             data-animate-delay={delay !== "0" ? delay : undefined}
-            class="bg-white rounded-xl border border-slate-200/80 p-5 shadow-2xs hover:shadow-md transition-shadow flex flex-col items-center text-center group"
+            class="bg-white rounded-xl p-5 flex flex-col items-center text-center group"
           >
             
             <!-- Packshot / Container Render -->
@@ -42,14 +42,14 @@ const { products, lang } = Astro.props;
               />
             </div>
 
-            <!-- Product Technical Name & Presentation -->
-            <div class="space-y-1.5 w-full mt-auto">
+            <!-- Product Name -->
+            <div class="w-full mt-auto">
               <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[var(--color-cad-teal)] transition-colors line-clamp-2">
                 {product.name}
               </h3>
-              <p class="text-[11px] sm:text-xs text-slate-500 font-medium">
-                {product.presentation}
-              </p>
+               <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[var(--color-cad-teal)] transition-colors line-clamp-2">
+                {product.sku}
+              </h3>
             </div>
 
           </article>

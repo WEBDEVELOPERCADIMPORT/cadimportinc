@@ -24,32 +24,32 @@
           {
             "id": "cat-health-beauty",
             "label": "SALUD Y BELLEZA",
-            "path": "healthandbeauty"
+            "path": "catalog/healthandbeauty"
           },
           {
             "id": "cat-household",
             "label": "PRODUCTOS PARA EL HOGAR",
-            "path": "household"
+            "path": "catalog/household"
           },
           {
             "id": "cat-otc",
             "label": "MEDICAMENTOS DE VENTA LIBRE (OTC)",
-            "path": "overthecountermedicines"
+            "path": "catalog/overthecountermedicines"
           },
           {
             "id": "cat-supplements",
             "label": "VITAMINAS Y SUPLEMENTOS",
-            "path": "vitaminsandsupplements"
+            "path": "catalog/vitaminsandsupplements"
           },
           {
             "id": "cat-children",
             "label": "BEBÉS E INFANTES",
-            "path": "childrenandinfants"
+            "path": "catalog/childrenandinfants"
           },
           {
             "id": "cat-groceries",
             "label": "ABARROTES Y ALIMENTOS",
-            "path": "grocery"
+            "path": "catalog/grocery"
           }
         ]
       },
@@ -86,12 +86,12 @@
           {
             "id": "brand-cancun",
             "label": "Cancún",
-            "path": "own-brands/cancun"
+            "path": "own-brands/cancun-drink"
           },
           {
             "id": "brand-hidravit",
             "label": "Hidravit",
-            "path": "own-brands/hidravit"
+            "path": "own-brands/hidravit-usa"
           },
           {
             "id": "brand-fixion",
@@ -207,32 +207,32 @@
           {
             "id": "cat-health-beauty",
             "label": "HEALTH AND BEAUTY PRODUCTS",
-            "path": "healthandbeauty"
+            "path": "catalog/healthandbeauty"
           },
           {
             "id": "cat-household",
             "label": "HOUSEHOLD PRODUCTS",
-            "path": "household"
+            "path": "catalog/household"
           },
           {
             "id": "cat-otc",
             "label": "OVER-THE-COUNTER (OTC) MEDICINES",
-            "path": "overthecountermedicines"
+            "path": "catalog/overthecountermedicines"
           },
           {
             "id": "cat-supplements",
             "label": "VITAMINS & SUPPLEMENTS",
-            "path": "vitaminsandsupplements"
+            "path": "catalog/vitaminsandsupplements"
           },
           {
             "id": "cat-children",
             "label": "CHILDREN & INFANTS",
-            "path": "childrenandinfants"
+            "path": "catalog/childrenandinfants"
           },
           {
             "id": "cat-groceries",
             "label": "GROCERY ITEMS",
-            "path": "grocery"
+            "path": "catalog/grocery"
           }
         ]
       },
@@ -269,12 +269,12 @@
           {
             "id": "brand-cancun",
             "label": "Cancún",
-            "path": "own-brands/cancun"
+            "path": "own-brands/cancun-drink"
           },
           {
             "id": "brand-hidravit",
             "label": "Hidravit",
-            "path": "own-brands/hidravit"
+            "path": "own-brands/hidravit-usa"
           },
           {
             "id": "brand-fixion",

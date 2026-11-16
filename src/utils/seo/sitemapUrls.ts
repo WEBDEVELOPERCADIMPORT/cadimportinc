@@ -20,14 +20,16 @@ export const getAllSitemapUrls = (): string[] => {
     urls.push(`${BASE_URL}/${lang}/contact`);
     urls.push(`${BASE_URL}/${lang}/privacy-policy`);
 
-    // Department Landing Pages (Root level under /[lang]/[department])
+    // Department Landing Pages (under /[lang]/catalog/[department])
     for (const dept of departmentsData.departments) {
-      urls.push(`${BASE_URL}/${lang}/${dept.slug}`);
+      urls.push(`${BASE_URL}/${lang}/catalog/${dept.slug}`);
     }
 
-    // Own Brands Showcase Pages
+    // Own Brands Showcase Pages (under /[lang]/own-brands/[brand])
     for (const brand of brandsData.brands) {
-      urls.push(`${BASE_URL}/${lang}/own-brands/${brand.slug}`);
+      if (!brand.isRedirect) {
+        urls.push(`${BASE_URL}/${lang}/own-brands/${brand.slug}`);
+      }
     }
   }
 

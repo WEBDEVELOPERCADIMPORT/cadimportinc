@@ -10,6 +10,8 @@ export interface BrandItem {
   description: { es: string; en: string };
   ctaText: { es: string; en: string };
   catalogPdf: string;
+  isRedirect: boolean;
+  redirectUrl?: string;
 }
 
 export const getBrands = defineAction({

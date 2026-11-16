@@ -1,33 +1,31 @@
 ---
-import Layout from '../../../../layouts/Layout.astro';
-import { LANGUAGES, type Lang } from '../../../../i18n/config.i18n';
-import { actions } from 'astro:actions';
-
-// Sections
-import BrandHeader from '../../../../components/brand-detail/sections/BrandHeader.astro';
-import ProductsGrid from '../../../../components/brand-detail/sections/ProductsGrid.astro';
+import Layout from "../../../../layouts/Layout.astro";
+import { LANGUAGES, type Lang } from "../../../../i18n/config.i18n";
+import { actions } from "astro:actions";
+import BrandDetailView from "../../../../components/brand-detail/sections/BrandDetailView.astro";
 
 const lang = Astro.params.lang as Lang;
 const { brand: brandSlug } = Astro.params;
 
-// 1. Validar idioma y parámetro
 if (!(lang in LANGUAGES) || !brandSlug) {
-  return Astro.redirect('/404');
+  return Astro.redirect("/404");
 }
 
-// 2. Consultar marca vía Server Action
 const { data: brandResponse, error: brandError } = await Astro.callAction(
   actions.getBrandBySlug,
   { slug: brandSlug }
 );
 
 if (brandError || !brandResponse?.data) {
-  return Astro.redirect('/404');
+  return Astro.redirect("/404");
 }
 
 const brand = brandResponse.data;
 
-// 3. Consultar productos de la marca vía Server Action
+if (brand.isRedirect && brand.redirectUrl) {
+  return Astro.redirect(brand.redirectUrl);
+}
+
 const { data: productsResponse } = await Astro.callAction(
   actions.getProductsByBrand,
   { brandSlug, lang }
@@ -43,8 +41,5 @@ const products = productsResponse?.data ?? [];
   image={brand.logo}
   canonicalPath={`own-brands/${brandSlug}`}
 >
-  <main class="w-full">
-    <BrandHeader brand={brand} lang={lang} />
-    <ProductsGrid products={products} lang={lang} />
-  </main>
+  <BrandDetailView brand={brand} products={products} lang={lang} />
 </Layout>

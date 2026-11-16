@@ -1,8 +1,14 @@
 import { LANGUAGES, type Lang } from "./config.i18n";
 import { routingConfig } from "./routing.config";
 import globalContent from "../data/site-global-content.json";
+import brandsData from "../data/brands/brands.data.json";
 
 const defaultLang: Lang = routingConfig.defaultLocale;
+const redirectBrandSlugs = new Set(
+    (brandsData.brands || [])
+        .filter((brand) => brand.isRedirect)
+        .map((brand) => brand.slug)
+);
 
 export interface NavItem {
     id: string;
@@ -45,10 +51,15 @@ export const useTranslations = (lang: Lang) => {
         // Tolerancia a erratas comunes de tipado (children vs chilndren)
         const rawChildren = item.children || item.chilndren;
 
-        const children = rawChildren?.map((child: any) => ({
-            ...child,
-            href: buildHref(lang, child.path)
-        }));
+        const children = rawChildren
+            ?.filter((child: any) => {
+                const match = typeof child.path === "string" ? child.path.match(/^own-brands\/([^/]+)$/) : null;
+                return !(match && redirectBrandSlugs.has(match[1]));
+            })
+            .map((child: any) => ({
+                ...child,
+                href: buildHref(lang, child.path)
+            }));
 
         return {
             ...item,

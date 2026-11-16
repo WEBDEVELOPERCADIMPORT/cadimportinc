@@ -1,0 +1,35 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import { LANGUAGES, type Lang } from "../../../../i18n/config.i18n";
+import { actions } from "astro:actions";
+import DepartmentDetailView from "../../../../components/department/sections/DepartmentDetailView.astro";
+
+const lang = Astro.params.lang as Lang;
+const { department: departmentSlug } = Astro.params;
+
+if (!(lang in LANGUAGES) || !departmentSlug) {
+  return Astro.redirect("/404");
+}
+
+const { data: deptResponse, error } = await Astro.callAction(
+  actions.getDepartmentBySlug,
+  { slug: departmentSlug }
+);
+
+if (error || !deptResponse?.data) {
+  return Astro.redirect("/404");
+}
+
+const department = deptResponse.data;
+const departmentTitle = department.name[lang] || department.name.en;
+---
+
+<Layout
+  title={`${departmentTitle} | CAD Import Inc`}
+  lang={lang}
+  description={department.heroDescription[lang] || department.heroDescription.en}
+  image={department.image}
+  canonicalPath={`catalog/${departmentSlug}`}
+>
+  <DepartmentDetailView department={department} lang={lang} />
+</Layout>
