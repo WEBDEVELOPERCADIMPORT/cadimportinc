@@ -1,0 +1,354 @@
+{
+  "departments": [
+    {
+      "id": "healthandbeauty",
+      "slug": "healthandbeauty",
+      "name": {
+        "es": "Salud y Belleza",
+        "en": "Health & Beauty Products"
+      },
+      "heroTitle": {
+        "es": "Productos de Salud y Belleza",
+        "en": "Health & Beauty Products"
+      },
+      "heroDescription": {
+        "es": "Deje de preocuparse por problemas y retrasos en la cadena de suministro, comience a ofrecer a sus clientes los productos de cuidado personal que desean.",
+        "en": "Stop Worrying about Supply Chain Issues & Backlog, Start Offering Your Customers the Personal Care Products They Desire"
+      },
+      "bannerTitle": {
+        "es": "Abastezca los productos de cuidado personal que sus clientes están buscando.",
+        "en": "Supply the personal care products your customers are seeking."
+      },
+      "collageTitle": {
+        "es": "Productos que sus Clientes Usan a Diario",
+        "en": "Products Your Customers Use Everyday"
+      },
+      "checklistTitle": {
+        "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
+        "en": "Trusted Brands To Keep Your Customers Returning For More"
+      },
+      "image": "/images/departments/healthandbeauty.jpg",
+      "collageImage": "/images/departments/healthandbeauty-collage.png",
+      "featuredBrands": ["Dove", "Cicatricure", "Maite", "Moco de Gorila", "Jaloma", "Caprice", "Sedal", "Colgate", "Hinds", "Saba", "OpticView"],
+      "items": {
+        "es": [
+          "Pasta Dental",
+          "Shampoo",
+          "Acondicionador",
+          "Mascarillas Capilares",
+          "Jabón en Barra",
+          "Jabón Líquido",
+          "Cremas Faciales",
+          "Aceites",
+          "Removedor de Verrugas",
+          "Pruebas de Embarazo",
+          "Toallitas para Bebé",
+          "Gotas para los Ojos",
+          "Cuidado de los Pies",
+          "Cremas Deportivas",
+          "¡Y mucho más!"
+        ],
+        "en": [
+          "Toothpaste",
+          "Shampoo",
+          "Conditioner",
+          "Hair Masks",
+          "Bar Soap",
+          "Liquid Soap",
+          "Face Creams",
+          "Oils",
+          "Wart Remover",
+          "Pregnancy Tests",
+          "Baby Wipes",
+          "Eye Drops",
+          "Foot Care",
+          "Sports Creams",
+          "And more!"
+        ]
+      }
+    },
+    {
+      "id": "household",
+      "slug": "household",
+      "name": {
+        "es": "Productos para el Hogar",
+        "en": "Household Products"
+      },
+      "heroTitle": {
+        "es": "Productos para el Hogar",
+        "en": "Household Products"
+      },
+      "heroDescription": {
+        "es": "Asóciese con nosotros y no vuelva a quedarse sin papel higiénico, deje de preocuparse por problemas y retrasos en la cadena de suministro.",
+        "en": "Partner With Us & Never Run Out Of Toilet Paper Again, Stop Worrying about Supply Chain Issues & Backlog"
+      },
+      "bannerTitle": {
+        "es": "Mantenga en inventario los productos para el hogar que sus clientes buscan.",
+        "en": "Keep the household products your customers are seeking in stock."
+      },
+      "collageTitle": {
+        "es": "Productos que sus Clientes Usan a Diario",
+        "en": "Products Your Customers Use Everyday"
+      },
+      "checklistTitle": {
+        "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
+        "en": "Trusted Brands To Keep Your Customers Returning For More"
+      },
+      "image": "/images/departments/household.jpg",
+      "collageImage": "/images/departments/household-collage.png",
+      "featuredBrands": ["Ace", "Axion", "Suavitel", "Downy", "Ambar", "Ariel"],
+      "items": {
+        "es": [
+          "Detergentes para Lavavajillas",
+          "Esponjas y Paños de Limpieza",
+          "Jabón Líquido para Platos",
+          "Detergente en Polvo para Ropa",
+          "Detergente Líquido para Ropa",
+          "Suavizante de Telas",
+          "Baterías",
+          "Papel Higiénico",
+          "Bolsas de Basura",
+          "Papel Aluminio",
+          "¡Y mucho más!"
+        ],
+        "en": [
+          "Dishwasher Detergents",
+          "Sponges & Cleaning Cloths",
+          "Liquid Dish Soap",
+          "Laundry Powder",
+          "Liquid Laundry Detergent",
+          "Fabric Softener",
+          "Batteries",
+          "Toilet Paper",
+          "Trash Bags",
+          "Tin Foil",
+          "And more!"
+        ]
+      }
+    },
+    {
+      "id": "overthecountermedicines",
+      "slug": "overthecountermedicines",
+      "name": {
+        "es": "Medicamentos OTC",
+        "en": "Over-The-Counter (OTC) Medicines"
+      },
+      "heroTitle": {
+        "es": "Medicamentos de Venta Libre (OTC)",
+        "en": "Over-The-Counter (OTC) Medicines"
+      },
+      "heroDescription": {
+        "es": "Optimice la oferta de medicamentos OTC, salud y belleza de su tienda generando confianza y valor en su comunidad.",
+        "en": "Optimize Your Store’s OTC Drug, Health & Beauty Offerings Building Trust & Value Within Your Community"
+      },
+      "bannerTitle": {
+        "es": "Mantenga los medicamentos OTC que sus clientes buscan todo el año, no solo en temporada de gripe y resfriado.",
+        "en": "Keep the OTC medicines your customers are seeking year round, not just during cold & flu season."
+      },
+      "collageTitle": {
+        "es": "Productos a los que sus Clientes Acuden para Alivio y Cuidado",
+        "en": "Products Your Customers Turn To for Relief & Care"
+      },
+      "checklistTitle": {
+        "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
+        "en": "Trusted Brands To Keep Your Customers Returning For More"
+      },
+      "image": "/images/departments/overthecountermedicines.jpg",
+      "collageImage": "/images/departments/overthecountermedicines-collage.png",
+      "featuredBrands": ["Theraflu", "Dolex", "SanaTos", "Motrin", "FlexSport", "Benadryl", "Antigrip", "Flanax", "Tylenol", "Vicks"],
+      "items": {
+        "es": [
+          "Analgésicos",
+          "Gripe y Resfriado",
+          "Descongestionantes",
+          "Expectorantes",
+          "Antihistamínicos",
+          "Pastillas para la Tos",
+          "Cuidado de la Piel",
+          "Primeros Auxilios",
+          "Alivio Digestivo",
+          "Alergias y Sinusitis",
+          "Analgésicos Tópicos",
+          "¡Y mucho más!"
+        ],
+        "en": [
+          "Pain Relievers",
+          "Cold & Flu",
+          "Decongestants",
+          "Expectorants",
+          "Antihistamines",
+          "Cough Drops",
+          "Skin Care",
+          "First Aid",
+          "Digestive",
+          "Allergies & Sinus",
+          "Topical Pain Relievers",
+          "And more!"
+        ]
+      }
+    },
+    {
+      "id": "vitaminsandsupplements",
+      "slug": "vitaminsandsupplements",
+      "name": {
+        "es": "Suplementos",
+        "en": "Supplements"
+      },
+      "heroTitle": {
+        "es": "Suplementos Nutricionales",
+        "en": "Supplements"
+      },
+      "heroDescription": {
+        "es": "Vitaminas, minerales y complementos dietéticos que respaldan la energía y la salud integral de su clientela.",
+        "en": "High Quality Vitamins, Minerals, and Dietary Supplements Supporting Everyday Energy & Wellness."
+      },
+      "bannerTitle": {
+        "es": "Abastezca las vitaminas y suplementos que sus clientes buscan cada día.",
+        "en": "Keep the vitamins and supplements your customers are seeking in stock."
+      },
+      "collageTitle": {
+        "es": "Productos que sus Clientes Usan a Diario",
+        "en": "Products Your Customers Use Everyday"
+      },
+      "checklistTitle": {
+        "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
+        "en": "Trusted Brands To Keep Your Customers Returning For More"
+      },
+      "image": "/images/departments/vitaminsandsupplements.jpg",
+      "collageImage": "/images/departments/vitaminsandsupplements-collage.png",
+      "featuredBrands": ["Pharmadel", "Relox", "Hidravit", "Therbal", "Plantimex"],
+      "items": {
+        "es": [
+          "Complejo B y Multivitamínicos",
+          "Vitamina C y Defensas",
+          "Electrolitos y Rehidratación",
+          "Suplementos Botánicos y Herbales",
+          "Calcio y Minerales Esenciales",
+          "¡Y mucho más!"
+        ],
+        "en": [
+          "Vitamin B Complex & Multivitamins",
+          "Vitamin C & Immune Support",
+          "Electrolytes & Rehydration",
+          "Botanical & Herbal Formulas",
+          "Calcium & Essential Minerals",
+          "And more!"
+        ]
+      }
+    },
+    {
+      "id": "childrenandinfants",
+      "slug": "childrenandinfants",
+      "name": {
+        "es": "Bebés e Infantes",
+        "en": "Children & Infant Care Products"
+      },
+      "heroTitle": {
+        "es": "Productos para el Cuidado Infantil y de Bebés",
+        "en": "Children & Infant Care Products"
+      },
+      "heroDescription": {
+        "es": "Brinde a sus clientes la comodidad de realizar todas sus compras en un solo lugar.",
+        "en": "Provide Your Customer The Convenience of One Stop Shopping"
+      },
+      "bannerTitle": {
+        "es": "Conviértase en la tienda en la que sus clientes confían para cuidar la salud de sus familias.",
+        "en": "Become the store your customers rely on to support their families health."
+      },
+      "collageTitle": {
+        "es": "Líneas de Productos Creadas para Toda la Familia",
+        "en": "Product Lines Created for the Entire Family"
+      },
+      "checklistTitle": {
+        "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
+        "en": "Trusted Brands To Keep Your Customers Returning For More"
+      },
+      "image": "/images/departments/childrenandinfants.jpg",
+      "collageImage": "/images/departments/childrenandinfants-collage.png",
+      "featuredBrands": ["Bebelyn", "Broncolito", "Ricitos de Oro", "Mennen", "El Piojito", "Grisi"],
+      "items": {
+        "es": [
+          "Biberones",
+          "Toallitas para Bebé",
+          "Crema para Rozaduras",
+          "Shampoo",
+          "Jabón Corporal",
+          "Gripe y Resfriado",
+          "Multivitamínicos",
+          "Soporte Inmunológico",
+          "Estimulantes del Apetito",
+          "¡Y mucho más!"
+        ],
+        "en": [
+          "Baby Bottles",
+          "Baby Wipes",
+          "Diaper Cream",
+          "Shampoo",
+          "Body Wash",
+          "Cold & Flu",
+          "Multi-Vitamins",
+          "Immune Support",
+          "Appetite Enhancers",
+          "And more!"
+        ]
+      }
+    },
+    {
+      "id": "grocery",
+      "slug": "grocery",
+      "name": {
+        "es": "Abarrotes y Alimentos",
+        "en": "Grocery Items"
+      },
+      "heroTitle": {
+        "es": "Artículos de Abarrotes",
+        "en": "Grocery Items"
+      },
+      "heroDescription": {
+        "es": "Brinde a sus clientes la comodidad de realizar todas sus compras en un solo lugar.",
+        "en": "Provide Your Customer The Convenience of One Stop Shopping"
+      },
+      "bannerTitle": {
+        "es": "Abastezca su tienda con productos que evocan un sentido de nostalgia.",
+        "en": "Stock products that bring back a sense of nostalgia."
+      },
+      "collageTitle": {
+        "es": "Productos Básicos de Despensa para que sus Clientes Regresen",
+        "en": "Shelf Staples to Keep Your Customers Coming Back"
+      },
+      "checklistTitle": {
+        "es": "Marcas de Confianza Para Que Sus Clientes Regresen Por Más",
+        "en": "Trusted Brands To Keep Your Customers Returning For More"
+      },
+      "image": "/images/departments/grocery.jpg",
+      "collageImage": "/images/departments/grocery-collage.png",
+      "featuredBrands": ["La Helada", "Tortrix", "Guatelinda", "Eclipse", "Lucas", "FruVita", "Cancún", "Therbal"],
+      "items": {
+        "es": [
+          "Frituras y Botanas",
+          "Pastas",
+          "Té",
+          "Café",
+          "Dulces y Golosinas",
+          "Chicles",
+          "Jugos de Frutas",
+          "Refrescos",
+          "Veladoras",
+          "¡Y mucho más!"
+        ],
+        "en": [
+          "Chips",
+          "Pasta",
+          "Tea",
+          "Coffee",
+          "Candies",
+          "Gum",
+          "Fruit Juices",
+          "Sodas",
+          "Candles",
+          "And more!"
+        ]
+      }
+    }
+  ]
+}

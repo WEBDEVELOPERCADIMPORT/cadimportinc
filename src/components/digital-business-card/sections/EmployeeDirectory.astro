@@ -1,0 +1,79 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import type { EmployeeBusinessCard } from "../../../types/vcard";
+import { buildHref } from "../../../i18n/utils.i18n";
+import pageContent from "../../../data/site-digital-business-card-content.json";
+import AvatarRing from "../components/AvatarRing.astro";
+
+interface Props {
+  employees: EmployeeBusinessCard[];
+  lang: Lang;
+}
+
+const { employees, lang } = Astro.props;
+const t = pageContent[lang] ?? pageContent.en;
+---
+
+<section class="py-14 sm:py-20 bg-slate-50 border-t border-slate-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="inline-flex items-center rounded-full px-3.5 py-1 text-xs font-semibold uppercase tracking-wider bg-[#0b3c61]/10 text-[#0b3c61] mb-4">
+        {t.hero.tag}
+      </span>
+      <h1 class="text-3xl sm:text-4xl font-bold text-[#0b3c61] tracking-tight">
+        {t.hero.title}
+      </h1>
+      <p class="mt-3 text-base text-slate-600">
+        {t.hero.subtitle}
+      </p>
+    </div>
+
+    <!-- Employees Grid -->
+    {employees.length === 0 ? (
+      <div class="text-center py-12 bg-white rounded-2xl border border-slate-200">
+        <p class="text-slate-500">{t.directory.empty}</p>
+      </div>
+    ) : (
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {employees.map((employee) => {
+          const initials = `${employee.firstName.charAt(0)}${employee.lastName.charAt(0)}`.toUpperCase();
+          const cardHref = buildHref(lang, `digital-business-card/${employee.slug}`);
+
+          return (
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-lg transition-all duration-300 p-7 flex flex-col items-center text-center group">
+              <AvatarRing
+                src={employee.avatar}
+                alt={employee.fullName}
+                initials={initials}
+                uid={`dir-${employee.slug}`}
+                size="sm"
+              />
+
+              <h2 class="mt-4 text-xl font-bold text-[#0b3c61] leading-snug">
+                {employee.fullName}
+              </h2>
+              <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-[#5cb82e]">
+                {employee.title}
+              </p>
+
+              <div class="mt-4 space-y-1.5 text-sm text-slate-600 w-full">
+                <p class="truncate">{employee.phone}</p>
+                <p class="truncate">{employee.email}</p>
+              </div>
+
+              <div class="mt-6 w-full pt-4 border-t border-slate-100">
+                <a
+                  href={cardHref}
+                  class="w-full inline-flex items-center justify-center rounded-full bg-[#003865] hover:bg-[#0b3c61] text-white text-xs font-semibold uppercase tracking-wider py-2.5 px-5 transition-colors"
+                >
+                  {t.directory.viewCard}
+                </a>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    )}
+  </div>
+</section>

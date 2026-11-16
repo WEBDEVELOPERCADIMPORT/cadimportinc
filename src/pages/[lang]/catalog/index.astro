@@ -1,0 +1,57 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import catalogContent from "../../../data/site-catalog-content.json";
+import { LANGUAGES, type Lang } from "../../../i18n/config.i18n";
+import { actions } from "astro:actions";
+
+// Sections
+import Hero from "../../../components/catalog/sections/Hero.astro";
+import CatalogBanner from "../../../components/common/CatalogBanner.astro";
+import DepartmentsGrid from "../../../components/catalog/sections/DepartmentsGrid.astro";
+import OfferingsAndContact from "../../../components/catalog/sections/OfferingsAndContact.astro";
+
+const lang = Astro.params.lang as Lang;
+
+// 1. Validar idioma
+if (!(lang in LANGUAGES) || !(lang in catalogContent)) {
+  return Astro.redirect("/404");
+}
+
+const content = (catalogContent as Record<string, any>)[lang];
+const card = content.downloadCard ?? {};
+
+// 2. Consultar departamentos mediante Server Action
+const { data: deptResponse } = await Astro.callAction(
+  actions.getDepartments,
+  {},
+);
+const departments = deptResponse?.data ?? [];
+---
+
+<Layout
+  title={content.meta?.title ?? "Product Catalog & Offerings | CAD Import Inc"}
+  lang={lang}
+  description={content.meta?.description}
+  canonicalPath="catalog"
+>
+  <main class="w-full">
+    <Hero lang={lang} />
+    <CatalogBanner
+      variant="large"
+      title={card.title ??
+        "The hispanic population in the U.S is over 62.1 million and growing."}
+      subtitle={card.subtitle ??
+        "Are you carrying the right products to reach this growing audience?"}
+      descriptionPrefix={lang === "es"
+        ? "Descargue una copia"
+        : "Download a copy"}
+      description={card.description ??
+        "of our product catalog for a complete listing of goods available form our retail and distribution partners, along with SKU numbers to place your bulk order today."}
+      buttonText={card.buttonText ??
+        (lang === "es" ? "DESCARGA NUESTRO CATÁLOGO" : "DOWNLOAD OUR CATALOG")}
+      lang={lang}
+    />
+    <DepartmentsGrid departments={departments} lang={lang} />
+    <OfferingsAndContact lang={lang} />
+  </main>
+</Layout>

@@ -1,0 +1,53 @@
+---
+import type { Lang } from '../../../i18n/config.i18n';
+import type { BrandItem } from '../../../actions/brands/getBrands.action';
+
+interface Props {
+  brands: BrandItem[];
+  lang: Lang;
+}
+
+const { brands, lang } = Astro.props;
+---
+
+<section class="py-16 sm:py-24 bg-slate-50 border-t border-slate-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-10 items-stretch">
+      {brands.map((brand, index) => {
+        const delay = ((index % 3) * 100).toString();
+        return (
+        <div
+          data-animate="bubble-pop"
+          data-animate-delay={delay !== "0" ? delay : undefined}
+          class="bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-lg transition-all duration-300 p-8 flex flex-col items-center justify-between text-center group"
+        >
+          
+          <!-- Brand Logo Container -->
+          <div class="h-28 w-full flex items-center justify-center p-2 mb-6">
+            <img
+              src={brand.logo}
+              alt={brand.name}
+              width="200"
+              height="80"
+              class="max-h-24 max-w-[190px] object-contain transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Action Button in Brand Corporate Color -->
+          <div class="w-full mt-auto">
+            <a
+              href={`/${lang}/own-brands/${brand.slug}`}
+              style={`background-color: ${brand.badgeColor};`}
+              class="w-full text-white font-bold text-xs uppercase tracking-widest py-3 px-6 rounded-md shadow-sm hover:opacity-90 transition-opacity inline-flex items-center justify-center"
+            >
+              {brand.ctaText[lang] || brand.ctaText.en || "SEE PRODUCTS"}
+            </a>
+          </div>
+
+        </div>
+        );
+      })}
+    </div>
+  </div>
+</section>

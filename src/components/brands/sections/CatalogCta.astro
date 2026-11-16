@@ -1,0 +1,56 @@
+---
+import type { Lang } from '../../../i18n/config.i18n';
+import brandsContent from '../../../data/site-brands-content.json';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = brandsContent[lang] ?? brandsContent.en;
+const card = t.catalogCta;
+---
+
+<section class="py-12 sm:py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white border border-slate-200 rounded-xl shadow-sm p-6 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-8">
+      
+      <div class="space-y-4 max-w-xl text-left">
+        <h2 class="text-xl sm:text-2xl font-black text-[var(--color-cad-navy)] tracking-tight leading-snug">
+          {card.title}
+        </h2>
+        <p class="text-sm sm:text-base font-semibold text-slate-700">
+          {card.subtitle}
+        </p>
+        <p class="text-xs sm:text-sm text-slate-500 leading-relaxed">
+          {card.description}
+        </p>
+        <div class="pt-2">
+          <a
+            href={card.catalogUrl}
+            target="_blank"
+            download
+            class="btn-cad-lime text-xs sm:text-sm px-6 py-3 shadow-md inline-flex items-center gap-2"
+          >
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/>
+            </svg>
+            <span>{card.buttonText}</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="shrink-0 w-44 sm:w-56 shadow-xl rounded-lg overflow-hidden border border-slate-200 bg-slate-100 aspect-[3/4]">
+        <img
+          src={card.coverImage}
+          alt="CAD Import 2026 Product Catalog Cover"
+          width="224"
+          height="300"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>

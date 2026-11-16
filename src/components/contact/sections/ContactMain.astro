@@ -1,0 +1,249 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import contactContent from "../../../data/site-contact-content.json";
+import PhoneInput from "../../common/PhoneInput.astro";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = contactContent[lang] ?? contactContent.en;
+const main = t.main;
+---
+
+<section class="py-12 sm:py-16 bg-white overflow-x-clip">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+      {/* Left Column: Inquiry Intro & Headquarters Information Card */}
+      <div data-animate="slide-in-left" class="lg:col-span-6 space-y-6">
+        <div class="space-y-3">
+          <h2
+            class="text-xl sm:text-2xl font-bold text-[#013764] tracking-tight"
+          >
+            {main.heading}
+          </h2>
+          <p class="text-sm text-slate-700 leading-relaxed">
+            {main.subheading}
+          </p>
+        </div>
+
+        {/* Dark Navy Headquarters Card */}
+        <div class="bg-[#013764] text-white p-8 sm:p-10 rounded-[4px]">
+          <h3 class="text-lg sm:text-xl font-bold tracking-tight mb-4">
+            {main.hqTitle}
+          </h3>
+
+          <div class="mb-4 text-sm">
+            <p class="font-bold">{main.addressLabel}</p>
+            <ul class="list-disc pl-6 mt-1.5">
+              <li>
+                <strong class="font-bold">{main.addressState}</strong>
+                {main.addressText}
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-1.5 text-sm">
+            <p>
+              <strong class="font-bold">{main.hoursLabel}</strong>
+              {main.hoursText}
+            </p>
+            <p>
+              <strong class="font-bold">{main.phoneLabel}</strong>{" "}
+              <a
+                href={`tel:${main.phoneTel}`}
+                class="text-[#7ebc00] hover:underline font-medium"
+              >
+                {main.phoneText}
+              </a>
+            </p>
+            <p>
+              <strong class="font-bold">{main.emailLabel}</strong>{" "}
+              <a
+                href={`mailto:${main.emailText}`}
+                class="text-[#7ebc00] hover:underline font-medium"
+              >
+                {main.emailText}
+              </a>
+            </p>
+          </div>
+
+          <p class="mt-6 text-sm text-white">
+            {main.affiliationPrefix}
+            <a
+              href={main.affiliationLinkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-[#7ebc00] hover:underline"
+            >
+              {main.affiliationLinkText}
+            </a>.
+          </p>
+        </div>
+      </div>
+
+      {/* Right Column: Contact Form (Directly on white background) */}
+      <div data-animate="slide-in-right" class="lg:col-span-6 lg:pt-8">
+        <div class="max-w-lg mx-auto">
+          <h3
+            class="text-lg sm:text-xl font-medium text-slate-900 text-center mb-6 tracking-tight"
+          >
+            {main.formTitle}
+          </h3>
+
+          <form
+            id="cad-main-contact-form"
+            class="space-y-3.5"
+            data-success={main.successMessage}
+          >
+            {/* First Name */}
+            <div>
+              <label for="contact-fname" class="sr-only"
+                >{main.firstNamePlaceholder}</label
+              >
+              <input
+                type="text"
+                id="contact-fname"
+                name="firstName"
+                placeholder={main.firstNamePlaceholder}
+                class="w-full h-11 px-3.5 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 bg-white border border-slate-300 rounded-[4px] focus:outline-none focus:border-[var(--color-cad-teal)] focus:ring-1 focus:ring-[var(--color-cad-teal)] transition-all"
+                required
+              />
+            </div>
+
+            {/* Last Name */}
+            <div>
+              <label for="contact-lname" class="sr-only"
+                >{main.lastNamePlaceholder}</label
+              >
+              <input
+                type="text"
+                id="contact-lname"
+                name="lastName"
+                placeholder={main.lastNamePlaceholder}
+                class="w-full h-11 px-3.5 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 bg-white border border-slate-300 rounded-[4px] focus:outline-none focus:border-[var(--color-cad-teal)] focus:ring-1 focus:ring-[var(--color-cad-teal)] transition-all"
+                required
+              />
+            </div>
+
+            {/* Email with Envelope Icon */}
+            <div class="relative">
+              <label for="contact-email" class="sr-only"
+                >{main.emailPlaceholder}</label
+              >
+              <svg
+                class="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="M3 7l9 6 9-6"></path>
+              </svg>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder={main.emailPlaceholder}
+                class="w-full h-11 pl-10 pr-3.5 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 bg-white border border-slate-300 rounded-[4px] focus:outline-none focus:border-[var(--color-cad-teal)] focus:ring-1 focus:ring-[var(--color-cad-teal)] transition-all"
+                required
+              />
+            </div>
+
+            {/* Seamless Phone Input */}
+            <div>
+              <label class="sr-only">{main.phonePlaceholder}</label>
+              <PhoneInput
+                lang={lang}
+                placeholder={main.phonePlaceholder}
+                name="phone"
+                seamless={true}
+              />
+            </div>
+
+            {/* Preferred Contact Method Dropdown */}
+            <div class="relative">
+              <label for="contact-preferred" class="sr-only"
+                >{main.preferredContactLabel}</label
+              >
+              <select
+                id="contact-preferred"
+                name="preferredContact"
+                class="w-full h-11 px-3.5 pr-9 text-xs sm:text-sm text-slate-500 bg-white border border-slate-300 rounded-[4px] appearance-none focus:outline-none focus:border-[var(--color-cad-teal)] focus:ring-1 focus:ring-[var(--color-cad-teal)] transition-all cursor-pointer"
+              >
+                <option value="" disabled selected
+                  >{main.preferredContactLabel}</option
+                >
+                {
+                  main.preferredContactOptions.map((opt) => (
+                    <option value={opt}>{opt}</option>
+                  ))
+                }
+              </select>
+              <span
+                class="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-[9px] text-slate-500"
+              >
+                ▼
+              </span>
+            </div>
+
+            {/* Message Input */}
+            <div>
+              <label for="contact-message" class="sr-only"
+                >{main.messagePlaceholder}</label
+              >
+              <input
+                type="text"
+                id="contact-message"
+                name="message"
+                placeholder={main.messagePlaceholder}
+                class="w-full h-11 px-3.5 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 bg-white border border-slate-300 rounded-[4px] focus:outline-none focus:border-[var(--color-cad-teal)] focus:ring-1 focus:ring-[var(--color-cad-teal)] transition-all"
+                required
+              />
+            </div>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
+              class="w-full h-11 bg-[#18bd5b] hover:bg-[#15a850] active:scale-[0.99] text-white text-sm font-bold rounded-[4px] transition-all cursor-pointer shadow-xs"
+            >
+              {main.submitButton}
+            </button>
+
+            <p
+              id="cad-contact-feedback"
+              class="text-xs text-center font-medium text-emerald-600 hidden pt-1"
+            >
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function setupMainContact() {
+    const form = document.getElementById(
+      "cad-main-contact-form",
+    ) as HTMLFormElement | null;
+    const feedback = document.getElementById("cad-contact-feedback");
+    if (!form || !feedback || form.dataset.bound === "true") return;
+    form.dataset.bound = "true";
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      feedback.textContent =
+        form.dataset.success ||
+        "✓ Your message has been sent successfully. We will contact you soon!";
+      feedback.classList.remove("hidden");
+      form.reset();
+    });
+  }
+
+  setupMainContact();
+  document.addEventListener("astro:page-load", setupMainContact);
+</script>

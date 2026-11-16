@@ -1,0 +1,116 @@
+{
+  "brands": [
+    {
+      "id": "pharmadel",
+      "slug": "pharmadel",
+      "name": "Pharmadel",
+      "logo": "/images/brands/pharmadel.png",
+      "badgeColor": "#1b8738",
+      "description": {
+        "es": "Líder en medicamentos de venta libre (OTC) y suplementos nutricionales de calidad farmacéutica comprobada, formulados para brindar bienestar a toda la familia latina en los Estados Unidos.",
+        "en": "Leading provider of trusted over-the-counter (OTC) medicines and dietary supplements crafted under rigorous pharmaceutical standards for Hispanic families across the United States."
+      },
+      "ctaText": {
+        "es": "VER PRODUCTOS",
+        "en": "SEE PRODUCTS"
+      },
+      "catalogPdf": "/catalogs/catalog-2026.pdf"
+    },
+    {
+      "id": "titas",
+      "slug": "titas",
+      "name": "Tita's",
+      "logo": "/images/brands/titas.png",
+      "badgeColor": "#0f4c81",
+      "description": {
+        "es": "Auténtica sazón y despensa tradicional con los mejores condimentos, sales marinas y alimentos que evocan el sabor del hogar para las familias hispanas.",
+        "en": "Authentic Latin pantry staples, seasonings, and traditional grocery products bringing true homemade flavor to the Hispanic table."
+      },
+      "ctaText": {
+        "es": "VER PRODUCTOS",
+        "en": "SEE PRODUCTS"
+      },
+      "catalogPdf": "/catalogs/catalog-2026.pdf"
+    },
+    {
+      "id": "guatelinda",
+      "slug": "guatelinda",
+      "name": "Guatelinda",
+      "logo": "/images/brands/guatelinda.png",
+      "badgeColor": "#d49b00",
+      "description": {
+        "es": "Alimentos nostálgicos y tradicionales de Centroamérica que conservan recetas ancestrales y sabores inconfundibles que conectan a la comunidad con sus raíces.",
+        "en": "Nostalgic Central American traditional food products and comforting heritage recipes that keep the community connected to their origins."
+      },
+      "ctaText": {
+        "es": "VER PRODUCTOS",
+        "en": "SEE PRODUCTS"
+      },
+      "catalogPdf": "/catalogs/catalog-2026.pdf"
+    },
+    {
+      "id": "relox",
+      "slug": "relox",
+      "name": "Relox",
+      "logo": "/images/brands/relox.png",
+      "badgeColor": "#003876",
+      "description": {
+        "es": "Línea especializada en suplementos vitamínicos, defensas inmunitarias y complementos nutricionales esenciales con los más altos estándares de pureza y biodisponibilidad.",
+        "en": "Specialized wellness line of vitamins, immune defense formulations, and essential dietary nutrients developed to the highest purity standards."
+      },
+      "ctaText": {
+        "es": "VER PRODUCTOS",
+        "en": "SEE PRODUCTS"
+      },
+      "catalogPdf": "/catalogs/catalog-2026.pdf"
+    },
+    {
+      "id": "cancun",
+      "slug": "cancun",
+      "name": "Cancún",
+      "logo": "/images/brands/cancun.png",
+      "badgeColor": "#cc0000",
+      "description": {
+        "es": "Una marca enfocada en bebidas tropicales y refrescantes inspiradas en la cultura latina, elaboradas con frutas naturales e ingredientes de primera calidad, diseñadas para llevar frescura, sabor y una experiencia única y auténtica al mercado latino en los Estados Unidos.",
+        "en": "A brand focused on tropical and refreshing beverages inspired by Latin and Caribbean flavors, formulated with real fruit and natural ingredients, designed to offer freshness, flavor, and an authentic taste experience for the Latino market in the United States."
+      },
+      "ctaText": {
+        "es": "VER PRODUCTOS",
+        "en": "SEE PRODUCTS"
+      },
+      "catalogPdf": "/catalogs/catalog-2026.pdf"
+    },
+    {
+      "id": "hidravit",
+      "slug": "hidravit",
+      "name": "Hidravit",
+      "logo": "/images/brands/hidravit.png",
+      "badgeColor": "#00a8e8",
+      "description": {
+        "es": "Soluciones avanzadas de rehidratación oral y sueros balanceados con electrolitos para recuperar la energía y vitalidad diaria en niños y adultos.",
+        "en": "Advanced oral rehydration formulas and electrolyte solutions designed for rapid restorative hydration and daily vitality for all ages."
+      },
+      "ctaText": {
+        "es": "VER PRODUCTOS",
+        "en": "SEE PRODUCTS"
+      },
+      "catalogPdf": "/catalogs/catalog-2026.pdf"
+    },
+    {
+      "id": "fixion",
+      "slug": "fixion",
+      "name": "Fixion Styling Gel",
+      "logo": "/images/brands/fixion.png",
+      "badgeColor": "#1a1061",
+      "description": {
+        "es": "Geles estilizadores profesionales de fijación ultra resistente y brillo duradero, sin residuos ni alcohol, preferidos en salones y hogares de toda la nación.",
+        "en": "Professional-grade hair styling gels offering ultra-firm hold and lasting shine without flakes or alcohol, trusted by stylists and everyday consumers."
+      },
+      "ctaText": {
+        "es": "VER PRODUCTOS",
+        "en": "SEE PRODUCTS"
+      },
+      "catalogPdf": "/catalogs/catalog-2026.pdf"
+    }
+  ]
+}

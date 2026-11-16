@@ -1,0 +1,32 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import contactContent from '../../../data/site-contact-content.json';
+import { LANGUAGES, type Lang } from '../../../i18n/config.i18n';
+
+// Sections
+import Hero from '../../../components/contact/sections/Hero.astro';
+import ContactMain from '../../../components/contact/sections/ContactMain.astro';
+import MapEmbed from '../../../components/contact/sections/MapEmbed.astro';
+
+const lang = Astro.params.lang as Lang;
+
+// 1. Validar idioma
+if (!(lang in LANGUAGES) || !(lang in contactContent)) {
+  return Astro.redirect('/404');
+}
+
+const content = (contactContent as Record<string, any>)[lang];
+---
+
+<Layout
+  title={content.meta?.title ?? "Contact Us | CAD Import Inc"}
+  lang={lang}
+  description={content.meta?.description}
+  canonicalPath="contact"
+>
+  <main class="w-full">
+    <Hero lang={lang} />
+    <ContactMain lang={lang} />
+    <MapEmbed lang={lang} />
+  </main>
+</Layout>

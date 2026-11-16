@@ -1,0 +1,81 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  initials: string;
+  uid: string;
+  size?: "sm" | "lg";
+}
+
+const { src, alt, initials, uid, size = "lg" } = Astro.props;
+
+const containerClass =
+  size === "lg" ? "w-52 h-52 sm:w-56 sm:h-56" : "w-24 h-24";
+const innerClass =
+  size === "lg" ? "w-44 h-44 sm:w-48 sm:h-48" : "w-20 h-20";
+const textSizeClass = size === "lg" ? "text-4xl" : "text-xl";
+
+const gradTopId = `avatar-ring-top-${uid}`;
+const gradBottomId = `avatar-ring-bottom-${uid}`;
+---
+
+<div class={`relative inline-flex items-center justify-center ${containerClass}`}>
+  <!-- Organic gradient ring matching CAD brand arc -->
+  <svg
+    viewBox="0 0 220 220"
+    class="pointer-events-none absolute inset-0 h-full w-full"
+    aria-hidden="true"
+  >
+    <defs>
+      <linearGradient id={gradTopId} x1="0%" y1="70%" x2="100%" y2="20%">
+        <stop offset="0%" stop-color="#0a5c36" />
+        <stop offset="30%" stop-color="#3bb525" />
+        <stop offset="58%" stop-color="#c6dc00" />
+        <stop offset="80%" stop-color="#f5a600" />
+        <stop offset="100%" stop-color="#e53917" />
+      </linearGradient>
+      <linearGradient id={gradBottomId} x1="0%" y1="40%" x2="80%" y2="100%">
+        <stop offset="0%" stop-color="#2ca830" />
+        <stop offset="55%" stop-color="#0b5544" />
+        <stop offset="100%" stop-color="#073d38" />
+      </linearGradient>
+    </defs>
+
+    <!-- Main sweeping top/left/right arc (leaves right-bottom open) -->
+    <path
+      d="M 28 158 A 96 96 0 1 1 204 92"
+      fill="none"
+      stroke={`url(#${gradTopId})`}
+      stroke-width="6.5"
+      stroke-linecap="round"
+    />
+
+    <!-- Thickened bottom-left accent arc -->
+    <path
+      d="M 24 148 A 98 98 0 0 0 74 198"
+      fill="none"
+      stroke={`url(#${gradBottomId})`}
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+  </svg>
+
+  <!-- Circular avatar container -->
+  <div
+    class={`relative overflow-hidden rounded-full bg-[#dfe6ec] flex items-center justify-center ${innerClass}`}
+  >
+    <img
+      src={src}
+      alt={alt}
+      class="h-full w-full object-cover object-top"
+      loading="eager"
+      onerror="this.style.display='none'; if(this.nextElementSibling){this.nextElementSibling.style.display='flex';}"
+    />
+    <span
+      style="display: none;"
+      class={`absolute inset-0 items-center justify-center font-bold text-[#0b3c61] select-none ${textSizeClass}`}
+    >
+      {initials}
+    </span>
+  </div>
+</div>

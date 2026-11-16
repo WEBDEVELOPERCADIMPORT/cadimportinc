@@ -1,0 +1,42 @@
+{
+  "es": {
+    "meta": {
+      "title": "Tarjetas de Presentación Digitales | CAD Import Inc",
+      "description": "Directorio de tarjetas de presentación digitales del equipo de CAD Import Inc."
+    },
+    "hero": {
+      "tag": "Directorio Corporativo",
+      "title": "Tarjetas de Presentación Digitales",
+      "subtitle": "Conecta directamente con nuestro equipo de liderazgo y representantes."
+    },
+    "directory": {
+      "viewCard": "Ver Tarjeta Digital",
+      "empty": "No hay empleados registrados en este momento."
+    },
+    "card": {
+      "scanPrompt": "Escanea esto para agregar mi contacto",
+      "saveContact": "Guardar Contacto (.vcf)",
+      "backToDirectory": "Ver directorio"
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Digital Business Cards | CAD Import Inc",
+      "description": "Digital business card directory for the CAD Import Inc team."
+    },
+    "hero": {
+      "tag": "Corporate Directory",
+      "title": "Digital Business Cards",
+      "subtitle": "Connect directly with our leadership team and representatives."
+    },
+    "directory": {
+      "viewCard": "View Digital Card",
+      "empty": "No employees registered at the moment."
+    },
+    "card": {
+      "scanPrompt": "Scan this for add my contact",
+      "saveContact": "Save Contact (.vcf)",
+      "backToDirectory": "View directory"
+    }
+  }
+}

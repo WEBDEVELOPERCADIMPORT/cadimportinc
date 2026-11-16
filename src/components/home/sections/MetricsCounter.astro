@@ -1,0 +1,165 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import homeContent from "../../../data/site-home-content.json";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = homeContent[lang] ?? homeContent.en;
+const metrics = t.metrics;
+
+// Circumference for r=70 is 2 * PI * 70 ≈ 439.82
+const RADIUS = 70;
+const CIRCUMFERENCE = Math.round(2 * Math.PI * RADIUS);
+---
+
+<section id="metrics-section" class="py-16 sm:py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-12">
+    <h2 class="text-2xl sm:text-3xl font-black text-[#0b3c61] tracking-tight">
+      {metrics.title}
+    </h2>
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto"
+    >
+      {
+        metrics.items.map((item) => (
+          <div class="relative w-60 h-60 sm:w-60 sm:h-60 aspect-square mx-auto flex flex-col items-center justify-center">
+            {/* Circular SVG Ring */}
+            <svg
+              class="absolute inset-0 w-full h-full -rotate-90 pointer-events-none"
+              viewBox="0 0 160 160"
+              aria-hidden="true"
+            >
+              {/* Background track circle */}
+              <circle
+                cx="80"
+                cy="80"
+                r={RADIUS}
+                fill="transparent"
+                stroke="#e2e8f0"
+                stroke-width="7"
+              />
+              {/* Animated progress circle */}
+              <circle
+                class="metric-progress-circle"
+                cx="80"
+                cy="80"
+                r={RADIUS}
+                fill="transparent"
+                stroke="#F9AB39"
+                stroke-width="7"
+                stroke-linecap="round"
+                stroke-dasharray={CIRCUMFERENCE}
+                stroke-dashoffset={CIRCUMFERENCE}
+                data-circumference={CIRCUMFERENCE}
+              />
+            </svg>
+
+            {/* Centered Counter & Label */}
+            <div class="relative z-10 flex flex-col items-center justify-center p-4 text-center">
+              <span
+                class="metric-counter text-2xl sm:text-3xl md:text-4xl font-black text-[#0b3c61] leading-none"
+                data-target={item.targetNumber}
+                data-suffix={item.suffix}
+              >
+                0{item.suffix}
+              </span>
+              <span class="mt-2 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-600 text-center leading-tight">
+                {item.label}
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  function initMetricsAnimation() {
+    const section = document.getElementById("metrics-section");
+    if (!section) return;
+
+    let hasAnimated = false;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !hasAnimated) {
+            hasAnimated = true;
+            observer.disconnect();
+            animateAllMetrics();
+          }
+        });
+      },
+      { threshold: 0.25 },
+    );
+
+    observer.observe(section);
+  }
+
+  function animateAllMetrics() {
+    const counters = document.querySelectorAll<HTMLElement>(".metric-counter");
+    const circles = document.querySelectorAll<SVGCircleElement>(
+      ".metric-progress-circle",
+    );
+
+    const duration = 2000; // 2 seconds
+    const startTime = performance.now();
+
+    function easeOutCubic(x: number): number {
+      return 1 - Math.pow(1 - x, 3);
+    }
+
+    function step(currentTime: number) {
+      const elapsed = currentTime - startTime;
+      const rawProgress = Math.min(elapsed / duration, 1);
+      const easedProgress = easeOutCubic(rawProgress);
+
+      // Animate numbers
+      counters.forEach((el) => {
+        const target = Number(el.dataset.target || 0);
+        const suffix = el.dataset.suffix || "";
+        const currentVal = Math.floor(easedProgress * target);
+        el.textContent = `${currentVal.toLocaleString("en-US")}${suffix}`;
+      });
+
+      // Animate rings
+      circles.forEach((circle) => {
+        const circumference = Number(circle.dataset.circumference || 440);
+        // Animate offset from circumference to 0 (100% full fill)
+        const offset = circumference * (1 - easedProgress);
+        circle.style.strokeDashoffset = `${offset}`;
+      });
+
+      if (rawProgress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        // Ensure exact final state
+        counters.forEach((el) => {
+          const target = Number(el.dataset.target || 0);
+          const suffix = el.dataset.suffix || "";
+          el.textContent = `${target.toLocaleString("en-US")}${suffix}`;
+        });
+        circles.forEach((circle) => {
+          circle.style.strokeDashoffset = "0";
+        });
+      }
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  document.addEventListener("astro:page-load", initMetricsAnimation);
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
+    initMetricsAnimation();
+  } else {
+    document.addEventListener("DOMContentLoaded", initMetricsAnimation);
+  }
+</script>

@@ -1,0 +1,52 @@
+---
+import type { Lang } from '../../../i18n/config.i18n';
+import type { BrandItem } from '../../../actions/brands/getBrands.action';
+
+interface Props {
+  brand: BrandItem;
+  lang: Lang;
+}
+
+const { brand, lang } = Astro.props;
+const localizedDesc = brand.description[lang] || brand.description.en;
+---
+
+<section class="py-12 sm:py-16 bg-white border-b border-slate-100 overflow-x-clip">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 items-center">
+      
+      <!-- Brand Logo & Contact CTA -->
+      <div data-animate="bubble-pop" class="md:col-span-5 flex flex-col items-center text-center space-y-6">
+        <div class="max-w-[280px] w-full p-4 flex items-center justify-center">
+          <img
+            src={brand.logo}
+            alt={`${brand.name} official logo`}
+            width="280"
+            height="140"
+            class="max-h-36 w-auto object-contain"
+            loading="eager"
+          />
+        </div>
+
+        <a
+          href={`/${lang}/contact`}
+          style={`background-color: ${brand.badgeColor};`}
+          class="text-white font-bold text-xs uppercase tracking-widest py-2.5 px-8 rounded-md shadow-md hover:opacity-90 transition-opacity inline-flex items-center justify-center"
+        >
+          {lang === "es" ? "CONTÁCTANOS" : "CONTACT US"}
+        </a>
+      </div>
+
+      <!-- Brand Info & Story -->
+      <div data-animate="slide-in-right" class="md:col-span-7 space-y-4 text-left">
+        <h1 class="text-3xl sm:text-4xl font-black text-[var(--color-cad-navy)] tracking-tight">
+          {brand.name}
+        </h1>
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+          {localizedDesc}
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>

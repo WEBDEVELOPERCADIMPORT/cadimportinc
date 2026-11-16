@@ -1,0 +1,120 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import aboutContent from "../../../data/site-about-content.json";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = aboutContent[lang] ?? aboutContent.en;
+const supply = t.supplyChain;
+---
+
+<section class="py-16 sm:py-24 bg-white overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="flex items-start justify-center gap-2 sm:gap-2 md:gap-5 lg:gap-6"
+    >
+      {/* Step 1: Manufacturer */}
+      <div
+        data-animate="bubble-pop"
+        class="flex flex-col items-center text-center w-32 sm:w-48 md:w-60 lg:w-72"
+      >
+        <div class="h-24 sm:h-32 md:h-40 flex items-center justify-center">
+          <img
+            src="/images/about/manufacturer.png"
+            alt={supply.steps[0].title}
+            width="150"
+            height="150"
+            class="max-h-20 sm:max-h-20 md:max-h-25 w-auto object-contain transition-transform duration-300 hover:scale-105"
+            loading="eager"
+          />
+        </div>
+        <span
+          class="mt-4 sm:mt-2 text-sm sm:text-xl md:text-2xl font-bold text-[#013764] tracking-tight"
+        >
+          {supply.steps[0].title}
+        </span>
+      </div>
+
+      {/* Arrow 1 */}
+      <div
+        data-animate="fade-in"
+        data-animate-delay="100"
+        class="h-24 sm:h-32 md:h-40 flex items-center justify-center px-1 sm:px-3 md:px-5"
+      >
+        <img
+          src="/images/about/arrow.png"
+          alt=">"
+          width="60"
+          height="88"
+          class="w-3.5 sm:w-5 md:w-7 h-auto object-contain"
+          loading="eager"
+        />
+      </div>
+
+      {/* Step 2: Distributor */}
+      <div
+        data-animate="bubble-pop"
+        data-animate-delay="200"
+        class="flex flex-col items-center text-center w-32 sm:w-48 md:w-60 lg:w-72"
+      >
+        <div class="h-24 sm:h-32 md:h-40 flex items-center justify-center">
+          <img
+            src="/images/about/distributor.png"
+            alt={supply.steps[0].title}
+            width="150"
+            height="150"
+            class="max-h-20 sm:max-h-20 md:max-h-25 w-auto object-contain transition-transform duration-300 hover:scale-105"
+            loading="eager"
+          />
+        </div>
+        <span
+          class="mt-4 sm:mt-2 text-sm sm:text-xl md:text-2xl font-bold text-[#013764] tracking-tight"
+        >
+          {supply.steps[1].title}
+        </span>
+      </div>
+
+      {/* Arrow 2 */}
+      <div
+        data-animate="fade-in"
+        data-animate-delay="300"
+        class="h-24 sm:h-32 md:h-40 flex items-center justify-center px-1 sm:px-3 md:px-5"
+      >
+        <img
+          src="/images/about/arrow.png"
+          alt=">"
+          width="60"
+          height="88"
+          class="w-3.5 sm:w-5 md:w-7 h-auto object-contain"
+          loading="eager"
+        />
+      </div>
+
+      {/* Step 3: Retailer */}
+      <div
+        data-animate="bubble-pop"
+        data-animate-delay="400"
+        class="flex flex-col items-center text-center w-32 sm:w-48 md:w-60 lg:w-72"
+      >
+        <div class="h-24 sm:h-32 md:h-40 flex items-center justify-center">
+          <img
+            src="/images/about/retailer.png"
+            alt={supply.steps[2].title}
+            width="150"
+            height="150"
+            class="max-h-20 sm:max-h-20 md:max-h-25 w-auto object-contain transition-transform duration-300 hover:scale-105"
+            loading="eager"
+          />
+        </div>
+        <span
+          class="mt-4 sm:mt-2 text-sm sm:text-xl md:text-2xl font-bold text-[#013764] tracking-tight"
+        >
+          {supply.steps[2].title}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

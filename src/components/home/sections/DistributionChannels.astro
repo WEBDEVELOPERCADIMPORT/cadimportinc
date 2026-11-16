@@ -1,0 +1,45 @@
+---
+import type { Lang } from '../../../i18n/config.i18n';
+import homeContent from '../../../data/site-home-content.json';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = homeContent[lang] ?? homeContent.en;
+const channels = t.channels;
+---
+
+<section class="py-16 bg-slate-50 overflow-x-clip">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+      
+      <!-- Left Column: Copy -->
+      <div class="space-y-5" data-animate="slide-in-left">
+        <h2 class="text-2xl sm:text-3xl font-black text-[var(--color-cad-navy)] tracking-tight leading-tight">
+          {channels.title}
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+          {channels.p1}
+        </p>
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+          {channels.p2}
+        </p>
+      </div>
+
+      <!-- Right Column: Conveyor Belt / Supply Chain Image Placeholder -->
+      <div data-animate="slide-in-right" class="relative rounded-xl overflow-hidden shadow-md bg-slate-200 aspect-[16/10]">
+        <img
+          src={channels.image}
+          alt="CAD Import automated distribution & logistics conveyer"
+          width="600"
+          height="375"
+          class="w-full h-full object-cover object-center"
+          loading="lazy"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>

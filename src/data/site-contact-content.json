@@ -1,0 +1,94 @@
+{
+  "es": {
+    "meta": {
+      "title": "Contacto | CAD Import Inc",
+      "description": "¿Busca un producto o desea asociarse como distribuidor? Contáctenos hoy y nuestro equipo de atención le asistirá."
+    },
+    "hero": {
+      "title": "Contacto",
+      "bgImage": "/images/contact/cart-hero.png"
+    },
+    "main": {
+      "heading": "¿No encuentra el producto que está buscando?",
+      "subheading": "¿Preguntas sobre cantidades de productos, entregas o cómo establecer un canal de distribución? Complete nuestro sencillo formulario en línea para ponerse en contacto con un miembro de nuestro equipo de atención al cliente hoy.",
+      "hqTitle": "Información de Oficinas Centrales",
+      "addressLabel": "Dirección:",
+      "addressState": "Delaware",
+      "addressText": "650 Centerpoint Blvd, New Castle, DE 19720",
+      "hoursLabel": "Horario:",
+      "hoursText": "Lunes - Viernes 8am - 5pm",
+      "phoneLabel": "Teléfono:",
+      "phoneText": "(302) 628-4178",
+      "phoneTel": "+13026284178",
+      "emailLabel": "Correo:",
+      "emailText": "info@cadimportinc.com",
+      "affiliationPrefix": "Un orgulloso afiliado de Pharmadel LLC y ",
+      "affiliationLinkText": "Vas al Super",
+      "affiliationLinkUrl": "https://vasalsuper.store",
+      "formTitle": "¡Escríbenos! Estaremos encantados de ayudarte.",
+      "firstNamePlaceholder": "Ingresa tu primer nombre",
+      "lastNamePlaceholder": "Ingresa tu apellido",
+      "emailPlaceholder": "Ingresa tu mejor correo",
+      "phonePlaceholder": "Número telefónico",
+      "preferredContactLabel": "¿Cómo prefieres ser contactado?",
+      "preferredContactOptions": [
+        "Llamada telefónica",
+        "Correo electrónico",
+        "WhatsApp / Mensaje"
+      ],
+      "messagePlaceholder": "Escribe brevemente tu consulta o requerimiento.",
+      "submitButton": "Enviar mensaje",
+      "successMessage": "✓ ¡Gracias! Tu mensaje ha sido enviado a nuestro equipo de soporte."
+    },
+    "map": {
+      "title": "Nuestra Ubicación en New Castle, Delaware",
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.391295328221!2d-75.60338332356948!3d39.66336590114002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7022030d97bfb%3A0x7d6fec665bf24f8e!2s650%20Centerpoint%20Blvd%2C%20New%20Castle%2C%20DE%2019720!5e0!3m2!1ses!2sus!4v1715000000000!5m2!1ses!2sus"
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Contact Us | CAD Import Inc",
+      "description": "Can't find a product that you're looking for? Reach out to CAD Import Inc. customer support team today."
+    },
+    "hero": {
+      "title": "Contact Us",
+      "bgImage": "/images/contact/cart-hero.png"
+    },
+    "main": {
+      "heading": "Can’t find a product that you’re looking for?",
+      "subheading": "Questions regarding product quantities, delivery, or looking to set up a distribution channel? Complete our easy online form to be put in touch with a member of our customer support team today.",
+      "hqTitle": "Headquarters Information",
+      "addressLabel": "Address:",
+      "addressState": "Delaware",
+      "addressText": "650 Centerpoint Blvd, New Castle, DE 19720",
+      "hoursLabel": "Hours:",
+      "hoursText": "Monday - Friday 8am - 5pm",
+      "phoneLabel": "Phone:",
+      "phoneText": "(302) 628-4178",
+      "phoneTel": "+13026284178",
+      "emailLabel": "Email:",
+      "emailText": "info@cadimportinc.com",
+      "affiliationPrefix": "A proud affiliate of Pharmadel LLC & ",
+      "affiliationLinkText": "Vas al Super",
+      "affiliationLinkUrl": "https://vasalsuper.store",
+      "formTitle": "Write to us! We'll be happy to help you.",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastNamePlaceholder": "Enter your last name",
+      "emailPlaceholder": "Enter your best email",
+      "phonePlaceholder": "Phone Number",
+      "preferredContactLabel": "How do you prefer to be contacted?",
+      "preferredContactOptions": [
+        "Phone Call",
+        "Email",
+        "WhatsApp / SMS"
+      ],
+      "messagePlaceholder": "Please briefly write your request or requirement.",
+      "submitButton": "Send message",
+      "successMessage": "✓ Thank you! Your message has been sent to our support team."
+    },
+    "map": {
+      "title": "Our Location in New Castle, Delaware",
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.391295328221!2d-75.60338332356948!3d39.66336590114002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c7022030d97bfb%3A0x7d6fec665bf24f8e!2s650%20Centerpoint%20Blvd%2C%20New%20Castle%2C%20DE%2019720!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus"
+    }
+  }
+}

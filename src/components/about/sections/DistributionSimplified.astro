@@ -1,0 +1,85 @@
+---
+import type { Lang } from '../../../i18n/config.i18n';
+import aboutContent from '../../../data/site-about-content.json';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = aboutContent[lang] ?? aboutContent.en;
+const sim = t.simplified;
+
+// Split partners evenly into two columns of 7
+const half = Math.ceil(sim.partners.length / 2);
+const col1 = sim.partners.slice(0, half);
+const col2 = sim.partners.slice(half);
+---
+
+<section class="py-12 sm:py-16 bg-white overflow-x-clip">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      
+      {/* Left Column: Product Distribution Simplified */}
+      <div data-animate="slide-in-left" class="lg:col-span-6 space-y-5">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#013764] tracking-tight leading-tight">
+          {sim.title}
+        </h2>
+        
+        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+          {sim.p1}
+        </p>
+
+        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+          {sim.p2}
+        </p>
+
+        <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+          {sim.p3}
+        </p>
+      </div>
+
+      {/* Right Column: Exclusive Partners */}
+      <div data-animate="slide-in-right" class="lg:col-span-6 pt-1 sm:pt-2">
+        {/* Header with dotted lines */}
+        <div class="flex items-center justify-center gap-3 sm:gap-4 mb-6">
+          <div class="grow border-b-2 border-dotted border-[#299899]"></div>
+          <h3 class="text-base sm:text-lg font-bold text-[#013764] tracking-tight whitespace-nowrap">
+            {sim.partnersTitle}
+          </h3>
+          <div class="grow border-b-2 border-dotted border-[#299899]"></div>
+        </div>
+
+        {/* 2-Column Partners List with Golden Stars */}
+        <div class="grid grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-2.5 sm:gap-y-3">
+          <ul class="space-y-2.5 sm:space-y-3">
+            {col1.map((partner) => (
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-[#f3d120] shrink-0 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                <span class="text-xs sm:text-sm font-medium text-slate-800 leading-snug">
+                  {partner}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <ul class="space-y-2.5 sm:space-y-3">
+            {col2.map((partner) => (
+              <li class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 text-[#f3d120] shrink-0 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                <span class="text-xs sm:text-sm font-medium text-slate-800 leading-snug">
+                  {partner}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

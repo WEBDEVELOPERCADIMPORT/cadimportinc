@@ -1,0 +1,42 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import homeContent from "../../data/site-home-content.json";
+import { LANGUAGES, type Lang } from "../../i18n/config.i18n";
+
+// Sections
+import Hero from "../../components/home/sections/Hero.astro";
+import IntroOverview from "../../components/home/sections/IntroOverview.astro";
+import DistributionCta from "../../components/home/sections/DistributionCta.astro";
+import MetricsCounter from "../../components/home/sections/MetricsCounter.astro";
+import DistributionChannels from "../../components/home/sections/DistributionChannels.astro";
+import Testimonials from "../../components/home/sections/Testimonials.astro";
+import BrandsCarousel from "../../components/home/sections/BrandsCarousel.astro";
+import RepContactForm from "../../components/home/sections/RepContactForm.astro";
+
+const lang = (Astro.params.lang as Lang) || "en";
+
+// 1. Validar idioma
+if (!(lang in LANGUAGES) || !(lang in homeContent)) {
+  return Astro.redirect("/404");
+}
+
+const content = (homeContent as Record<string, any>)[lang];
+---
+
+<Layout
+  title={content.meta?.title ?? "CAD Import Inc"}
+  lang={lang}
+  description={content.meta?.description}
+  image="/images/home/cad-logo.png"
+>
+  <main class="w-full">
+    <Hero lang={lang} />
+    <IntroOverview lang={lang} />
+    <DistributionCta lang={lang} />
+    <MetricsCounter lang={lang} />
+    <DistributionChannels lang={lang} />
+    <Testimonials lang={lang} />
+    <BrandsCarousel lang={lang} />
+    <RepContactForm lang={lang} />
+  </main>
+</Layout>

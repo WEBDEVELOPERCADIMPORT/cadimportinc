@@ -1,0 +1,22 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import aboutContent from "../../../data/site-about-content.json";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = aboutContent[lang] ?? aboutContent.en;
+const mission = t.mission;
+---
+
+<section
+  class="py-14 sm:py-16 bg-white text-slate-700 border-b border-slate-100"
+>
+  <div data-animate="fade-up" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+    <p class="text-sm sm:text-base leading-relaxed text-slate-700 font-normal">
+      {mission.text}
+    </p>
+  </div>
+</section>

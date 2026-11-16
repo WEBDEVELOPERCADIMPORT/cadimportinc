@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "../animations/animations.css";
+
+@theme {
+  --color-cad-teal: #299898;
+  --color-cad-teal-dark: #1f7979;
+  --color-cad-teal-light: #35a8a8;
+
+  --color-cad-lime: #76b900;
+  --color-cad-lime-hover: #669f00;
+
+  --color-cad-green: #1bbf5c;
+  --color-cad-green-hover: #17a84f;
+
+  --color-cad-navy: #0b3c61;
+  --color-cad-navy-dark: #07263d;
+  --color-cad-navy-light: #0e4c7b;
+
+  --color-cad-gray-bg: #f7f7f7;
+
+  --color-brand-pharmadel: #1b8738;
+  --color-brand-titas: #0f4c81;
+  --color-brand-guatelinda: #d49b00;
+  --color-brand-relox: #003876;
+  --color-brand-cancun: #cc0000;
+  --color-brand-hidravit: #00a8e8;
+  --color-brand-fixion: #1a1061;
+}
+
+@layer base {
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+  }
+}
+
+/* Centralized Button Utility Styles */
+.btn-cad-lime {
+  background-color: var(--color-cad-lime);
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-cad-lime:hover {
+  background-color: var(--color-cad-lime-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(118, 185, 0, 0.35);
+}
+
+.btn-cad-green {
+  background-color: var(--color-cad-green);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+.btn-cad-green:hover {
+  background-color: var(--color-cad-green-hover);
+  box-shadow: 0 4px 12px rgba(27, 191, 92, 0.3);
+}
+
+/* Custom form inputs */
+.cad-input {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.cad-input:focus {
+  border-color: var(--color-cad-teal);
+  box-shadow: 0 0 0 3px rgba(41, 152, 152, 0.15);
+}
+
+.cad-select {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #334155;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.cad-select:focus {
+  border-color: var(--color-cad-teal);
+  box-shadow: 0 0 0 3px rgba(41, 152, 152, 0.15);
+}

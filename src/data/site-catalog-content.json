@@ -1,0 +1,106 @@
+{
+  "es": {
+    "meta": {
+      "title": "Catálogo de Productos y Oferta Comercial | CAD Import Inc",
+      "description": "Explore el catálogo de productos y marcas líderes disponibles para minoristas y distribuidores hispanos en los Estados Unidos."
+    },
+    "hero": {
+      "title": "Catálogo de Productos y Oferta Comercial",
+      "subtitle": "Conectando Bienes y Consumidores Hispanos Desde 2003",
+      "ctaText": "ASÓCIATE CON NOSOTROS",
+      "ctaUrl": "contact",
+      "bgImage": "/images/catalog/supermarket-aisle.png"
+    },
+    "downloadCard": {
+      "title": "La población hispana en EE. UU. supera los 62.1 millones y sigue creciendo.",
+      "subtitle": "¿Cuenta con los productos adecuados para llegar a esta creciente audiencia?",
+      "description": "Descargue una copia de nuestro catálogo de productos para ver el listado completo de artículos disponibles para nuestros socios minoristas y de distribución, junto con los códigos SKU para realizar su pedido al por mayor.",
+      "buttonText": "DESCARGA NUESTRO CATÁLOGO",
+      "catalogUrl": "/catalogs/catalog-2026.pdf",
+      "coverImage": "/images/catalog/catalog-cover-2026.jpg"
+    },
+    "departmentsHeader": {
+      "title": "Productos Para Que Sus Clientes Sigan Regresando",
+      "subtitle": "Seleccione un Departamento a Continuación Para Conocer Más"
+    },
+    "offeringsAndContact": {
+      "intro": "En CAD Imports nos especializamos en brindar acceso dentro de EE. UU. a los productos latinoamericanos que nuestras comunidades desean y contamos con los canales de distribución que ha estado buscando.",
+      "offeringsTitle": "Nuestra oferta incluye:",
+      "offerings": [
+        "Artículos de Cuidado Personal (Shampoo, Acondicionador, Jabones, Rastrillos, Pasta de Dientes, etc.)",
+        "Productos para el Hogar (Detergente para Ropa, Jabón Líquido para Platos, Papel Higiénico, etc.)",
+        "Medicamentos OTC y Suplementos (Medicinas para resfriados y gripe, analgésicos, Vitamina C, ¡y más!)",
+        "Abarrotes y Alimentos (Tés seleccionados, cafés y otras bebidas, dulces, botanas, fideos y otros productos secos)"
+      ],
+      "credentials": "Además de nuestra selección completa de productos VIP de América Latina, somos distribuidores exclusivos de la línea de productos Pharmadel de calidad para la salud, la vida y la belleza en América del Norte. En CAD Import, hemos comercializado marcas hispanas en los Estados Unidos por más de 15 años y nos entusiasma trabajar con minoristas y distribuidores de todos los tamaños. Póngase en contacto con uno de nuestros representantes hoy para conocer cómo puede comenzar a expandir los productos internacionales en su tienda.",
+      "formCardTitle": "¡Aprende Más!",
+      "formCardSubtitle": "¡Escríbenos! Estaremos encantados de ayudarte.",
+      "namePlaceholder": "Ingresa tu nombre",
+      "emailPlaceholder": "Ingresa tu mejor correo",
+      "phonePlaceholder": "Ingresa tu teléfono",
+      "contactMethodLabel": "¿Cómo prefieres ser contactado?",
+      "contactMethods": [
+        "Seleccionar uno",
+        "Llamada telefónica",
+        "Correo electrónico",
+        "WhatsApp / Mensaje de texto"
+      ],
+      "messagePlaceholder": "Escribe brevemente tu consulta o requerimiento...",
+      "recaptchaText": "No soy un robot",
+      "consentText": "Acepto recibir información y acepto la declaración de privacidad.",
+      "submitButton": "Enviar mensaje"
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Product Catalog & Offerings | CAD Import Inc",
+      "description": "Connecting Hispanic Goods & Consumers Since 2003. Browse our wholesale departments and catalog."
+    },
+    "hero": {
+      "title": "Product Catalog & Offerings",
+      "subtitle": "Connecting Hispanic Goods & Consumers Since 2003",
+      "ctaText": "PARTNER WITH US",
+      "ctaUrl": "contact",
+      "bgImage": "/images/catalog/supermarket-aisle.png"
+    },
+    "downloadCard": {
+      "title": "The hispanic population in the U.S is over 62.1 million and growing.",
+      "subtitle": "Are you carrying the right products to reach this growing audience?",
+      "description": "Download a copy of our product catalog for a complete listing of goods available form our retail and distribution partners, along with SKU numbers to place your bulk order today.",
+      "buttonText": "DESCARGA NUESTRO CATÁLOGO",
+      "catalogUrl": "/catalogs/catalog-2026.pdf",
+      "coverImage": "/images/catalog/catalog-cover-2026.jpg"
+    },
+    "departmentsHeader": {
+      "title": "Products to Keep Your Customers Coming Back",
+      "subtitle": "Select a Department Below To Learn More"
+    },
+    "offeringsAndContact": {
+      "intro": "At CAD Imports we specialize in bringing access within the U.S. to the Latin American products that our communities desire and have the distribution channels you've been searching for.",
+      "offeringsTitle": "Our offerings include:",
+      "offerings": [
+        "Personal Care Items (Shampoo, Conditioner, Soaps, Razor, Toothpaste, etc.)",
+        "Household Products (Laundry Detergent, Dishwashing soaps, even toilet paper!)",
+        "OTC Medicinal Products & Supplements (cold & flu medicines, pain relievers, vitamin C and more!)",
+        "Grocery (Specially sourced teas, coffees and other beverages, candles, chips, noodles and other dry goods)"
+      ],
+      "credentials": "In addition to our full selection of VIP products from Latin America, we're an exclusive distributor of the Pharmadel product line of quality health, life, and beauty products in North America. At CAD Import, we have been marketing Hispanic brands in the United States for more than 15 year & we're happy to work with retailers and distributors of all sizes. Contact one of our representatives today to learn more about how you can start expanding international products in your store.",
+      "formCardTitle": "Learn More!",
+      "formCardSubtitle": "Write to us! We'll be happy to help you.",
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your best email",
+      "phonePlaceholder": "Enter your phone",
+      "contactMethodLabel": "How do you prefer to be contacted?",
+      "contactMethods": [
+        "Select one",
+        "Phone Call",
+        "Email",
+        "WhatsApp / SMS"
+      ],
+      "messagePlaceholder": "Please briefly write your request or requirement...",
+      "recaptchaText": "I'm not a robot",
+      "consentText": "I agree to receiving information and accept the data privacy statement",
+      "submitButton": "Send message"
+    }
+  }
+}

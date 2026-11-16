@@ -1,0 +1,270 @@
+{
+  "company": {
+    "name": "CAD Import Inc",
+    "address": {
+      "street": "650 Centerpoint Blvd",
+      "city": "New Castle",
+      "state": "DE",
+      "postalCode": "19720",
+      "country": "USA",
+      "formatted": "650 Centerpoint Blvd New Castle, DE 19720"
+    },
+    "website": "www.cadimportinc.com",
+    "websiteUrl": "https://www.cadimportinc.com",
+    "phone": "+1 (302) 628-4178"
+  },
+  "employees": [
+    {
+      "id": "eveliovelasquez",
+      "slug": "eveliovelasquez",
+      "firstName": "Evelio",
+      "lastName": "Velasquez",
+      "title": "CEO / PRESIDENT",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Evelio_Velasquez.jpeg",
+      "phone": "+1 (302) 628 4178",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "evelio@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+13025195961",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      }
+    },
+    {
+      "id": "arath-vazquez",
+      "slug": "arath-vazquez",
+      "firstName": "Arath",
+      "lastName": "Vazquez",
+      "title": "MARKETING REPRESENTATIVE",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Arath_Vazquez.jpg",
+      "phone": "+1 (302) 519 1852",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "marketing@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+13025026657",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      }
+    },
+    {
+      "id": "cynthia-velasquez",
+      "slug": "cynthia-velasquez",
+      "firstName": "Cynthia",
+      "lastName": "Velasquez",
+      "title": "SALES REPRESENTATIVE",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Cynthia_Velasquez.jpg",
+      "phone": "+1 (302) 803 3008",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "cynthia@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+13028033008",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      }
+    },
+    {
+      "id": "diego_cotzajay",
+      "slug": "diego_cotzajay",
+      "firstName": "Diego",
+      "lastName": "Cotzajay",
+      "title": "MANAGEMENT ASSISTANT",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Diego_Cotzajay.jpg",
+      "phone": "+(502) 3992 5500",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "assistant02@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+50239925500",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      }
+    },
+    {
+      "id": "estuardo-sarceno",
+      "slug": "estuardo-sarceno",
+      "firstName": "Estuardo",
+      "lastName": "Sarceño",
+      "title": "AGENTE DE COMPRAS",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Estuardo_Sarceno.jpg",
+      "phone": "+502 3992 5200",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "purchase05@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+50239925200",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      },
+      "companyOverride": {
+        "secondaryAddress": "11 Calle 6-21, zona 4, Mixco Bodega 25",
+        "countryLabel": "Guatemala"
+      }
+    },
+    {
+      "id": "evelyn-velasquez",
+      "slug": "evelyn-velasquez",
+      "firstName": "Evelyn",
+      "lastName": "Velasquez",
+      "title": "TRADEMARK",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Evelyn_Velasquez.jpg",
+      "phone": "+1 (302) 502 6657",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "evelyn@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+13025026657",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      }
+    },
+    {
+      "id": "giovanni-solis",
+      "slug": "giovanni-solis",
+      "firstName": "Giovanni",
+      "lastName": "Solis",
+      "title": "PRODUCT DEVELOPMENT MANAGER",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Giovanni_Solis.jpg",
+      "phone": "+1 (302) 502 7640",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "purchasing@pharmadel.com",
+      "social": {
+        "whatsapp": "https://wa.me/+13025027640",
+        "facebook": "https://www.facebook.com/pharmadel.us",
+        "instagram": "https://www.instagram.com/pharmadel.us/"
+      },
+      "companyOverride": {
+        "name": "Pharmadel",
+        "website": "www.pharmadel.com",
+        "websiteUrl": "https://pharmadel.com/"
+      }
+    },
+    {
+      "id": "manuel-colon",
+      "slug": "manuel-colon",
+      "firstName": "Manuel",
+      "lastName": "Colon",
+      "title": "AGENTE DE COMPRAS",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Manuel_Colon.jpg",
+      "phone": "+(502) 3992 5200",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "purchase02@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+50239925200",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      },
+      "companyOverride": {
+        "secondaryAddress": "11 Calle 6-21, zona 4, Mixco Bodega 25",
+        "countryLabel": "Guatemala"
+      }
+    },
+    {
+      "id": "marco-huertas",
+      "slug": "marco-huertas",
+      "firstName": "Marco",
+      "lastName": "Huertas",
+      "title": "Analista Digital",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Marco_Huertas.jpg",
+      "phone": "+(502) 5482 3337",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "marco@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+50254823337",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      },
+      "companyOverride": {
+        "countryLabel": "Guatemala"
+      }
+    },
+    {
+      "id": "marcos-ramirez",
+      "slug": "marcos-ramirez",
+      "firstName": "Marcos",
+      "lastName": "Ramirez",
+      "title": "SALES MANAGER",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Marcos_Ramirez.jpg",
+      "phone": "+1 (302) 319 0040",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "mramirez@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+13023190040",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      }
+    },
+    {
+      "id": "marvin-lopez",
+      "slug": "marvin-lopez",
+      "firstName": "Marvin",
+      "lastName": "Lopez",
+      "title": "Administracion General",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Marvin_Lopez.jpg",
+      "phone": "+(502) 5635 7657",
+      "otherPhone": "+1 (302) 628-4178 ext 124",
+      "email": "marvin@pharmadel.com",
+      "social": {
+        "whatsapp": "https://wa.me/+50256357657",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      },
+      "companyOverride": {
+        "secondaryAddress": "11 Calle 6-21, zona 4, Mixco Bodega 25",
+        "phone": "+1 (302) 628-4178 ext 124",
+        "countryLabel": "Guatemala"
+      }
+    },
+    {
+      "id": "samuel-figueroa",
+      "slug": "samuel-figueroa",
+      "firstName": "Samuel",
+      "lastName": "Figueroa",
+      "title": "AGENTE DE COMPRAS",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Samuel_Figueroa.jpg",
+      "phone": "+(502) 5481 5600",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "purchase@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+50254815600",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      },
+      "companyOverride": {
+        "secondaryAddress": "11 Calle 6-21, zona 4, Mixco Bodega 25",
+        "countryLabel": "Guatemala"
+      }
+    },
+    {
+      "id": "sebastian-garcia",
+      "slug": "sebastian-garcia",
+      "firstName": "Sebastian",
+      "lastName": "García",
+      "title": "ENCARGADO DE BODEGA",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Sebastian_Garcia.jpg",
+      "phone": "+(502) 3565 5599",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "bodegaGT@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+50235655599",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      },
+      "companyOverride": {
+        "countryLabel": "Guatemala"
+      }
+    },
+    {
+      "id": "zeyla-chavez",
+      "slug": "zeyla-chavez",
+      "firstName": "Zeyla",
+      "lastName": "Chavez",
+      "title": "SALES REPRESENTATIVE",
+      "avatar": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/digital-business-card/Zeyla_Chavez.jpg",
+      "phone": "+1 (302) 249 5219",
+      "otherPhone": "+1 (302) 628-4178",
+      "email": "zeyla@cadimportinc.com",
+      "social": {
+        "whatsapp": "https://wa.me/+13022495219",
+        "facebook": "https://www.facebook.com/share/zyvd1E1ySQcbozpy/?mibextid=LQQJ4d",
+        "instagram": "https://www.instagram.com/cadimportinc.usa?igsh=MWY4MmhsN3NraDVwdw=="
+      }
+    }
+  ]
+}

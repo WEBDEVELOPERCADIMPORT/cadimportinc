@@ -1,0 +1,35 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+import { LANGUAGES, type Lang } from "../../../../i18n/config.i18n";
+import { actions } from "astro:actions";
+import BusinessCardView from "../../../../components/digital-business-card/sections/BusinessCardView.astro";
+
+const lang = Astro.params.lang as Lang;
+const { slug } = Astro.params;
+
+if (!(lang in LANGUAGES) || !slug) {
+  return Astro.redirect("/404");
+}
+
+const { data: employeeResponse, error } = await Astro.callAction(
+  actions.getEmployeeBySlug,
+  { slug }
+);
+
+if (error || !employeeResponse?.data) {
+  return Astro.redirect("/404");
+}
+
+const employee = employeeResponse.data;
+---
+
+<Layout
+  title={`${employee.fullName} | ${employee.company.name}`}
+  lang={lang}
+  description={`${employee.fullName} - ${employee.title} at ${employee.company.name}`}
+  image={employee.avatar}
+  canonicalPath={`digital-business-card/${employee.slug}`}
+  hideChrome={true}
+>
+  <BusinessCardView employee={employee} lang={lang} />
+</Layout>

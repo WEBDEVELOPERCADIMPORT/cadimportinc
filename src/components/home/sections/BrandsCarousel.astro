@@ -1,0 +1,219 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import homeContent from "../../../data/site-home-content.json";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = homeContent[lang] ?? homeContent.en;
+const carousel = t.brandsCarousel;
+---
+
+<section class="py-8 sm:py-12 bg-white border-y border-slate-100 overflow-x-clip">
+  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+    <h3
+      data-animate="fade-up"
+      class="text-xl sm:text-2xl font-black text-[#0b3c61] text-center tracking-tight"
+    >
+      {carousel.title}
+    </h3>
+
+    <div
+      id="brands-carousel-container"
+      data-animate="fade-up"
+      data-animate-delay="200"
+      class="relative flex items-center justify-between gap-2 sm:gap-4 select-none"
+      aria-label="Brands carousel"
+    >
+      <!-- Prev Button -->
+      <button
+        id="brands-carousel-prev"
+        type="button"
+        class="shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded bg-[#F9AB39] hover:bg-[#e0982e] active:scale-95 text-white flex items-center justify-center transition shadow-xs cursor-pointer z-10 focus:outline-none focus:ring-2 focus:ring-[#F9AB39]/50"
+        aria-label="Previous brands"
+      >
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2.5"
+            d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+
+      <!-- Carousel Viewport & Track -->
+      <div class="overflow-hidden w-full py-2">
+        <div
+          id="brands-carousel-track"
+          class="flex transition-transform duration-500 ease-in-out"
+        >
+          {
+            carousel.brands.map((b) => (
+              <div class="brand-carousel-item shrink-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6">
+                <div class="h-30 sm:h-34 flex items-center justify-center p-0 rounded-lg bg-white hover:border-[#F9AB39] transition-all group">
+                  <img
+                    src={b.logo}
+                    alt={b.name}
+                    width="280"
+                    height="120"
+                    class="max-h-16 max-w-[280px] w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    onerror="this.classList.add('hidden'); if(this.nextElementSibling) this.nextElementSibling.classList.remove('hidden');"
+                  />
+                  <span class="hidden font-extrabold text-xs sm:text-sm text-[#0b3c61] text-center leading-tight uppercase tracking-wider group-hover:text-[#F9AB39] transition-colors">
+                    {b.name}
+                  </span>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Next Button -->
+      <button
+        id="brands-carousel-next"
+        type="button"
+        class="shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded bg-[#F9AB39] hover:bg-[#e0982e] active:scale-95 text-white flex items-center justify-center transition shadow-xs cursor-pointer z-10 focus:outline-none focus:ring-2 focus:ring-[#F9AB39]/50"
+        aria-label="Next brands"
+      >
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2.5"
+            d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  let brandsIntervalId: any = null;
+
+  function initBrandsCarousel() {
+    // Clear any lingering interval from prior page loads
+    if (brandsIntervalId) {
+      clearInterval(brandsIntervalId);
+      brandsIntervalId = null;
+    }
+
+    const container = document.getElementById("brands-carousel-container");
+    const track = document.getElementById("brands-carousel-track");
+    const prevBtn = document.getElementById("brands-carousel-prev");
+    const nextBtn = document.getElementById("brands-carousel-next");
+    if (!container || !track || !prevBtn || !nextBtn) return;
+
+    const items = track.querySelectorAll<HTMLElement>(".brand-carousel-item");
+    if (items.length === 0) return;
+
+    let currentIndex = 0;
+
+    function getVisibleCount(): number {
+      const width = window.innerWidth;
+      if (width >= 1024) return 6;
+      if (width >= 768) return 4;
+      if (width >= 640) return 3;
+      return 2;
+    }
+
+    function getMaxIndex(): number {
+      return Math.max(0, items.length - getVisibleCount());
+    }
+
+    function updateTrackPosition() {
+      if (!track || items.length === 0) return;
+      const firstItem = items[0];
+      const itemWidth = firstItem.getBoundingClientRect().width;
+      const offset = currentIndex * itemWidth;
+      track.style.transform = `translateX(-${offset}px)`;
+    }
+
+    function goNext() {
+      const maxIndex = getMaxIndex();
+      if (currentIndex >= maxIndex) {
+        currentIndex = 0;
+      } else {
+        currentIndex++;
+      }
+      updateTrackPosition();
+    }
+
+    function goPrev() {
+      const maxIndex = getMaxIndex();
+      if (currentIndex <= 0) {
+        currentIndex = maxIndex;
+      } else {
+        currentIndex--;
+      }
+      updateTrackPosition();
+    }
+
+    function startAutoPlay() {
+      stopAutoPlay();
+      brandsIntervalId = setInterval(goNext, 3000); // Avanzar cada 3 segundos
+    }
+
+    function stopAutoPlay() {
+      if (brandsIntervalId) {
+        clearInterval(brandsIntervalId);
+        brandsIntervalId = null;
+      }
+    }
+
+    // Button event listeners
+    nextBtn.onclick = () => {
+      stopAutoPlay();
+      goNext();
+      startAutoPlay();
+    };
+
+    prevBtn.onclick = () => {
+      stopAutoPlay();
+      goPrev();
+      startAutoPlay();
+    };
+
+    // Pause on hover / touch
+    container.onmouseenter = stopAutoPlay;
+    container.onmouseleave = startAutoPlay;
+    container.ontouchstart = stopAutoPlay;
+    container.ontouchend = startAutoPlay;
+
+    // Handle responsive resize
+    window.addEventListener("resize", () => {
+      const maxIndex = getMaxIndex();
+      if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+      }
+      updateTrackPosition();
+    });
+
+    // Initial setup
+    updateTrackPosition();
+    startAutoPlay();
+  }
+
+  document.addEventListener("astro:page-load", initBrandsCarousel);
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
+    initBrandsCarousel();
+  } else {
+    document.addEventListener("DOMContentLoaded", initBrandsCarousel);
+  }
+</script>

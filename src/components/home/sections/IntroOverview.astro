@@ -1,0 +1,32 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import homeContent from "../../../data/site-home-content.json";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = homeContent[lang] ?? homeContent.en;
+const intro = t.intro;
+---
+
+<section class="py-14 sm:py-18 bg-white text-slate-700 overflow-x-clip">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-start space-y-6">
+    <h2
+      data-animate="fade-up"
+      class="text-2xl sm:text-3xl font-black text-[var(--color-cad-navy)] text-center tracking-tight"
+    >
+      {intro.title}
+    </h2>
+    <div
+      data-animate="fade-up"
+      data-animate-delay="200"
+      class="space-y-4 text-sm sm:text-base leading-relaxed text-slate-600 font-normal"
+    >
+      <p>{intro.p1}</p>
+      <p class="font-semibold text-slate-800">{intro.p2}</p>
+      <p>{intro.p3}</p>
+    </div>
+  </div>
+</section>

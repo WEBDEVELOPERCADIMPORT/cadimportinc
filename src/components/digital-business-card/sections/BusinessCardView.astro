@@ -1,0 +1,306 @@
+---
+import qrcode from "qrcode-generator";
+import type { Lang } from "../../../i18n/config.i18n";
+import type { EmployeeBusinessCard } from "../../../types/vcard";
+import { buildVCardString } from "../../../utils/vcard/buildVCard";
+import pageContent from "../../../data/site-digital-business-card-content.json";
+import AvatarRing from "../components/AvatarRing.astro";
+
+interface Props {
+  employee: EmployeeBusinessCard;
+  lang: Lang;
+}
+
+const { employee, lang } = Astro.props;
+const t = pageContent[lang] ?? pageContent.en;
+
+const initials =
+  `${employee.firstName.charAt(0)}${employee.lastName.charAt(0)}`.toUpperCase();
+const phoneHref = `tel:${employee.phone.replace(/[^\d+]/g, "")}`;
+const companyPhoneHref = `tel:${employee.company.phone.replace(/[^\d+]/g, "")}`;
+
+const vcardString = buildVCardString(employee.vcard);
+const qr = qrcode(0, "M");
+qr.addData(vcardString);
+qr.make();
+const qrSvg = qr.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+const vcardDownloadHref = `data:text/vcard;charset=utf-8,${encodeURIComponent(vcardString)}`;
+---
+
+<section
+  class="min-h-screen w-full bg-white flex flex-col items-center justify-center py-8 px-4"
+>
+  <div
+    class="relative w-full max-w-[460px] flex flex-col items-center text-center pt-10 pb-6"
+  >
+    <!-- Top-Right CAD Logo Badge -->
+    <div
+      class="absolute top-0 right-1 sm:right-0 w-20 h-20 rounded-full bg-white shadow-[0_4px_14px_rgba(0,0,0,0.18)] flex items-center justify-center"
+    >
+      <img
+        src="/logo.png"
+        alt={employee.company.name}
+        width="20"
+        height="20"
+        class="w-full h-full object-contain"
+      />
+    </div>
+
+    <!-- Employee Avatar with Gradient Ring -->
+    <AvatarRing
+      src={employee.avatar}
+      alt={employee.fullName}
+      initials={initials}
+      uid={employee.slug}
+      size="lg"
+    />
+
+    <!-- Full Name & Title -->
+    <h1
+      class="mt-3 text-[30px] sm:text-[34px] font-bold text-[#0b3c61] tracking-tight leading-tight"
+    >
+      {employee.fullName}
+    </h1>
+    <p
+      class="mt-0.5 text-[13px] font-medium uppercase tracking-wide text-[#5cb82e]"
+    >
+      {employee.title}
+    </p>
+
+    <!-- Dotted Divider -->
+    <div
+      class="w-32 border-b border-dotted border-slate-300 my-4"
+      aria-hidden="true"
+    >
+    </div>
+
+    <!-- Direct Phone & Email -->
+    <div
+      class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[14px] text-[#4b5563]"
+    >
+      <a
+        href={phoneHref}
+        class="inline-flex items-center gap-2 hover:text-[#0b3c61] transition-colors"
+      >
+        <svg
+          class="w-4 h-4 text-[#15803d] shrink-0"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"
+          ></path>
+        </svg>
+        <span>{employee.phone}</span>
+      </a>
+
+      <span class="hidden sm:block h-4 w-px bg-slate-200" aria-hidden="true"
+      ></span>
+
+      <a
+        href={`mailto:${employee.email}`}
+        class="inline-flex items-center gap-2 hover:text-[#0b3c61] transition-colors"
+      >
+        <svg
+          class="w-4 h-4 text-[#15803d] shrink-0"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+          ></path>
+        </svg>
+        <span>{employee.email}</span>
+      </a>
+    </div>
+
+    <!-- Social Pill Bar -->
+    <div
+      class="mt-5 w-full max-w-[430px] bg-[#003865] rounded-full py-2.5 px-8 flex items-center justify-center gap-12 text-white shadow-sm"
+    >
+      {
+        employee.social.whatsapp && (
+          <a
+            href={employee.social.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            class="hover:opacity-80 transition-opacity"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.79 14.01c-.24.68-1.41 1.3-1.95 1.38-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.37-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.26-.29.58-.36.77-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2.01.89 2.15.07.15.12.32.02.51-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.15-.29.31-.12.6.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.45.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.39-.24.65-.15.27.1 1.69.8 1.98.94.29.15.48.22.55.34.07.12.07.7-.17 1.38z" />
+            </svg>
+          </a>
+        )
+      }
+
+      {
+        employee.social.facebook && (
+          <a
+            href={employee.social.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            class="hover:opacity-80 transition-opacity"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 008.44-9.9c0-5.53-4.5-10.02-10-10.02z" />
+            </svg>
+          </a>
+        )
+      }
+
+      {
+        employee.social.instagram && (
+          <a
+            href={employee.social.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="hover:opacity-80 transition-opacity"
+          >
+            <svg
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+        )
+      }
+    </div>
+
+    <!-- Company Info Card -->
+    <div
+      class="mt-5 w-full max-w-[390px] bg-[#f5f6f7] rounded-2xl px-6 py-5 text-left space-y-2.5 text-[12.5px] sm:text-[13px] text-[#0b3c61]"
+    >
+      {
+        employee.company.secondaryAddress && (
+          <div class="flex items-start gap-2.5">
+            <svg
+              class="w-4 h-4 mt-0.5 text-[#0b3c61] shrink-0"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1114.5 9 2.5 2.5 0 0112 11.5z" />
+            </svg>
+            <span>{employee.company.secondaryAddress}</span>
+          </div>
+        )
+      }
+
+      <div class="flex items-start gap-2.5">
+        <svg
+          class="w-4 h-4 mt-0.5 text-[#0b3c61] shrink-0"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1114.5 9 2.5 2.5 0 0112 11.5z"
+          ></path>
+        </svg>
+        <span>{employee.company.address.formatted}</span>
+      </div>
+
+      <div class="flex items-center gap-2.5">
+        <svg
+          class="w-4 h-4 text-[#0b3c61] shrink-0"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path
+            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+          ></path>
+        </svg>
+        <a
+          href={employee.company.websiteUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:underline"
+        >
+          {employee.company.website}
+        </a>
+      </div>
+
+      <div class="flex items-center gap-2.5">
+        <svg
+          class="w-4 h-4 text-[#0b3c61] shrink-0"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"
+          ></path>
+        </svg>
+        <a href={companyPhoneHref} class="hover:underline">
+          {employee.company.phone}
+        </a>
+      </div>
+
+      {
+        employee.company.countryLabel && (
+          <div class="flex items-center gap-2.5">
+            <svg
+              class="w-4 h-4 text-[#0b3c61] shrink-0"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z" />
+            </svg>
+            <span>{employee.company.countryLabel}</span>
+          </div>
+        )
+      }
+    </div>
+
+    <!-- vCard QR Code -->
+    <div class="mt-6 flex flex-col items-center">
+      <p class="text-[12px] text-[#6b7280] mb-3">
+        {t.card.scanPrompt}
+      </p>
+      <a
+        href={vcardDownloadHref}
+        download={`${employee.slug}.vcf`}
+        title={t.card.saveContact}
+        aria-label={t.card.saveContact}
+        class="block w-40 h-40 p-1 bg-white rounded-md transition-transform hover:scale-[1.02]"
+      >
+        <div
+          class="w-full h-full [&>svg]:w-full [&>svg]:h-full"
+          set:html={qrSvg}
+        />
+      </a>
+    </div>
+  </div>
+</section>

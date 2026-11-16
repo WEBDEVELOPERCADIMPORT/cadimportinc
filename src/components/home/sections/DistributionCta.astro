@@ -1,0 +1,70 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import homeContent from "../../../data/site-home-content.json";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = homeContent[lang] ?? homeContent.en;
+const cta = t.distributionCta;
+---
+
+<section class="py-12 sm:py-16 bg-white overflow-x-clip">
+  <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-12">
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-14">
+      {/* Columna Izquierda: Espacio para la imagen del Catálogo con enlace al PDF */}
+      <div class="shrink-0 w-48 sm:w-64" data-animate="bubble-pop">
+        <a
+          href={cta.pdfUrl ?? "/catalogo.pdf"}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={cta.buttonText}
+          class="group w-full shadow-2xl rounded-sm overflow-hidden bg-slate-50 border border-slate-200 aspect-[3/4] flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+        >
+          <img
+            src={cta.image ?? "/images/catalogo.png"}
+            alt={cta.imageAlt ?? "catalogo"}
+            width="224"
+            height="308"
+            class="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-95"
+            loading="lazy"
+          />
+        </a>
+      </div>
+
+      {/* Columna Derecha: Título, Descripción y Botón para abrir el PDF */}
+      <div class="space-y-5 text-left w-full">
+        <h2
+          data-animate="fade-up"
+          class="text-2xl sm:text-4xl lg:text-3xl font-extrabold text-[#0b3c61] tracking-tight leading-snug font-sans"
+        >
+          {cta.question}
+        </h2>
+
+        <p
+          data-animate="fade-up"
+          data-animate-delay="100"
+          class="text-sm sm:text-base text-slate-700 leading-relaxed font-normal"
+        >
+          <strong class="font-bold text-slate-900"
+            >{cta.descriptionPrefix}</strong
+          >
+          {cta.description}
+        </p>
+
+        <div class="pt-2 inline-block" data-animate="slide-in-right">
+          <a
+            href={cta.pdfUrl ?? "/catalogo.pdf"}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-8 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-white bg-[#76b800] hover:bg-[#6aa600] active:bg-[#5d9200] rounded-xs shadow-md transition-colors cursor-pointer"
+          >
+            {cta.buttonText}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

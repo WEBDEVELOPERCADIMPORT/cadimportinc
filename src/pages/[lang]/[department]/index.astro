@@ -1,0 +1,62 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { LANGUAGES, type Lang } from '../../../i18n/config.i18n';
+import { actions } from 'astro:actions';
+
+// Sections
+import Hero from '../../../components/department/sections/Hero.astro';
+import CatalogBanner from '../../../components/common/CatalogBanner.astro';
+import FeaturedBrands from '../../../components/department/sections/FeaturedBrands.astro';
+
+const lang = Astro.params.lang as Lang;
+const { department: departmentSlug } = Astro.params;
+
+// 1. Validar idioma y parámetro
+if (!(lang in LANGUAGES) || !departmentSlug) {
+  return Astro.redirect('/404');
+}
+
+// 2. Consultar departamento vía Server Action
+const { data: deptResponse, error } = await Astro.callAction(
+  actions.getDepartmentBySlug,
+  { slug: departmentSlug }
+);
+
+if (error || !deptResponse?.data) {
+  return Astro.redirect('/404');
+}
+
+const department = deptResponse.data;
+const departmentTitle = department.name[lang] || department.name.en;
+const dynamicTitle =
+  department.bannerTitle?.[lang] ||
+  department.bannerTitle?.en ||
+  (lang === 'es'
+    ? `Abastézcase de los productos de ${departmentTitle.toLowerCase()} que sus clientes buscan.`
+    : `Supply the ${departmentTitle.toLowerCase()} your customers are seeking.`);
+---
+
+<Layout
+  title={`${departmentTitle} | CAD Import Inc`}
+  lang={lang}
+  description={department.heroDescription[lang] || department.heroDescription.en}
+  image={department.image}
+  canonicalPath={departmentSlug}
+>
+  <main class="w-full">
+    <Hero department={department} lang={lang} />
+    <CatalogBanner
+      variant="compact"
+      title={dynamicTitle}
+      descriptionPrefix={lang === 'es' ? 'Descargue una copia' : 'Download a copy'}
+      description={
+        lang === 'es'
+          ? 'de nuestro catálogo de productos para ver el listado completo de artículos disponibles para nuestros socios minoristas y de distribución, junto con los códigos SKU para realizar su pedido al por mayor.'
+          : 'of our product catalog for a complete listing of goods available for our retail and distribution partners, along with SKU numbers to place a bulk order today.'
+      }
+      buttonText={lang === 'es' ? 'DESCARGAR NUESTRO CATÁLOGO' : 'DOWNLOAD OUR CATALOG'}
+      lang={lang}
+    />
+    <FeaturedBrands department={department} lang={lang} />
+  </main>
+</Layout>

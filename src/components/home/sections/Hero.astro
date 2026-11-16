@@ -1,0 +1,56 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import homeContent from "../../../data/site-home-content.json";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = homeContent[lang] ?? homeContent.en;
+const hero = t.hero;
+---
+
+<section
+  class="relative w-full min-h-[500px] md:min-h-[580px] flex items-center justify-start overflow-hidden bg-[#0b3c61] text-white"
+>
+  {/* Background Image */}
+  <img
+    src={hero.bgImage}
+    alt="CAD Import Retail & Logistics"
+    class="absolute inset-0 w-full h-full object-cover object-center"
+    loading="eager"
+  />
+
+  {
+    /* Gradient Overlay: Deep navy on the left fading smoothly to transparent across the right */
+  }
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-[#0b3c61] via-[#0b3c61]/60 via-30% to-transparent"
+  >
+  </div>
+
+  {/* Content Container aligned to the left */}
+  <div
+    class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 w-full"
+  >
+    <div class="max-w-2xl text-left space-y-5">
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight font-sans"
+      >
+        {hero.title}
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-100 font-normal leading-relaxed">
+        {hero.subtitle}
+      </p>
+      <div class="pt-3">
+        <a
+          href={`/${lang}/${hero.ctaUrl}`}
+          class="inline-flex items-center justify-center gap-2 px-7 py-3 text-sm font-bold uppercase tracking-wider text-white bg-[#76b800] hover:bg-[#6aa600] active:bg-[#5d9200] rounded-sm shadow-md transition-colors"
+        >
+          <span>{hero.ctaText}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,316 @@
+{
+  "products": {
+    "es": [
+      {
+        "id": "cancun-apple-juice",
+        "slug": "cancun-apple-juice",
+        "brandSlug": "cancun",
+        "name": "Cancun Jugo de Manzana con pulpa 500 ml x 24",
+        "presentation": "500 ml x 24 unidades",
+        "description": "Delicioso jugo tropical de manzana con pulpa de fruta natural en lata de alta calidad.",
+        "image": "/images/products/cancun-apple-juice.png",
+        "sku": "CAN-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "cancun-aloe-vera-fresa",
+        "slug": "cancun-aloe-vera-fresa",
+        "brandSlug": "cancun",
+        "name": "Cancun Aloe Vera Mini Fresa 500ml x 24",
+        "presentation": "500 ml x 24 botellas",
+        "description": "Bebida refrescante enriquecida con trozos de sábila natural y extracto de fresa dulce.",
+        "image": "/images/products/cancun-aloe-vera-fresa.png",
+        "sku": "CAN-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "pharmadel-dolodent",
+        "slug": "pharmadel-dolodent",
+        "brandSlug": "pharmadel",
+        "name": "Dolo-Dent Solución para Encías 15ml",
+        "presentation": "15 ml x 12 unidades",
+        "description": "Fórmula tópica comprobada para el alivio temporal de molestias en encías y dentición.",
+        "image": "/images/products/pharmadel-dolodent.png",
+        "sku": "PHA-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "pharmadel-dolofin",
+        "slug": "pharmadel-dolofin",
+        "brandSlug": "pharmadel",
+        "name": "Dolo-Fin Alivio Rápido del Dolor 24 Tabletas",
+        "presentation": "24 tabletas x 24 cajas",
+        "description": "Analgésico y antipirético de rápida acción contra dolor de cabeza, muscular y dental.",
+        "image": "/images/products/pharmadel-dolofin.png",
+        "sku": "PHA-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "titas-sal-marina",
+        "slug": "titas-sal-marina",
+        "brandSlug": "titas",
+        "name": "Tita's Sal Marina Pura 500g",
+        "presentation": "500 g x 24 bolsas",
+        "description": "Sal de grano seleccionada de fuentes marinas puras, ideal para resaltar los platillos latinos.",
+        "image": "/images/products/titas-sal-marina.png",
+        "sku": "TIT-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "titas-sazonador-completo",
+        "slug": "titas-sazonador-completo",
+        "brandSlug": "titas",
+        "name": "Tita's Sazonador con Culantro y Achiote 8oz",
+        "presentation": "8 oz x 24 frascos",
+        "description": "Mezcla de especias criollas que aportan color dorado y sazón tradicional inigualable.",
+        "image": "/images/products/titas-sazonador-completo.png",
+        "sku": "TIT-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "guatelinda-frijol-negro",
+        "slug": "guatelinda-frijol-negro",
+        "brandSlug": "guatelinda",
+        "name": "Guatelinda Frijol Negro Volteado 400g",
+        "presentation": "400 g x 24 latas",
+        "description": "Frijoles negros colados y fritos estilo casero guatemalteco listos para calentar y servir.",
+        "image": "/images/products/guatelinda-frijol-negro.png",
+        "sku": "GUA-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "guatelinda-tamal-masa",
+        "slug": "guatelinda-tamal-masa",
+        "brandSlug": "guatelinda",
+        "name": "Guatelinda Harina de Maíz para Tamales 1kg",
+        "presentation": "1 kg x 12 paquetes",
+        "description": "Harina especial de maíz nixtamalizado con textura perfecta para tamales de fiesta.",
+        "image": "/images/products/guatelinda-tamal-masa.png",
+        "sku": "GUA-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "relox-vitamina-c",
+        "slug": "relox-vitamina-c",
+        "brandSlug": "relox",
+        "name": "Relox Vitamina C 1000mg 60 Tabletas",
+        "presentation": "60 tabletas x 12 frascos",
+        "description": "Suplemento antioxidante de alta potencia con bioflavonoides cítricos para reforzar defensas.",
+        "image": "/images/products/relox-vitamina-c.png",
+        "sku": "REL-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "relox-complejo-b",
+        "slug": "relox-complejo-b",
+        "brandSlug": "relox",
+        "name": "Relox Complejo B Energizante 100 Cápsulas",
+        "presentation": "100 cápsulas x 12 frascos",
+        "description": "Fórmula completa de vitaminas B1, B2, B6 y B12 para el metabolismo energético diario.",
+        "image": "/images/products/relox-complejo-b.png",
+        "sku": "REL-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "hidravit-suero-coco",
+        "slug": "hidravit-suero-coco",
+        "brandSlug": "hidravit",
+        "name": "Hidravit Suero Oral Electrolitos Sabor Coco 500ml",
+        "presentation": "500 ml x 12 botellas",
+        "description": "Solución hidroelectrolítica de grado médico para recuperación rápida de la deshidratación.",
+        "image": "/images/products/hidravit-suero-coco.png",
+        "sku": "HID-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "hidravit-suero-manzana",
+        "slug": "hidravit-suero-manzana",
+        "brandSlug": "hidravit",
+        "name": "Hidravit Suero Oral Electrolitos Sabor Manzana 500ml",
+        "presentation": "500 ml x 12 botellas",
+        "description": "Bebida hidratante equilibrada para niños y adultos con agradable sabor a manzana.",
+        "image": "/images/products/hidravit-suero-manzana.png",
+        "sku": "HID-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "fixion-gel-black",
+        "slug": "fixion-gel-black",
+        "brandSlug": "fixion",
+        "name": "Fixion Styling Gel Ultra Hold Black 250g",
+        "presentation": "250 g x 24 tarros",
+        "description": "Gel fijador extra fuerte con micro-pigmentos negros para camuflar canas y definir peinados.",
+        "image": "/images/products/fixion-gel-black.png",
+        "sku": "FIX-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "fixion-gel-clear",
+        "slug": "fixion-gel-clear",
+        "brandSlug": "fixion",
+        "name": "Fixion Styling Gel Mega Hold Clear 500g",
+        "presentation": "500 g x 12 tarros",
+        "description": "Gel transparente de fijación extrema todo el día, libre de residuos y con protector UV.",
+        "image": "/images/products/fixion-gel-clear.png",
+        "sku": "FIX-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      }
+    ],
+    "en": [
+      {
+        "id": "cancun-apple-juice",
+        "slug": "cancun-apple-juice",
+        "brandSlug": "cancun",
+        "name": "Cancun Apple Juice with pulp 500 ml x 24",
+        "presentation": "500 ml x 24 units",
+        "description": "Delicious tropical apple juice with real fruit pulp in a premium canned presentation.",
+        "image": "/images/products/cancun-apple-juice.png",
+        "sku": "CAN-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "cancun-aloe-vera-fresa",
+        "slug": "cancun-aloe-vera-fresa",
+        "brandSlug": "cancun",
+        "name": "Cancun Aloe Vera Mini Strawberry 500ml x 24",
+        "presentation": "500 ml x 24 bottles",
+        "description": "Refreshing beverage enriched with natural aloe vera cubes and sweet strawberry juice.",
+        "image": "/images/products/cancun-aloe-vera-fresa.png",
+        "sku": "CAN-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "pharmadel-dolodent",
+        "slug": "pharmadel-dolodent",
+        "brandSlug": "pharmadel",
+        "name": "Dolo-Dent Gum Relief Liquid 15ml",
+        "presentation": "15 ml x 12 units",
+        "description": "Proven topical formula for fast soothing relief of gum pain and infant teething irritation.",
+        "image": "/images/products/pharmadel-dolodent.png",
+        "sku": "PHA-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "pharmadel-dolofin",
+        "slug": "pharmadel-dolofin",
+        "brandSlug": "pharmadel",
+        "name": "Dolo-Fin Fast Pain Relief 24 Tablets",
+        "presentation": "24 tablets x 24 boxes",
+        "description": "Fast-acting analgesic and fever reducer for relief of headache, muscle, and body aches.",
+        "image": "/images/products/pharmadel-dolofin.png",
+        "sku": "PHA-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "titas-sal-marina",
+        "slug": "titas-sal-marina",
+        "brandSlug": "titas",
+        "name": "Tita's Pure Sea Salt 500g",
+        "presentation": "500 g x 24 bags",
+        "description": "Coarse sea salt harvested from clean coastal waters, perfect for elevating Latin culinary recipes.",
+        "image": "/images/products/titas-sal-marina.png",
+        "sku": "TIT-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "titas-sazonador-completo",
+        "slug": "titas-sazonador-completo",
+        "brandSlug": "titas",
+        "name": "Tita's Complete All-Purpose Seasoning with Achiote 8oz",
+        "presentation": "8 oz x 24 jars",
+        "description": "Authentic Latin spice blend with culantro and annatto for vibrant color and deep savory flavor.",
+        "image": "/images/products/titas-sazonador-completo.png",
+        "sku": "TIT-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "guatelinda-frijol-negro",
+        "slug": "guatelinda-frijol-negro",
+        "brandSlug": "guatelinda",
+        "name": "Guatelinda Refried Black Beans 400g",
+        "presentation": "400 g x 24 cans",
+        "description": "Homestyle pureed black beans seasoned with traditional Guatemalan recipes, ready to heat.",
+        "image": "/images/products/guatelinda-frijol-negro.png",
+        "sku": "GUA-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "guatelinda-tamal-masa",
+        "slug": "guatelinda-tamal-masa",
+        "brandSlug": "guatelinda",
+        "name": "Guatelinda Traditional Tamale Corn Flour 1kg",
+        "presentation": "1 kg x 12 packs",
+        "description": "Finely milled nixtamalized corn meal specially formulated for festive Central American tamales.",
+        "image": "/images/products/guatelinda-tamal-masa.png",
+        "sku": "GUA-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "relox-vitamina-c",
+        "slug": "relox-vitamina-c",
+        "brandSlug": "relox",
+        "name": "Relox Vitamin C 1000mg 60 Tablets",
+        "presentation": "60 tablets x 12 bottles",
+        "description": "High-potency antioxidant formulation featuring natural citrus bioflavonoids to support immunity.",
+        "image": "/images/products/relox-vitamina-c.png",
+        "sku": "REL-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "relox-complejo-b",
+        "slug": "relox-complejo-b",
+        "brandSlug": "relox",
+        "name": "Relox Vitamin B-Complex 100 Capsules",
+        "presentation": "100 capsules x 12 bottles",
+        "description": "Complete B-vitamin energy formula with B1, B2, B6 and B12 for active daily metabolism.",
+        "image": "/images/products/relox-complejo-b.png",
+        "sku": "REL-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "hidravit-suero-coco",
+        "slug": "hidravit-suero-coco",
+        "brandSlug": "hidravit",
+        "name": "Hidravit Oral Electrolyte Solution Coconut Flavor 500ml",
+        "presentation": "500 ml x 12 bottles",
+        "description": "Clinical grade rehydration beverage engineered for fast recovery from dehydration and fatigue.",
+        "image": "/images/products/hidravit-suero-coco.png",
+        "sku": "HID-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "hidravit-suero-manzana",
+        "slug": "hidravit-suero-manzana",
+        "brandSlug": "hidravit",
+        "name": "Hidravit Oral Electrolyte Solution Apple Flavor 500ml",
+        "presentation": "500 ml x 12 bottles",
+        "description": "Balanced electrolyte fluid for adults and children featuring a pleasant crisp apple taste.",
+        "image": "/images/products/hidravit-suero-manzana.png",
+        "sku": "HID-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "fixion-gel-black",
+        "slug": "fixion-gel-black",
+        "brandSlug": "fixion",
+        "name": "Fixion Styling Gel Ultra Hold Black 250g",
+        "presentation": "250 g x 24 jars",
+        "description": "Heavy-duty holding gel with subtle black pigment to blend gray hair and sculpt defined styles.",
+        "image": "/images/products/fixion-gel-black.png",
+        "sku": "FIX-001",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      },
+      {
+        "id": "fixion-gel-clear",
+        "slug": "fixion-gel-clear",
+        "brandSlug": "fixion",
+        "name": "Fixion Styling Gel Mega Hold Clear 500g",
+        "presentation": "500 g x 12 jars",
+        "description": "Crystal-clear 24-hour mega hold styling gel with no flaking, zero alcohol, and UV defense.",
+        "image": "/images/products/fixion-gel-clear.png",
+        "sku": "FIX-002",
+        "catalogPdf": "/catalogs/catalog-2026.pdf"
+      }
+    ]
+  }
+}

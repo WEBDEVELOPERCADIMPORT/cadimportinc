@@ -1,0 +1,126 @@
+{
+  "es": {
+    "meta": {
+      "title": "Sobre Nosotros | CAD Import Inc",
+      "description": "Establecida en 2003, CAD Import Inc. ayuda a tiendas y distribuidores en EE. UU. a expandirse en el mercado hispano."
+    },
+    "hero": {
+      "title": "Sobre Nosotros",
+      "subtitle": "Conectando Bienes y Consumidores Hispanos Desde 2003",
+      "ctaText": "ASÓCIATE CON NOSOTROS",
+      "ctaUrl": "contact",
+      "bgImage": "/images/about/warehouse-hero.png"
+    },
+    "mission": {
+      "text": "Establecida en 2003, CAD Import Inc. ayuda a tiendas y distribuidores en todos los Estados Unidos a expandir su negocio en el mercado hispano de EE. UU., ya sea que necesite ayuda con importación, distribución, comercialización o manufactura. CAD es el socio en el que puede confiar para hacer crecer su negocio. Las tiendas de abarrotes y minoristas hispanos y latinos en los Estados Unidos representan un mercado viable y en constante crecimiento, con una base de consumidores que buscan productos con los que están familiarizados. CAD ayuda a satisfacer esta necesidad ofreciendo productos de la más alta calidad, a los mejores precios disponibles, razón por la cual somos uno de los proveedores más confiables de productos hispanos en los Estados Unidos."
+    },
+    "supplyChain": {
+      "title": "Cadena de Suministro Simplificada",
+      "steps": [
+        {
+          "id": "manufacturer",
+          "title": "Fabricante",
+          "icon": "cog",
+          "description": "Alianzas directas con los productores más prestigiosos de Latinoamérica."
+        },
+        {
+          "id": "distributor",
+          "title": "Distribuidor",
+          "icon": "truck",
+          "description": "Logística centralizada, almacenamiento y despacho rápido desde Delaware."
+        },
+        {
+          "id": "retailer",
+          "title": "Minorista",
+          "icon": "tag",
+          "description": "Abastecimiento puntual a tiendas, supermercados y cadenas en todo el país."
+        }
+      ]
+    },
+    "simplified": {
+      "title": "Distribución de Productos Simplificada",
+      "p1": "Si bien 'import' está en nuestro nombre, no es nuestro único negocio. En CAD también ayudamos a nuestros clientes a conectarse con los minoristas que necesitan para vender sus productos una vez que están en los Estados Unidos y hacer crecer su negocio. El servicio al cliente está al frente de todo lo que hacemos. En CAD creemos que eso comienza con el proceso de ventas y se extiende a la logística. Cada producto que manejamos cumple plenamente con las regulaciones y estándares locales e internacionales, y nuestra línea de productos de América Latina es perfecta para minoristas y tiendas de comestibles que atienden a una gran población hispana.",
+      "p2": "Ofrecer una amplia gama de productos de calidad no tiene por qué ser un desafío si eres minorista. No cuando estás trabajando con CAD Import.",
+      "p3": "Póngase en contacto con un miembro de nuestro equipo hoy para obtener más información sobre las opciones de distribución disponibles.",
+      "partnersTitle": "Socios Exclusivos",
+      "partners": [
+        "Pharmadel",
+        "Farmamedica",
+        "Mexlink",
+        "Combisa Laboratorios",
+        "Shalom",
+        "Hidravit",
+        "Relox",
+        "Max Pappel",
+        "Procaps",
+        "Cancun",
+        "Jaloma",
+        "Therbal",
+        "Plantimex",
+        "La Popular"
+      ]
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "About Us | CAD Import Inc",
+      "description": "Established in 2003, CAD Import Inc. helps stores and distributors across the U.S. expand into the Hispanic marketplace."
+    },
+    "hero": {
+      "title": "About Us",
+      "subtitle": "Connecting Hispanic Goods & Consumers Since 2003",
+      "ctaText": "PARTNER WITH US",
+      "ctaUrl": "contact",
+      "bgImage": "/images/about/warehouse-hero.png"
+    },
+    "mission": {
+      "text": "Established in 2003, CAD Import Inc. helps stores and distributors across the United States expand their business into the U.S. hispanic marketplace - whether you need help with importing, distribution, marketing or manufacturing - CAD is the partner you can rely on to grow your business. Hispanic and Latino grocery stores and retailers in the United States represent a viable, growing market - with a customer base who are searching for products they are familiar. CAD helps to fill this need by offering the highest quality products, at the best available prices there is a reason why we are one of the most trusted providers of hispanic goods in the United States."
+    },
+    "supplyChain": {
+      "title": "Simplified Supply Chain Flow",
+      "steps": [
+        {
+          "id": "manufacturer",
+          "title": "Manufacturer",
+          "icon": "cog",
+          "description": "Direct strategic ties with Latin America's leading manufacturers."
+        },
+        {
+          "id": "distributor",
+          "title": "Distributor",
+          "icon": "truck",
+          "description": "Centralized warehousing and logistics hub based in New Castle, DE."
+        },
+        {
+          "id": "retailer",
+          "title": "Retailer",
+          "icon": "tag",
+          "description": "Reliable inventory delivery to grocery stores and retail shelves nationwide."
+        }
+      ]
+    },
+    "simplified": {
+      "title": "Product Distribution Simplified",
+      "p1": "While \"import\" is in our name, it's not our only business. At CAD we also help our clients to connect with the retailers they need to sell their products once they are in the United States and grow their business. Customer service is at the front of everything we do. At CAD we believe that starts with the sales process and carries through to logistics. Every product we carry complies with local and international regulations and standards, and our line of Latin America products are perfect for retailers and grocery stores who cater to a large Hispanic population.",
+      "p2": "Offering a wide array of quality products doesn't have to be challenging if you're a retailer. Not when you're working with CAD Import.",
+      "p3": "Contact a member of our team today to learn more about the distribution options available.",
+      "partnersTitle": "Exclusive Partners",
+      "partners": [
+        "Pharmadel",
+        "Farmamedica",
+        "Mexlink",
+        "Combisa Laboratorios",
+        "Shalom",
+        "Hidravit",
+        "Relox",
+        "Max Pappel",
+        "Procaps",
+        "Cancun",
+        "Jaloma",
+        "Therbal",
+        "Plantimex",
+        "La Popular"
+      ]
+    }
+  }
+}

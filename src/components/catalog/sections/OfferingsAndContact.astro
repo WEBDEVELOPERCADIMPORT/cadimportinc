@@ -1,0 +1,180 @@
+---
+import type { Lang } from '../../../i18n/config.i18n';
+import catalogContent from '../../../data/site-catalog-content.json';
+import PhoneInput from '../../common/PhoneInput.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = catalogContent[lang] ?? catalogContent.en;
+const off = t.offeringsAndContact;
+---
+
+<section class="py-16 sm:py-20 bg-white overflow-x-clip">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+      
+      <!-- Left Column: Detailed Offerings & Credentials -->
+      <div data-animate="slide-in-left" class="lg:col-span-7 space-y-6 text-slate-700">
+        <p class="text-sm sm:text-base leading-relaxed">
+          <strong class="font-bold text-[var(--color-cad-navy)]">At CAD Imports</strong> {off.intro}
+        </p>
+
+        <div class="space-y-3">
+          <h3 class="text-lg font-black text-[var(--color-cad-navy)] tracking-tight">
+            {off.offeringsTitle}
+          </h3>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+            {off.offerings.map((item) => (
+              <li class="flex items-start gap-2.5">
+                <span class="text-[var(--color-cad-teal)] font-bold text-base leading-none">•</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-2">
+          {off.credentials}
+        </p>
+      </div>
+
+      <!-- Right Column: Learn More Form Card in Navy Outer Container -->
+      <div data-animate="slide-in-right" class="lg:col-span-5 bg-[var(--color-cad-navy)] p-6 sm:p-8 rounded-2xl shadow-xl text-white">
+        <h3 class="text-2xl font-black text-center mb-6 tracking-tight">
+          {off.formCardTitle}
+        </h3>
+
+        <div class="bg-white rounded-xl p-5 sm:p-6 text-slate-800 shadow-md">
+          <h4 class="text-sm sm:text-base font-bold text-center text-slate-900 mb-5">
+            {off.formCardSubtitle}
+          </h4>
+
+          <form id="cad-catalog-contact-form" class="space-y-3.5">
+            <div>
+              <label for="cat-name" class="sr-only">{off.namePlaceholder}</label>
+              <input
+                type="text"
+                id="cat-name"
+                name="name"
+                placeholder={off.namePlaceholder}
+                class="cad-input text-xs"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="cat-email" class="sr-only">{off.emailPlaceholder}</label>
+              <input
+                type="email"
+                id="cat-email"
+                name="email"
+                placeholder={off.emailPlaceholder}
+                class="cad-input text-xs"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="sr-only">{off.phonePlaceholder}</label>
+              <PhoneInput
+                lang={lang}
+                placeholder={off.phonePlaceholder}
+                name="phone"
+              />
+            </div>
+
+            <div>
+              <label for="cat-contact-method" class="block text-[11px] font-semibold text-slate-600 mb-1">
+                {off.contactMethodLabel}
+              </label>
+              <select
+                id="cat-contact-method"
+                name="preferredContact"
+                class="cad-select text-xs"
+              >
+                {off.contactMethods.map((m, idx) => (
+                  <option value={idx === 0 ? "" : m} disabled={idx === 0} selected={idx === 0}>
+                    {m}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div>
+              <label for="cat-message" class="sr-only">{off.messagePlaceholder}</label>
+              <textarea
+                id="cat-message"
+                name="message"
+                rows="3"
+                placeholder={off.messagePlaceholder}
+                class="cad-input text-xs resize-none"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Simulated reCAPTCHA badge -->
+            <div class="p-2.5 border border-slate-200 rounded-md bg-slate-50 flex items-center justify-between">
+              <label class="flex items-center gap-2 cursor-pointer text-xs text-slate-700">
+                <input type="checkbox" required class="rounded border-slate-300 text-[var(--color-cad-teal)] focus:ring-0" />
+                <span>{off.recaptchaText}</span>
+              </label>
+              <div class="flex flex-col items-center">
+                <img
+                  src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                  alt="reCAPTCHA"
+                  width="24"
+                  height="24"
+                  class="w-6 h-6 object-contain"
+                />
+                <span class="text-[8px] text-slate-400">reCAPTCHA</span>
+              </div>
+            </div>
+
+            <!-- Consent -->
+            <label class="flex items-start gap-2 text-[11px] text-slate-500 cursor-pointer pt-1">
+              <input type="checkbox" required class="mt-0.5 rounded border-slate-300 text-[var(--color-cad-teal)]" />
+              <span>
+                {lang === 'es' ? (
+                  <>Acepto recibir información y acepto la <a href={`/${lang}/privacy-policy`} class="underline text-[var(--color-cad-teal)] hover:text-[#0b3c61] transition-colors" target="_blank">declaración de privacidad</a>.</>
+                ) : (
+                  <>I agree to receiving information and accept the <a href={`/${lang}/privacy-policy`} class="underline text-[var(--color-cad-teal)] hover:text-[#0b3c61] transition-colors" target="_blank">data privacy statement</a>.</>
+                )}
+              </span>
+            </label>
+
+            <button
+              type="submit"
+              class="btn-cad-lime w-full text-xs font-bold uppercase tracking-wider py-2.5"
+            >
+              {off.submitButton}
+            </button>
+
+            <p id="cad-catalog-form-feedback" class="text-xs text-center font-medium text-emerald-600 hidden"></p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function setupCatalogForm() {
+    const form = document.getElementById('cad-catalog-contact-form');
+    const feedback = document.getElementById('cad-catalog-form-feedback');
+    if (!form || !feedback) return;
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      feedback.textContent = '✓ Message submitted successfully!';
+      feedback.classList.remove('hidden');
+      (form as HTMLFormElement).reset();
+    });
+  }
+
+  setupCatalogForm();
+  document.addEventListener('astro:page-load', setupCatalogForm);
+</script>

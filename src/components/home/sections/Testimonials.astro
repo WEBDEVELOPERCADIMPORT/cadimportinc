@@ -1,0 +1,183 @@
+---
+import type { Lang } from "../../../i18n/config.i18n";
+import homeContent from "../../../data/site-home-content.json";
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = homeContent[lang] ?? homeContent.en;
+const testimonials = t.testimonials;
+const items = testimonials.items ?? [];
+---
+
+<section
+  class="relative py-16 sm:py-20 text-white overflow-hidden bg-[#299898]"
+>
+  {/* Background Image underneath */}
+  <img
+    src="/images/home/bg-testimonials.png"
+    alt="CAD Import Testimonials Background Pattern"
+    class="absolute inset-0 w-full h-full object-cover object-center opacity-90 pointer-events-none"
+    loading="lazy"
+  />
+
+  {/* Dominant Teal Color Overlay */}
+  <div class="absolute inset-0 bg-[#299898]/85 pointer-events-none"></div>
+
+  {/* Content Container aligned matching the reference screenshot */}
+  <div
+    data-animate="fade-up"
+    class="relative z-10 max-w-5xl mx-auto px-6 sm:px-10 lg:px-12 w-full space-y-6"
+  >
+    {
+      /* Header row: Title on the left, lime-green circular nav buttons on the right */
+    }
+    <div class="flex items-center justify-between">
+      <h2
+        class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight font-sans"
+      >
+        {testimonials.title}
+      </h2>
+
+      {/* Navigation Buttons: Two circular green controls */}
+      <div class="flex items-center gap-1.5 shrink-0">
+        <button
+          type="button"
+          id="testimonials-prev-btn"
+          class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#8cc63f] hover:bg-[#7cb82f] active:scale-95 text-[#0b3c61] flex items-center justify-center transition-all cursor-pointer shadow-sm focus:outline-none"
+          aria-label="Previous testimonial"
+        >
+          <svg
+            class="w-3.5 h-3.5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          id="testimonials-next-btn"
+          class="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#8cc63f] hover:bg-[#7cb82f] active:scale-95 text-[#0b3c61] flex items-center justify-center transition-all cursor-pointer shadow-sm focus:outline-none"
+          aria-label="Next testimonial"
+        >
+          <svg
+            class="w-3.5 h-3.5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    {/* Slider Slides Container */}
+    <div
+      class="relative min-h-[90px] sm:min-h-[110px]"
+      id="testimonials-slider"
+    >
+      {
+        items.map((item, index) => (
+          <div
+            class={`testimonial-slide transition-opacity duration-700 ease-in-out ${
+              index === 0
+                ? "opacity-100 relative"
+                : "opacity-0 absolute inset-0 pointer-events-none"
+            }`}
+            data-slide-index={index}
+          >
+            <blockquote class="text-base sm:text-xl font-normal italic leading-relaxed text-white max-w-4xl text-left">
+              {item.quote}
+            </blockquote>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  function setupTestimonialsSlider() {
+    const slides = document.querySelectorAll<HTMLElement>(".testimonial-slide");
+    const prevBtn = document.getElementById("testimonials-prev-btn");
+    const nextBtn = document.getElementById("testimonials-next-btn");
+
+    if (!slides.length) return;
+
+    let currentIndex = 0;
+    let timer: number | undefined;
+
+    function showSlide(index: number) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.classList.remove(
+            "opacity-0",
+            "absolute",
+            "pointer-events-none",
+          );
+          slide.classList.add("opacity-100", "relative");
+        } else {
+          slide.classList.remove("opacity-100", "relative");
+          slide.classList.add("opacity-0", "absolute", "pointer-events-none");
+        }
+      });
+      currentIndex = index;
+    }
+
+    function nextSlide() {
+      const nextIndex = (currentIndex + 1) % slides.length;
+      showSlide(nextIndex);
+    }
+
+    function prevSlide() {
+      const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(prevIndex);
+    }
+
+    function startAutoPlay() {
+      stopAutoPlay();
+      // Auto move every 8 seconds as requested
+      timer = window.setInterval(nextSlide, 8000);
+    }
+
+    function stopAutoPlay() {
+      if (timer) {
+        window.clearInterval(timer);
+        timer = undefined;
+      }
+    }
+
+    if (prevBtn) {
+      prevBtn.onclick = () => {
+        prevSlide();
+        startAutoPlay();
+      };
+    }
+
+    if (nextBtn) {
+      nextBtn.onclick = () => {
+        nextSlide();
+        startAutoPlay();
+      };
+    }
+
+    startAutoPlay();
+  }
+
+  setupTestimonialsSlider();
+  document.addEventListener("astro:page-load", setupTestimonialsSlider);
+</script>

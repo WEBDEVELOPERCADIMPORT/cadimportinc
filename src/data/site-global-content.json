@@ -1,0 +1,368 @@
+{
+  "es": {
+    "nav": [
+      {
+        "id": "home",
+        "label": "INICIO",
+        "path": ""
+      },
+      {
+        "id": "about",
+        "label": "SOBRE NOSOTROS",
+        "path": "about-us"
+      },
+      {
+        "id": "catalog",
+        "label": "CATÁLOGO ACTUAL",
+        "path": "catalog",
+        "children": [
+          {
+            "id": "catalog-all",
+            "label": "TODAS LAS CATEGORÍAS",
+            "path": "catalog"
+          },
+          {
+            "id": "cat-health-beauty",
+            "label": "SALUD Y BELLEZA",
+            "path": "healthandbeauty"
+          },
+          {
+            "id": "cat-household",
+            "label": "PRODUCTOS PARA EL HOGAR",
+            "path": "household"
+          },
+          {
+            "id": "cat-otc",
+            "label": "MEDICAMENTOS DE VENTA LIBRE (OTC)",
+            "path": "overthecountermedicines"
+          },
+          {
+            "id": "cat-supplements",
+            "label": "VITAMINAS Y SUPLEMENTOS",
+            "path": "vitaminsandsupplements"
+          },
+          {
+            "id": "cat-children",
+            "label": "BEBÉS E INFANTES",
+            "path": "childrenandinfants"
+          },
+          {
+            "id": "cat-groceries",
+            "label": "ABARROTES Y ALIMENTOS",
+            "path": "grocery"
+          }
+        ]
+      },
+      {
+        "id": "brands",
+        "label": "MARCAS PROPIAS",
+        "path": "own-brands",
+        "children": [
+          {
+            "id": "brands-all",
+            "label": "Ver Todas las Marcas",
+            "path": "own-brands"
+          },
+          {
+            "id": "brand-pharmadel",
+            "label": "Pharmadel",
+            "path": "own-brands/pharmadel"
+          },
+          {
+            "id": "brand-titas",
+            "label": "Tita's",
+            "path": "own-brands/titas"
+          },
+          {
+            "id": "brand-guatelinda",
+            "label": "Guatelinda",
+            "path": "own-brands/guatelinda"
+          },
+          {
+            "id": "brand-relox",
+            "label": "Relox",
+            "path": "own-brands/relox"
+          },
+          {
+            "id": "brand-cancun",
+            "label": "Cancún",
+            "path": "own-brands/cancun"
+          },
+          {
+            "id": "brand-hidravit",
+            "label": "Hidravit",
+            "path": "own-brands/hidravit"
+          },
+          {
+            "id": "brand-fixion",
+            "label": "Fixion Styling Gel",
+            "path": "own-brands/fixion"
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "label": "CONTACTO",
+        "path": "contact"
+      }
+    ],
+    "catalog": {
+      "pdfUrl": "/catalogo.pdf",
+      "image": "/images/catalogo.png",
+      "imageAlt": "catalogo"
+    },
+    "footer": {
+      "logo": {
+        "src": "/logo.png",
+        "alt": "CAD Import Inc"
+      },
+      "social": [
+        {
+          "id": "facebook",
+          "label": "Facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "id": "instagram",
+          "label": "Instagram",
+          "href": "https://instagram.com"
+        }
+      ],
+      "certification": {
+        "src": "/images/footer/nmsdc-certified.png",
+        "alt": "NMSDC Certified"
+      },
+      "locations": {
+        "title": "UBICACIÓN DE ALMACÉN",
+        "addressLine1": "650 Centerpoint Blvd,",
+        "addressLine2": "New Castle, Delaware 19720",
+        "schedule": "Lunes - Viernes 8am - 5pm Eastern",
+        "phone": "(302) 628-4178",
+        "phoneHref": "tel:+13026284178"
+      },
+      "careers": {
+        "title": "CARRERAS",
+        "linkLabel": "Únete a Nuestro Equipo",
+        "href": "/es/contact"
+      },
+      "newsletter": {
+        "title": "SUSCRÍBETE A NUESTRO BOLETÍN",
+        "namePlaceholder": "Ingresa tu nombre",
+        "emailPlaceholder": "Ingresa tu mejor correo",
+        "languagePlaceholder": "Idioma de preferencia",
+        "languageOptions": [
+          {
+            "value": "es",
+            "label": "Español"
+          },
+          {
+            "value": "en",
+            "label": "English"
+          }
+        ],
+        "submit": "¡Suscribirse!",
+        "success": "¡Suscrito!"
+      },
+      "stores": {
+        "title": "ENCUENTRA NUESTRAS LÍNEAS EXCLUSIVAS EN",
+        "items": [
+          {
+            "id": "vasalsuper",
+            "src": "/images/footer/vas-al-super.png",
+            "alt": "Vas al Super",
+            "href": "https://vasalsuper.store"
+          },
+          {
+            "id": "amazon",
+            "src": "/images/footer/amazon.png",
+            "alt": "Amazon",
+            "href": "https://amazon.com"
+          }
+        ]
+      }
+    }
+  },
+  "en": {
+    "nav": [
+      {
+        "id": "home",
+        "label": "HOME",
+        "path": ""
+      },
+      {
+        "id": "about",
+        "label": "ABOUT US",
+        "path": "about-us"
+      },
+      {
+        "id": "catalog",
+        "label": "CURRENT CATALOG",
+        "path": "catalog",
+        "children": [
+          {
+            "id": "catalog-all",
+            "label": "ALL CATEGORIES",
+            "path": "catalog"
+          },
+          {
+            "id": "cat-health-beauty",
+            "label": "HEALTH AND BEAUTY PRODUCTS",
+            "path": "healthandbeauty"
+          },
+          {
+            "id": "cat-household",
+            "label": "HOUSEHOLD PRODUCTS",
+            "path": "household"
+          },
+          {
+            "id": "cat-otc",
+            "label": "OVER-THE-COUNTER (OTC) MEDICINES",
+            "path": "overthecountermedicines"
+          },
+          {
+            "id": "cat-supplements",
+            "label": "VITAMINS & SUPPLEMENTS",
+            "path": "vitaminsandsupplements"
+          },
+          {
+            "id": "cat-children",
+            "label": "CHILDREN & INFANTS",
+            "path": "childrenandinfants"
+          },
+          {
+            "id": "cat-groceries",
+            "label": "GROCERY ITEMS",
+            "path": "grocery"
+          }
+        ]
+      },
+      {
+        "id": "brands",
+        "label": "OWN BRANDS",
+        "path": "own-brands",
+        "children": [
+          {
+            "id": "brands-all",
+            "label": "See All Brands",
+            "path": "own-brands"
+          },
+          {
+            "id": "brand-pharmadel",
+            "label": "Pharmadel",
+            "path": "own-brands/pharmadel"
+          },
+          {
+            "id": "brand-titas",
+            "label": "Tita's",
+            "path": "own-brands/titas"
+          },
+          {
+            "id": "brand-guatelinda",
+            "label": "Guatelinda",
+            "path": "own-brands/guatelinda"
+          },
+          {
+            "id": "brand-relox",
+            "label": "Relox",
+            "path": "own-brands/relox"
+          },
+          {
+            "id": "brand-cancun",
+            "label": "Cancún",
+            "path": "own-brands/cancun"
+          },
+          {
+            "id": "brand-hidravit",
+            "label": "Hidravit",
+            "path": "own-brands/hidravit"
+          },
+          {
+            "id": "brand-fixion",
+            "label": "Fixion Styling Gel",
+            "path": "own-brands/fixion"
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "label": "CONTACT",
+        "path": "contact"
+      }
+    ],
+    "catalog": {
+      "pdfUrl": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/Catalogs/catalog-new.pdf",
+      "image": "/images/catalogo.png",
+      "imageAlt": "catalogo"
+    },
+    "footer": {
+      "logo": {
+        "src": "/logo.png",
+        "alt": "CAD Import Inc"
+      },
+      "social": [
+        {
+          "id": "facebook",
+          "label": "Facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "id": "instagram",
+          "label": "Instagram",
+          "href": "https://instagram.com"
+        }
+      ],
+      "certification": {
+        "src": "/images/footer/nmsdc-certified.png",
+        "alt": "NMSDC Certified"
+      },
+      "locations": {
+        "title": "WAREHOUSE LOCATIONS",
+        "addressLine1": "650 Centerpoint Blvd,",
+        "addressLine2": "New Castle, Delaware 19720",
+        "schedule": "Monday - Friday 8am - 5pm Eastern",
+        "phone": "(302) 628-4178",
+        "phoneHref": "tel:+13026284178"
+      },
+      "careers": {
+        "title": "CAREERS",
+        "linkLabel": "Join Our Team",
+        "href": "/en/contact"
+      },
+      "newsletter": {
+        "title": "SUBSCRIBE TO OUR NEWSLETTER",
+        "namePlaceholder": "Enter your first name",
+        "emailPlaceholder": "Enter your best email",
+        "languagePlaceholder": "Preferred language",
+        "languageOptions": [
+          {
+            "value": "en",
+            "label": "English"
+          },
+          {
+            "value": "es",
+            "label": "Español"
+          }
+        ],
+        "submit": "Subscribe!",
+        "success": "Subscribed!"
+      },
+      "stores": {
+        "title": "FIND OUR EXCLUSIVES PRODUCT LINES AT",
+        "items": [
+          {
+            "id": "vasalsuper",
+            "src": "/images/footer/vas-al-super.png",
+            "alt": "Vas al Super",
+            "href": "https:/vasalsuper.store"
+          },
+          {
+            "id": "amazon",
+            "src": "/images/footer/amazon.png",
+            "alt": "Amazon",
+            "href": "https:/amazon.com"
+          }
+        ]
+      }
+    }
+  }
+}

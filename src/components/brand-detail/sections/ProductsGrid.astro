@@ -1,0 +1,62 @@
+---
+import type { Lang } from '../../../i18n/config.i18n';
+import type { ProductItem } from '../../../actions/products/getProductsByBrand.action';
+
+interface Props {
+  products: ProductItem[];
+  lang: Lang;
+}
+
+const { products, lang } = Astro.props;
+---
+
+<section class="py-14 sm:py-20 bg-slate-50/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    {products.length === 0 ? (
+      <div class="text-center py-12 text-slate-500 text-sm">
+        {lang === "es"
+          ? "No se encontraron productos registrados para esta marca en este momento."
+          : "No products currently available for this brand."}
+      </div>
+    ) : (
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+        {products.map((product, index) => {
+          const delay = ((index % 4) * 100).toString();
+          return (
+          <article
+            data-animate="fade-up"
+            data-animate-delay={delay !== "0" ? delay : undefined}
+            class="bg-white rounded-xl border border-slate-200/80 p-5 shadow-2xs hover:shadow-md transition-shadow flex flex-col items-center text-center group"
+          >
+            
+            <!-- Packshot / Container Render -->
+            <div class="w-full aspect-[3/4] max-h-64 flex items-center justify-center p-3 mb-4 overflow-hidden">
+              <img
+                src={product.image}
+                alt={product.name}
+                width="220"
+                height="300"
+                class="max-h-56 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- Product Technical Name & Presentation -->
+            <div class="space-y-1.5 w-full mt-auto">
+              <h3 class="text-xs sm:text-sm font-semibold text-slate-900 group-hover:text-[var(--color-cad-teal)] transition-colors line-clamp-2">
+                {product.name}
+              </h3>
+              <p class="text-[11px] sm:text-xs text-slate-500 font-medium">
+                {product.presentation}
+              </p>
+            </div>
+
+          </article>
+          );
+        })}
+      </div>
+    )}
+
+  </div>
+</section>

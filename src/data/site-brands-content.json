@@ -1,0 +1,54 @@
+{
+  "es": {
+    "meta": {
+      "title": "Marcas Propias | CAD Import Inc",
+      "description": "Descubra nuestras marcas propias y productos que forman parte de su vida cotidiana."
+    },
+    "hero": {
+      "title": "Marcas Propias",
+      "subtitle": "Descubra nuestras marcas propias y productos que forman parte de su vida cotidiana",
+      "ctaText": "ASÓCIATE CON NOSOTROS",
+      "ctaUrl": "contact",
+      "bgImage": "/images/brands/brands-hero.png"
+    },
+    "catalogCta": {
+      "title": "La población hispana en EE. UU. supera los 62.1 millones y sigue creciendo.",
+      "subtitle": "¿Cuenta con los productos adecuados para llegar a esta creciente audiencia?",
+      "description": "Descargue una copia de nuestro catálogo de productos para ver el listado completo de artículos disponibles para nuestros socios minoristas y de distribución, junto con los códigos SKU para realizar su pedido al por mayor.",
+      "buttonText": "DESCARGA NUESTRO CATÁLOGO",
+      "catalogUrl": "/catalogs/catalog-2026.pdf",
+      "coverImage": "/images/catalog/catalog-cover-2026.jpg"
+    },
+    "detail": {
+      "contactButton": "CONTÁCTANOS",
+      "productsTitle": "Catálogo de Productos",
+      "b2bNotice": "Exhibición de catálogo mayorista y especificaciones técnicas para distribución en EE. UU."
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "Own Brands | CAD Import Inc",
+      "description": "Discover our own brands and products that are part of your everyday life."
+    },
+    "hero": {
+      "title": "Own brands",
+      "subtitle": "Discover our own brands and products that are part of your everyday life",
+      "ctaText": "PARTNER WITH US",
+      "ctaUrl": "contact",
+      "bgImage": "/images/brands/brands-hero.png"
+    },
+    "catalogCta": {
+      "title": "The hispanic population in the U.S is over 62.1 million and growing.",
+      "subtitle": "Are you carrying the right products to reach this growing audience?",
+      "description": "Download a copy of our product catalog for a complete listing of goods available form our retail and distribution partners, along with SKU numbers to place your bulk order today.",
+      "buttonText": "DESCARGA NUESTRO CATÁLOGO",
+      "catalogUrl": "/catalogs/catalog-2026.pdf",
+      "coverImage": "/images/catalog/catalog-cover-2026.jpg"
+    },
+    "detail": {
+      "contactButton": "CONTACT US",
+      "productsTitle": "Product Showcase",
+      "b2bNotice": "Wholesale catalog exhibition and technical presentations for U.S. distribution."
+    }
+  }
+}

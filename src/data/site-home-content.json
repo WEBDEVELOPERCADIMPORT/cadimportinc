@@ -1,0 +1,298 @@
+{
+  "es": {
+    "meta": {
+      "title": "CAD Import Inc | Líder en Importación y Distribución de Productos Hispanos",
+      "description": "El importador y distribuidor líder de productos latinoamericanos en los Estados Unidos. Conectando marcas auténticas con el consumidor hispano desde 2003."
+    },
+    "hero": {
+      "title": "El Importador y Distribuidor Líder de Productos Latinoamericanos en EE. UU.",
+      "subtitle": "Comparte Tu Cultura Con El Mundo",
+      "ctaText": "COMENZAR AHORA",
+      "ctaUrl": "contact",
+      "bgImage": "/images/home/hero-banner.png"
+    },
+    "intro": {
+      "title": "Creando Oportunidades Para Que Las Marcas Líderes Hagan Crecer Su Negocio",
+      "p1": "CAD Imports, Inc. es un importante importador, distribuidor y mayorista enfocado en productos de salud y belleza, medicamentos OTC, abarrotes y productos cotidianos en los Estados Unidos. Nuestros productos cumplen con los más altos estándares de calidad tanto de América Latina como del resto del mundo, lo que nos ha convertido en una de las opciones líderes para la importación y distribución de productos internacionales de primer nivel en todo el país.",
+      "p2": "¿Está interesado en importar sus productos a los Estados Unidos? Contáctenos hoy.",
+      "p3": "CAD IMPORT es su fuente confiable de productos cotidianos para el hogar y cuidado personal a precios de mayoreo, respaldados por la total satisfacción del cliente y altos estándares de calidad."
+    },
+    "distributionCta": {
+      "question": "¿Desea distribuir nuestros productos en su tienda en los Estados Unidos?",
+      "descriptionPrefix": "Consulte nuestro catálogo",
+      "description": "para obtener una lista completa de productos disponibles para nuestros socios minoristas y de distribución.",
+      "buttonText": "DESCARGAR NUESTRO CATÁLOGO",
+      "image": "/images/catalogo.png",
+      "imageAlt": "catalogo",
+      "pdfUrl": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/Catalogs/catalog-new.pdf"
+    },
+    "metrics": {
+      "title": "Lo Que Nos Distingue:",
+      "items": [
+        {
+          "targetNumber": 30,
+          "suffix": "+",
+          "label": "Marcas"
+        },
+        {
+          "targetNumber": 2500,
+          "suffix": "+",
+          "label": "Productos"
+        },
+        {
+          "targetNumber": 1500,
+          "suffix": "+",
+          "label": "Representaciones"
+        },
+        {
+          "targetNumber": 6,
+          "suffix": "",
+          "label": "Categorías"
+        }
+      ]
+    },
+    "channels": {
+      "title": "Proporcionando los Canales de Distribución Que Necesita Para Triunfar",
+      "p1": "Nos dedicamos a ayudar a que las empresas expandan sus marcas en el mercado hispano de EE. UU., ya sea que brinde servicios de importación, distribución, marketing o manufactura. En CAD le ayudamos a conectar con los minoristas que necesita para impulsar sus ventas. Con una trayectoria destacada, le aseguramos un servicio confiable y los canales adecuados para un crecimiento sostenido.",
+      "p2": "Al ofrecer una amplia selección de productos, nos esforzamos por elevar el valor de sus artículos, para que clientes y amigos sientan el respaldo de nuestro profesionalismo y la satisfacción de adquirir productos de la más alta calidad. Como socio comercial, le brindamos la garantía del más alto nivel en soporte de importación y distribución, asegurando un proceso transparente y eficiente en cada entrega.",
+      "image": "/images/home/distribution-chain.png"
+    },
+    "testimonials": {
+      "title": "Testimonios",
+      "items": [
+        {
+          "quote": "“Nuestro pedido llegó en perfectas condiciones. ¡Estoy entusiasmado por ordenar de nuevo!”",
+          "author": "Distribuidor Minorista"
+        },
+        {
+          "quote": "“Me encanta trabajar con CAD para el mercado que tengo. La selección de productos es la mejor en el negocio. ¡Definitivamente me alegro de haberme convertido en distribuidor!”",
+          "author": "Socio Distribuidor Autorizado"
+        },
+        {
+          "quote": "“CAD tiene productos increíbles. Me encanta la selección.”",
+          "author": "Dueño de Supermercado"
+        },
+        {
+          "quote": "“La experiencia de atención al cliente es increíble. Hubo un error con mi pedido y su equipo pudo resolver el problema rápidamente.”",
+          "author": "Gerente de Compras"
+        },
+        {
+          "quote": "“Uno de los pocos negocios con agentes de atención al cliente que hablan español. La comunicación fue muy fácil.”",
+          "author": "Comerciante Mayorista"
+        }
+      ]
+    },
+    "brandsCarousel": {
+      "title": "nuestras marcas",
+      "brands": [
+        {
+          "name": "DoloDent",
+          "logo": "/images/brands-carousel/dolodent.png"
+        },
+        {
+          "name": "Dolo-Fin",
+          "logo": "/images/brands-carousel/dolofin.png"
+        },
+        {
+          "name": "DOLEX",
+          "logo": "/images/brands-carousel/dolex.png"
+        },
+        {
+          "name": "El Piojito",
+          "logo": "/images/brands-carousel/elpiojito.png"
+        },
+        {
+          "name": "Jardín Verde",
+          "logo": "/images/brands-carousel/jardinverde.png"
+        },
+        {
+          "name": "Grapkids",
+          "logo": "/images/brands-carousel/grapkids.png"
+        },
+        {
+          "name": "Pharmadel",
+          "logo": "/images/brands-carousel/pharmadel.png"
+        },
+        {
+          "name": "Tita's",
+          "logo": "/images/brands-carousel/titas.png"
+        },
+        {
+          "name": "Guatelinda",
+          "logo": "/images/brands-carousel/guatelinda.png"
+        },
+        {
+          "name": "Relox",
+          "logo": "/images/brands-carousel/relox.png"
+        },
+        {
+          "name": "Cancún",
+          "logo": "/images/brands-carousel/cancun.png"
+        },
+        {
+          "name": "Hidravit",
+          "logo": "/images/brands-carousel/hidravit.png"
+        }
+      ]
+    },
+    "repContact": {
+      "title": "¿Interesado en Distribuir Nuestros Productos en Su Tienda?",
+      "subtitle": "Contacte a un representante hoy:",
+      "namePlaceholder": "Nombre",
+      "emailPlaceholder": "Correo Electrónico",
+      "phonePlaceholder": "Número Telefónico",
+      "companyPlaceholder": "Empresa / Tienda",
+      "messagePlaceholder": "Escriba brevemente su consulta o requerimiento...",
+      "submitButton": "Enviar mensaje",
+      "repImage": "/images/home/representative.png"
+    }
+  },
+  "en": {
+    "meta": {
+      "title": "CAD Import Inc | Leading Importer & Distributor of Latin American Goods",
+      "description": "The Leading Importer & Distributor of Latin American Goods in the U.S. Connecting authentic heritage brands with the growing Hispanic community since 2003."
+    },
+    "hero": {
+      "title": "The Leading Importer & Distributor of Latin American Goods in the U.S.",
+      "subtitle": "Share Your Culture With The World",
+      "ctaText": "GET STARTED",
+      "ctaUrl": "contact",
+      "bgImage": "/images/home/hero-banner.png"
+    },
+    "intro": {
+      "title": "Creating Opportunities For Leading Brands To Grow Their Business",
+      "p1": "CAD Imports, Inc. is a major importer, distributor, and master wholesaler focused on health and beauty products, supplements, groceries, and everyday essentials in the United States. Our products meet the highest quality standards from Latin America as well as the rest of the world, which has made us one of the leading choices for import and distribution of international products to partners within the United States.",
+      "p2": "Are you interested in exporting your products to the United States? Contact us today.",
+      "p3": "CAD IMPORT is your premier source for wholesale everyday personal care and household items, backed by relentless customer service and strict quality control."
+    },
+    "distributionCta": {
+      "question": "Do you want to distribute our products in your store in the United States?",
+      "descriptionPrefix": "See our catalog",
+      "description": "for a complete listing of goods available for our retail & distribution partners.",
+      "buttonText": "DOWNLOAD OUR CATALOG",
+      "image": "/images/catalogo.png",
+      "imageAlt": "catalogo",
+      "pdfUrl": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/Catalogs/catalog-new.pdf"
+    },
+    "metrics": {
+      "title": "What Sets Us Apart:",
+      "items": [
+        {
+          "targetNumber": 30,
+          "suffix": "+",
+          "label": "Brands"
+        },
+        {
+          "targetNumber": 2500,
+          "suffix": "+",
+          "label": "Products"
+        },
+        {
+          "targetNumber": 1500,
+          "suffix": "+",
+          "label": "Representations"
+        },
+        {
+          "targetNumber": 6,
+          "suffix": "",
+          "label": "Categories"
+        }
+      ]
+    },
+    "channels": {
+      "title": "Providing the Distribution Channels You Need to Succeed",
+      "p1": "We are dedicated to helping companies expand their businesses into the U.S. hispanic marketplace - whether you provide a importing, distribution, marketing or manufacturing - CAD is helping you connect you to retailers to grow your business. With a track record of achieving commercial milestones, you can rest knowing we can ensure you the dedicated and reliable channels for your growth.",
+      "p2": "As offering a wide selection of partner brands, we qualify and evaluate the sale of our products, so that clients and friends feel the support of our professionalism and the satisfaction of acquiring the highest quality products. As a customer, to this provides you assurance of the highest quality for exportation and products, knowing that the process is certified by the exact instructions and regulations.",
+      "image": "/images/home/distribution-chain.png"
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "items": [
+        {
+          "quote": "“Our order arrived in perfect condition. I am excited to order again!”",
+          "author": "Retail Partner"
+        },
+        {
+          "quote": "“I love working with CAD for the Market I own. The product selection is the best in the business. Definitely glad I became a distributor!”",
+          "author": "Authorized Distribution Partner"
+        },
+        {
+          "quote": "“CAD has some amazing products. I love the selection.”",
+          "author": "Supermarket Owner"
+        },
+        {
+          "quote": "“The customer service experience is amazing. There was a mistake with my order and their team was able to resolve the issue quickly.”",
+          "author": "Purchasing Manager"
+        },
+        {
+          "quote": "“One of the few businesses with Spanish speaking customer service agents. Communication was very easy.”",
+          "author": "Wholesale Distributor"
+        }
+      ]
+    },
+    "brandsCarousel": {
+      "title": "nuestras marcas",
+      "brands": [
+        {
+          "name": "DoloDent",
+          "logo": "/images/brands-carousel/dolodent.png"
+        },
+        {
+          "name": "Dolo-Fin",
+          "logo": "/images/brands-carousel/dolofin.png"
+        },
+        {
+          "name": "DOLEX",
+          "logo": "/images/brands-carousel/dolex.png"
+        },
+        {
+          "name": "El Piojito",
+          "logo": "/images/brands-carousel/elpiojito.png"
+        },
+        {
+          "name": "Jardín Verde",
+          "logo": "/images/brands-carousel/jardinverde.png"
+        },
+        {
+          "name": "Grapkids",
+          "logo": "/images/brands-carousel/grapkids.png"
+        },
+        {
+          "name": "Pharmadel",
+          "logo": "/images/brands-carousel/pharmadel.png"
+        },
+        {
+          "name": "Tita's",
+          "logo": "/images/brands-carousel/titas.png"
+        },
+        {
+          "name": "Guatelinda",
+          "logo": "/images/brands-carousel/guatelinda.png"
+        },
+        {
+          "name": "Relox",
+          "logo": "/images/brands-carousel/relox.png"
+        },
+        {
+          "name": "Cancún",
+          "logo": "/images/brands-carousel/cancun.png"
+        },
+        {
+          "name": "Hidravit",
+          "logo": "/images/brands-carousel/hidravit.png"
+        }
+      ]
+    },
+    "repContact": {
+      "title": "Interested in Distributing Our Products in Your Store?",
+      "subtitle": "Contact a rep today:",
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "phonePlaceholder": "Phone Number",
+      "companyPlaceholder": "Company / Store",
+      "messagePlaceholder": "Please briefly write your request or requirement...",
+      "submitButton": "Send message",
+      "repImage": "/images/home/representative.png"
+    }
+  }
+}
