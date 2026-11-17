@@ -96,6 +96,9 @@ const main = t.main;
             id="cad-main-contact-form"
             class="space-y-3.5"
             data-success={main.successMessage}
+            data-error={main.errorMessage}
+            data-sending={main.sendingButton}
+            data-submit={main.submitButton}
           >
             {/* First Name */}
             <div>
@@ -171,8 +174,9 @@ const main = t.main;
               >
               <select
                 id="contact-preferred"
-                name="preferredContact"
+                name="language"
                 class="w-full h-11 px-3.5 pr-9 text-xs sm:text-sm text-slate-500 bg-white border border-slate-300 rounded-[4px] appearance-none focus:outline-none focus:border-[var(--color-cad-teal)] focus:ring-1 focus:ring-[var(--color-cad-teal)] transition-all cursor-pointer"
+                required
               >
                 <option value="" disabled selected
                   >{main.preferredContactLabel}</option
@@ -207,8 +211,9 @@ const main = t.main;
 
             {/* Submit Button */}
             <button
+              id="cad-contact-submit"
               type="submit"
-              class="w-full h-11 bg-[#18bd5b] hover:bg-[#15a850] active:scale-[0.99] text-white text-sm font-bold rounded-[4px] transition-all cursor-pointer shadow-xs"
+              class="w-full h-11 bg-[#18bd5b] hover:bg-[#15a850] active:scale-[0.99] text-white text-sm font-bold rounded-[4px] transition-all cursor-pointer shadow-xs disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {main.submitButton}
             </button>
@@ -226,21 +231,62 @@ const main = t.main;
 </section>
 
 <script>
+  import { actions } from "astro:actions";
+
   function setupMainContact() {
     const form = document.getElementById(
       "cad-main-contact-form",
     ) as HTMLFormElement | null;
     const feedback = document.getElementById("cad-contact-feedback");
+    const submitBtn = document.getElementById(
+      "cad-contact-submit",
+    ) as HTMLButtonElement | null;
     if (!form || !feedback || form.dataset.bound === "true") return;
     form.dataset.bound = "true";
 
-    form.addEventListener("submit", (e) => {
+    const showFeedback = (message: string, isError: boolean) => {
+      feedback.textContent = message;
+      feedback.classList.remove("hidden", "text-emerald-600", "text-red-600");
+      feedback.classList.add(isError ? "text-red-600" : "text-emerald-600");
+    };
+
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      feedback.textContent =
+
+      const defaultLabel = form.dataset.submit || submitBtn?.textContent || "";
+      const sendingLabel = form.dataset.sending || "Sending...";
+      const successMsg =
         form.dataset.success ||
         "✓ Your message has been sent successfully. We will contact you soon!";
-      feedback.classList.remove("hidden");
-      form.reset();
+      const errorMsg =
+        form.dataset.error ||
+        "Could not send your message. Please check your details and try again.";
+
+      feedback.classList.add("hidden");
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = sendingLabel;
+      }
+
+      try {
+        const formData = new FormData(form);
+        const { data, error } = await actions.submitContact(formData);
+
+        if (error || !data?.data?.success) {
+          showFeedback(errorMsg, true);
+          return;
+        }
+
+        showFeedback(successMsg, false);
+        form.reset();
+      } catch {
+        showFeedback(errorMsg, true);
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = defaultLabel;
+        }
+      }
     });
   }
 

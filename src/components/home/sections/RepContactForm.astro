@@ -1,7 +1,7 @@
 ---
-import type { Lang } from '../../../i18n/config.i18n';
-import homeContent from '../../../data/site-home-content.json';
-import PhoneInput from '../../common/PhoneInput.astro';
+import type { Lang } from "../../../i18n/config.i18n";
+import homeContent from "../../../data/site-home-content.json";
+import PhoneInput from "../../common/PhoneInput.astro";
 
 interface Props {
   lang: Lang;
@@ -12,7 +12,9 @@ const t = homeContent[lang] ?? homeContent.en;
 const rep = t.repContact;
 ---
 
-<section class="relative min-h-[500px] flex items-center overflow-hidden text-white bg-[#0b3c61]">
+<section
+  class="relative min-h-[500px] flex items-center overflow-hidden text-white bg-[#0b3c61]"
+>
   {/* Background Image of the Representative */}
   <img
     src={rep.repImage}
@@ -21,15 +23,25 @@ const rep = t.repContact;
     loading="lazy"
   />
 
-  {/* Gradient Overlay: Deep navy on the left fading smoothly to transparent across the right */}
-  <div class="absolute inset-0 bg-gradient-to-r from-[#0b3c61] via-[#0b3c61]/60 via-30% to-transparent"></div>
+  {
+    /* Gradient Overlay: Deep navy on the left fading smoothly to transparent across the right */
+  }
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-[#0b3c61] via-[#0b3c61]/60 via-30% to-transparent"
+  >
+  </div>
 
-  {/* Content Container: Form strictly aligned to the left, nothing on the right */}
-  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+  {
+    /* Content Container: Form strictly aligned to the left, nothing on the right */
+  }
+  <div
+    class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20"
+  >
     <div data-animate="slide-in-left" class="max-w-xl text-left space-y-6">
-      
       <div class="space-y-2">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight">
+        <h2
+          class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight"
+        >
           {rep.title}
         </h2>
         <p class="text-slate-200 font-medium text-sm sm:text-base">
@@ -37,7 +49,14 @@ const rep = t.repContact;
         </p>
       </div>
 
-      <form id="cad-rep-contact-form" class="space-y-3.5 max-w-lg">
+      <form
+        id="cad-rep-contact-form"
+        class="space-y-3.5 max-w-lg"
+        data-success={rep.successMessage}
+        data-error={rep.errorMessage}
+        data-sending={rep.sendingButton}
+        data-submit={rep.submitButton}
+      >
         <div>
           <label for="rep-name" class="sr-only">{rep.namePlaceholder}</label>
           <input
@@ -72,7 +91,9 @@ const rep = t.repContact;
         </div>
 
         <div>
-          <label for="rep-company" class="sr-only">{rep.companyPlaceholder}</label>
+          <label for="rep-company" class="sr-only"
+            >{rep.companyPlaceholder}</label
+          >
           <input
             type="text"
             id="rep-company"
@@ -83,45 +104,96 @@ const rep = t.repContact;
         </div>
 
         <div>
-          <label for="rep-message" class="sr-only">{rep.messagePlaceholder}</label>
+          <label for="rep-message" class="sr-only"
+            >{rep.messagePlaceholder}</label
+          >
           <textarea
             id="rep-message"
             name="message"
             rows="3"
             placeholder={rep.messagePlaceholder}
             class="cad-input bg-white text-slate-800 placeholder:text-slate-400 resize-none"
-            required
-          ></textarea>
+            required></textarea>
         </div>
 
         <button
+          id="cad-rep-submit"
           type="submit"
-          class="btn-cad-green text-sm font-bold uppercase tracking-wider py-3 shadow-md"
+          class="btn-cad-green text-sm font-bold uppercase tracking-wider py-3 shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
         >
           {rep.submitButton}
         </button>
-        
-        <p id="cad-rep-feedback" class="text-xs text-center font-semibold text-emerald-400 hidden"></p>
-      </form>
 
+        <p
+          id="cad-rep-feedback"
+          class="text-xs text-center font-semibold text-emerald-400 hidden"
+        >
+        </p>
+      </form>
     </div>
   </div>
 </section>
 
 <script>
-  function setupRepForm() {
-    const form = document.getElementById('cad-rep-contact-form');
-    const feedback = document.getElementById('cad-rep-feedback');
-    if (!form || !feedback) return;
+  import { actions } from "astro:actions";
 
-    form.addEventListener('submit', (e) => {
+  function setupRepForm() {
+    const form = document.getElementById(
+      "cad-rep-contact-form",
+    ) as HTMLFormElement | null;
+    const feedback = document.getElementById("cad-rep-feedback");
+    const submitBtn = document.getElementById(
+      "cad-rep-submit",
+    ) as HTMLButtonElement | null;
+    if (!form || !feedback || form.dataset.bound === "true") return;
+    form.dataset.bound = "true";
+
+    const showFeedback = (message: string, isError: boolean) => {
+      feedback.textContent = message;
+      feedback.classList.remove("hidden", "text-emerald-400", "text-rose-300");
+      feedback.classList.add(isError ? "text-rose-300" : "text-emerald-400");
+    };
+
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      feedback.textContent = '✓ Message received! A representative will connect with you soon.';
-      feedback.classList.remove('hidden');
-      (form as HTMLFormElement).reset();
+
+      const defaultLabel = form.dataset.submit || submitBtn?.textContent || "";
+      const sendingLabel = form.dataset.sending || "Sending...";
+      const successMsg =
+        form.dataset.success ||
+        "✓ Message received! A representative will connect with you soon.";
+      const errorMsg =
+        form.dataset.error ||
+        "Could not send your message. Please check your details and try again.";
+
+      feedback.classList.add("hidden");
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = sendingLabel;
+      }
+
+      try {
+        const formData = new FormData(form);
+        const { data, error } = await actions.submitNewDistributor(formData);
+
+        if (error || !data?.data?.success) {
+          showFeedback(errorMsg, true);
+          return;
+        }
+
+        showFeedback(successMsg, false);
+        form.reset();
+      } catch {
+        showFeedback(errorMsg, true);
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = defaultLabel;
+        }
+      }
     });
   }
 
   setupRepForm();
-  document.addEventListener('astro:page-load', setupRepForm);
+  document.addEventListener("astro:page-load", setupRepForm);
 </script>

@@ -8,6 +8,8 @@ import { getProductsByBrand } from "./products/getProductsByBrand.action";
 import { getProductById } from "./products/getProductById.action";
 import { submitContact } from "./contact/submitContact.action";
 import { subscribeNewsletter } from "./newsletter/subscribeNewsletter.action";
+import { submitNewDistributor } from "./forms/submitNewDistributor.action";
+import { submitLearnMore } from "./forms/submitLearnMore.action";
 import { getEmployees } from "./employees/getEmployees.action";
 import { getEmployeeBySlug } from "./employees/getEmployeeBySlug.action";
 
@@ -35,4 +37,6 @@ export const server = {
   // Forms
   submitContact,
   subscribeNewsletter,
+  submitNewDistributor,
+  submitLearnMore,
 };

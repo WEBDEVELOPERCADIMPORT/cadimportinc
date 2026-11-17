@@ -59,7 +59,10 @@ const defaultLink = new URL(`/es${cleanRoute ? `/${cleanRoute}` : ""}`, baseUrl)
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<meta name="robots" content="index, follow" />
-
+		<script
+			src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+			async
+			defer></script>
 		<link rel="canonical" href={canonicalURL} />
 		{
 			alternateLinks.map(({ lang: l, url }) => (

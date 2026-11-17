@@ -144,6 +144,9 @@
       "companyPlaceholder": "Empresa / Tienda",
       "messagePlaceholder": "Escriba brevemente su consulta o requerimiento...",
       "submitButton": "Enviar mensaje",
+      "sendingButton": "Enviando...",
+      "successMessage": "✓ ¡Mensaje recibido! Un representante se pondrá en contacto con usted pronto.",
+      "errorMessage": "No se pudo enviar el mensaje. Por favor, verifique sus datos e intente de nuevo.",
       "repImage": "/images/home/representative.png"
     }
   },
@@ -292,6 +295,9 @@
       "companyPlaceholder": "Company / Store",
       "messagePlaceholder": "Please briefly write your request or requirement...",
       "submitButton": "Send message",
+      "sendingButton": "Sending...",
+      "successMessage": "✓ Message received! A representative will connect with you soon.",
+      "errorMessage": "Could not send your message. Please check your details and try again.",
       "repImage": "/images/home/representative.png"
     }
   }

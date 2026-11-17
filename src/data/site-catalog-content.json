@@ -38,17 +38,19 @@
       "namePlaceholder": "Ingresa tu nombre",
       "emailPlaceholder": "Ingresa tu mejor correo",
       "phonePlaceholder": "Ingresa tu teléfono",
-      "contactMethodLabel": "¿Cómo prefieres ser contactado?",
+      "contactMethodLabel": "¿En qué idioma prefieres ser contactado?",
       "contactMethods": [
         "Seleccionar uno",
-        "Llamada telefónica",
-        "Correo electrónico",
-        "WhatsApp / Mensaje de texto"
+        "Español",
+        "Inglés"
       ],
       "messagePlaceholder": "Escribe brevemente tu consulta o requerimiento...",
       "recaptchaText": "No soy un robot",
       "consentText": "Acepto recibir información y acepto la declaración de privacidad.",
-      "submitButton": "Enviar mensaje"
+      "submitButton": "Enviar mensaje",
+      "sendingButton": "Enviando...",
+      "successMessage": "✓ ¡Mensaje enviado con éxito! Un representante se pondrá en contacto pronto.",
+      "errorMessage": "No se pudo enviar el mensaje. Por favor, verifique sus datos e intente de nuevo."
     }
   },
   "en": {
@@ -90,17 +92,19 @@
       "namePlaceholder": "Enter your name",
       "emailPlaceholder": "Enter your best email",
       "phonePlaceholder": "Enter your phone",
-      "contactMethodLabel": "How do you prefer to be contacted?",
+      "contactMethodLabel": "Which language do you prefer to be contacted in?",
       "contactMethods": [
         "Select one",
-        "Phone Call",
-        "Email",
-        "WhatsApp / SMS"
+        "English",
+        "Spanish"
       ],
       "messagePlaceholder": "Please briefly write your request or requirement...",
       "recaptchaText": "I'm not a robot",
       "consentText": "I agree to receiving information and accept the data privacy statement",
-      "submitButton": "Send message"
+      "submitButton": "Send message",
+      "sendingButton": "Sending...",
+      "successMessage": "✓ Message submitted successfully! A representative will contact you soon.",
+      "errorMessage": "Could not send your message. Please check your details and try again."
     }
   }
 }

@@ -145,23 +145,37 @@
         "linkLabel": "Únete a Nuestro Equipo",
         "href": "/es/contact"
       },
-      "newsletter": {
-        "title": "SUSCRÍBETE A NUESTRO BOLETÍN",
-        "namePlaceholder": "Ingresa tu nombre",
-        "emailPlaceholder": "Ingresa tu mejor correo",
-        "languagePlaceholder": "Idioma de preferencia",
-        "languageOptions": [
+      "portfolio": {
+        "title": "EXPLORA NUESTRO PORTAFOLIO",
+        "links": [
           {
-            "value": "es",
-            "label": "Español"
+            "label": "Inicio",
+            "path": ""
           },
           {
-            "value": "en",
-            "label": "English"
+            "label": "Marcas Propias",
+            "path": "own-brands"
+          },
+          {
+            "label": "Sobre Nosotros",
+            "path": "about-us"
+          },
+          {
+            "label": "Distribución B2B",
+            "path": "about-us"
+          },
+          {
+            "label": "Catálogo Actual",
+            "path": "catalog"
+          },
+          {
+            "label": "Contacto",
+            "path": "contact"
           }
         ],
-        "submit": "¡Suscribirse!",
-        "success": "¡Suscrito!"
+        "ctaLabel": "Ver Catálogo Actualizado",
+        "ctaHref": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/Catalogs/catalog-new.pdf",
+        "note": "Distribución mayorista y retail en todo Estados Unidos"
       },
       "stores": {
         "title": "ENCUENTRA NUESTRAS LÍNEAS EXCLUSIVAS EN",
@@ -176,7 +190,7 @@
             "id": "amazon",
             "src": "/images/footer/amazon.png",
             "alt": "Amazon",
-            "href": "https://amazon.com"
+            "href": "https://www.amazon.com/s?k=pharmadel&crid=2XF1NDGDX8I5F&sprefix=pharmadel%2Caps%2C147&ref=nb_sb_noss_1"
           }
         ]
       }
@@ -328,23 +342,37 @@
         "linkLabel": "Join Our Team",
         "href": "/en/contact"
       },
-      "newsletter": {
-        "title": "SUBSCRIBE TO OUR NEWSLETTER",
-        "namePlaceholder": "Enter your first name",
-        "emailPlaceholder": "Enter your best email",
-        "languagePlaceholder": "Preferred language",
-        "languageOptions": [
+      "portfolio": {
+        "title": "EXPLORE OUR PORTFOLIO",
+        "links": [
           {
-            "value": "en",
-            "label": "English"
+            "label": "Home",
+            "path": ""
           },
           {
-            "value": "es",
-            "label": "Español"
+            "label": "Own Brands",
+            "path": "own-brands"
+          },
+          {
+            "label": "About Us",
+            "path": "about-us"
+          },
+          {
+            "label": "B2B Distribution",
+            "path": "about-us"
+          },
+          {
+            "label": "Current Catalog",
+            "path": "catalog"
+          },
+          {
+            "label": "Contact",
+            "path": "contact"
           }
         ],
-        "submit": "Subscribe!",
-        "success": "Subscribed!"
+        "ctaLabel": "View Updated Catalog",
+        "ctaHref": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/fe2453fa-fdae-4dc8-b8a8-96e47492bc77/Catalogs/catalog-new.pdf",
+        "note": "Wholesale and retail distribution across the United States"
       },
       "stores": {
         "title": "FIND OUR EXCLUSIVES PRODUCT LINES AT",
@@ -359,7 +387,7 @@
             "id": "amazon",
             "src": "/images/footer/amazon.png",
             "alt": "Amazon",
-            "href": "https:/amazon.com"
+            "href": "https://www.amazon.com/s?k=pharmadel&crid=2XF1NDGDX8I5F&sprefix=pharmadel%2Caps%2C147&ref=nb_sb_noss_1"
           }
         ]
       }

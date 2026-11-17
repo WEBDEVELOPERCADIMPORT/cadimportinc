@@ -1,7 +1,7 @@
 ---
 // src/components/common/Footer.astro
 import type { Lang } from "../../i18n/config.i18n";
-import { getLangFromUrl } from "../../i18n/utils.i18n";
+import { getLangFromUrl, buildHref } from "../../i18n/utils.i18n";
 import globalContent from "../../data/site-global-content.json";
 
 interface Props {
@@ -129,74 +129,44 @@ const storeSizes: Record<string, string> = {
         </a>
       </div>
 
-      {/* Column 3: Newsletter */}
+      {/* Column 3: Portfolio Links */}
       <div>
-        <h3 class="text-[13px] font-bold uppercase text-[#0b3c61] mb-2">
-          {t.newsletter.title}
+        <h3 class="text-[13px] font-bold uppercase text-[#0b3c61] mb-4">
+          {t.portfolio.title}
         </h3>
-        <form
-          class="footer-newsletter-form flex flex-col gap-3"
-          data-success={t.newsletter.success}
-        >
-          <input
-            type="text"
-            name="firstName"
-            placeholder={t.newsletter.namePlaceholder}
-            aria-label={t.newsletter.namePlaceholder}
-            class="w-full h-[26px] px-2.5 text-[11px] text-gray-700 placeholder:text-gray-500 bg-white border border-gray-300 rounded-[3px] focus:outline-none focus:border-[#1bbf5c]"
-          />
-          <div class="relative mt-2">
-            <svg
-              class="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-500 pointer-events-none"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <rect x="3" y="5" width="18" height="14" rx="1.5"></rect>
-              <path d="M3.5 6l8.5 7 8.5-7"></path>
-            </svg>
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder={t.newsletter.emailPlaceholder}
-              aria-label={t.newsletter.emailPlaceholder}
-              class="w-full h-[26px] pl-8 pr-2.5 text-[11px] text-gray-700 placeholder:text-gray-500 bg-white border border-gray-300 rounded-[3px] focus:outline-none focus:border-[#1bbf5c]"
-            />
-          </div>
-          <div class="relative mt-2">
-            <select
-              name="language"
-              aria-label={t.newsletter.languagePlaceholder}
-              class="appearance-none w-full h-[30px] pl-2.5 pr-8 text-[11px] text-gray-600 bg-white border border-gray-300 rounded-[3px] focus:outline-none focus:border-[#1bbf5c] cursor-pointer"
-            >
-              <option value="" selected disabled
-                >{t.newsletter.languagePlaceholder}</option
-              >
-              {
-                t.newsletter.languageOptions.map((opt: any) => (
-                  <option value={opt.value}>{opt.label}</option>
-                ))
-              }
-            </select>
-            <svg
-              class="absolute right-3 top-1/2 -translate-y-1/2 w-2.5 h-2.5 text-gray-500 pointer-events-none"
-              viewBox="0 0 10 6"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path d="M0 0h10L5 6z"></path>
-            </svg>
-          </div>
-          <button
-            type="submit"
-            class="mt-4 w-full h-[32px] text-[12px] text-white bg-[#1bbf5c] hover:bg-[#17a84f] rounded-[3px] transition-colors cursor-pointer"
+        <ul class="space-y-2 text-[13px] text-[#333333]">
+          {
+            t.portfolio.links.map((link: any) => (
+              <li>
+                <a
+                  href={buildHref(lang, link.path)}
+                  class="group inline-flex items-center gap-2 text-[#333333] hover:text-[#0b3c61] transition-colors"
+                >
+                  <span
+                    class="text-[#76b900] font-bold leading-none transition-transform group-hover:translate-x-0.5"
+                    aria-hidden="true"
+                  >
+                    ›
+                  </span>
+                  <span>{link.label}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <div class="mt-5">
+          <a
+            href={t.portfolio.ctaHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center w-full sm:w-auto px-4 py-2 text-[12px] font-semibold text-white bg-[#1bbf5c] hover:bg-[#17a84f] rounded-[3px] transition-colors"
           >
-            {t.newsletter.submit}
-          </button>
-        </form>
+            {t.portfolio.ctaLabel}
+          </a>
+          <p class="mt-2.5 text-[11px] leading-snug text-gray-500">
+            {t.portfolio.note}
+          </p>
+        </div>
       </div>
 
       {/* Column 4: Exclusive product lines */}
@@ -243,29 +213,3 @@ const storeSizes: Record<string, string> = {
     </a>
   </div>
 </footer>
-
-<script>
-  function initFooterNewsletter() {
-    document
-      .querySelectorAll<HTMLFormElement>(".footer-newsletter-form")
-      .forEach((form) => {
-        if (form.dataset.bound === "true") return;
-        form.dataset.bound = "true";
-        form.addEventListener("submit", (event) => {
-          event.preventDefault();
-          const button = form.querySelector<HTMLButtonElement>(
-            'button[type="submit"]',
-          );
-          if (!button) return;
-          const original = button.textContent ?? "";
-          button.textContent = form.dataset.success ?? original;
-          form.reset();
-          window.setTimeout(() => {
-            button.textContent = original;
-          }, 3000);
-        });
-      });
-  }
-  initFooterNewsletter();
-  document.addEventListener("astro:page-load", initFooterNewsletter);
-</script>

@@ -30,15 +30,16 @@
       "lastNamePlaceholder": "Ingresa tu apellido",
       "emailPlaceholder": "Ingresa tu mejor correo",
       "phonePlaceholder": "Número telefónico",
-      "preferredContactLabel": "¿Cómo prefieres ser contactado?",
+      "preferredContactLabel": "¿En qué idioma prefieres ser contactado?",
       "preferredContactOptions": [
-        "Llamada telefónica",
-        "Correo electrónico",
-        "WhatsApp / Mensaje"
+        "Español",
+        "Inglés"
       ],
       "messagePlaceholder": "Escribe brevemente tu consulta o requerimiento.",
       "submitButton": "Enviar mensaje",
-      "successMessage": "✓ ¡Gracias! Tu mensaje ha sido enviado a nuestro equipo de soporte."
+      "sendingButton": "Enviando...",
+      "successMessage": "✓ ¡Gracias! Tu mensaje ha sido enviado a nuestro equipo de soporte.",
+      "errorMessage": "No se pudo enviar el mensaje. Por favor, verifique sus datos e intente de nuevo."
     },
     "map": {
       "title": "Nuestra Ubicación en New Castle, Delaware",
@@ -76,15 +77,16 @@
       "lastNamePlaceholder": "Enter your last name",
       "emailPlaceholder": "Enter your best email",
       "phonePlaceholder": "Phone Number",
-      "preferredContactLabel": "How do you prefer to be contacted?",
+      "preferredContactLabel": "Which language do you prefer to be contacted in?",
       "preferredContactOptions": [
-        "Phone Call",
-        "Email",
-        "WhatsApp / SMS"
+        "English",
+        "Spanish"
       ],
       "messagePlaceholder": "Please briefly write your request or requirement.",
       "submitButton": "Send message",
-      "successMessage": "✓ Thank you! Your message has been sent to our support team."
+      "sendingButton": "Sending...",
+      "successMessage": "✓ Thank you! Your message has been sent to our support team.",
+      "errorMessage": "Could not send your message. Please check your details and try again."
     },
     "map": {
       "title": "Our Location in New Castle, Delaware",

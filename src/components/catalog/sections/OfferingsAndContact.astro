@@ -1,7 +1,7 @@
 ---
-import type { Lang } from '../../../i18n/config.i18n';
-import catalogContent from '../../../data/site-catalog-content.json';
-import PhoneInput from '../../common/PhoneInput.astro';
+import type { Lang } from "../../../i18n/config.i18n";
+import catalogContent from "../../../data/site-catalog-content.json";
+import PhoneInput from "../../common/PhoneInput.astro";
 
 interface Props {
   lang: Lang;
@@ -15,24 +15,35 @@ const off = t.offeringsAndContact;
 <section class="py-16 sm:py-20 bg-white overflow-x-clip">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-      
       <!-- Left Column: Detailed Offerings & Credentials -->
-      <div data-animate="slide-in-left" class="lg:col-span-7 space-y-6 text-slate-700">
+      <div
+        data-animate="slide-in-left"
+        class="lg:col-span-7 space-y-6 text-slate-700"
+      >
         <p class="text-sm sm:text-base leading-relaxed">
-          <strong class="font-bold text-[var(--color-cad-navy)]">At CAD Imports</strong> {off.intro}
+          <strong class="font-bold text-[var(--color-cad-navy)]"
+            >At CAD Imports</strong
+          >
+          {off.intro}
         </p>
 
         <div class="space-y-3">
-          <h3 class="text-lg font-black text-[var(--color-cad-navy)] tracking-tight">
+          <h3
+            class="text-lg font-black text-[var(--color-cad-navy)] tracking-tight"
+          >
             {off.offeringsTitle}
           </h3>
           <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
-            {off.offerings.map((item) => (
-              <li class="flex items-start gap-2.5">
-                <span class="text-[var(--color-cad-teal)] font-bold text-base leading-none">•</span>
-                <span>{item}</span>
-              </li>
-            ))}
+            {
+              off.offerings.map((item) => (
+                <li class="flex items-start gap-2.5">
+                  <span class="text-[var(--color-cad-teal)] font-bold text-base leading-none">
+                    •
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))
+            }
           </ul>
         </div>
 
@@ -42,19 +53,32 @@ const off = t.offeringsAndContact;
       </div>
 
       <!-- Right Column: Learn More Form Card in Navy Outer Container -->
-      <div data-animate="slide-in-right" class="lg:col-span-5 bg-[var(--color-cad-navy)] p-6 sm:p-8 rounded-2xl shadow-xl text-white">
+      <div
+        data-animate="slide-in-right"
+        class="lg:col-span-5 bg-[var(--color-cad-navy)] p-6 sm:p-8 rounded-2xl shadow-xl text-white"
+      >
         <h3 class="text-2xl font-black text-center mb-6 tracking-tight">
           {off.formCardTitle}
         </h3>
 
         <div class="bg-white rounded-xl p-5 sm:p-6 text-slate-800 shadow-md">
-          <h4 class="text-sm sm:text-base font-bold text-center text-slate-900 mb-5">
+          <h4
+            class="text-sm sm:text-base font-bold text-center text-slate-900 mb-5"
+          >
             {off.formCardSubtitle}
           </h4>
 
-          <form id="cad-catalog-contact-form" class="space-y-3.5">
+          <form
+            id="cad-catalog-contact-form"
+            class="space-y-3.5"
+            data-success={off.successMessage}
+            data-error={off.errorMessage}
+            data-sending={off.sendingButton}
+            data-submit={off.submitButton}
+          >
             <div>
-              <label for="cat-name" class="sr-only">{off.namePlaceholder}</label>
+              <label for="cat-name" class="sr-only">{off.namePlaceholder}</label
+              >
               <input
                 type="text"
                 id="cat-name"
@@ -66,7 +90,9 @@ const off = t.offeringsAndContact;
             </div>
 
             <div>
-              <label for="cat-email" class="sr-only">{off.emailPlaceholder}</label>
+              <label for="cat-email" class="sr-only"
+                >{off.emailPlaceholder}</label
+              >
               <input
                 type="email"
                 id="cat-email"
@@ -87,94 +113,168 @@ const off = t.offeringsAndContact;
             </div>
 
             <div>
-              <label for="cat-contact-method" class="block text-[11px] font-semibold text-slate-600 mb-1">
+              <label
+                for="cat-contact-method"
+                class="block text-[11px] font-semibold text-slate-600 mb-1"
+              >
                 {off.contactMethodLabel}
               </label>
               <select
                 id="cat-contact-method"
-                name="preferredContact"
+                name="language"
                 class="cad-select text-xs"
+                required
               >
-                {off.contactMethods.map((m, idx) => (
-                  <option value={idx === 0 ? "" : m} disabled={idx === 0} selected={idx === 0}>
-                    {m}
-                  </option>
-                ))}
+                {
+                  off.contactMethods.map((m, idx) => (
+                    <option
+                      value={idx === 0 ? "" : m}
+                      disabled={idx === 0}
+                      selected={idx === 0}
+                    >
+                      {m}
+                    </option>
+                  ))
+                }
               </select>
             </div>
 
             <div>
-              <label for="cat-message" class="sr-only">{off.messagePlaceholder}</label>
+              <label for="cat-message" class="sr-only"
+                >{off.messagePlaceholder}</label
+              >
               <textarea
                 id="cat-message"
                 name="message"
                 rows="3"
                 placeholder={off.messagePlaceholder}
                 class="cad-input text-xs resize-none"
-                required
-              ></textarea>
+                required></textarea>
             </div>
 
-            <!-- Simulated reCAPTCHA badge -->
-            <div class="p-2.5 border border-slate-200 rounded-md bg-slate-50 flex items-center justify-between">
-              <label class="flex items-center gap-2 cursor-pointer text-xs text-slate-700">
-                <input type="checkbox" required class="rounded border-slate-300 text-[var(--color-cad-teal)] focus:ring-0" />
-                <span>{off.recaptchaText}</span>
-              </label>
-              <div class="flex flex-col items-center">
-                <img
-                  src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
-                  alt="reCAPTCHA"
-                  width="24"
-                  height="24"
-                  class="w-6 h-6 object-contain"
-                />
-                <span class="text-[8px] text-slate-400">reCAPTCHA</span>
-              </div>
+            <!--  cloudflare captcha -->
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAGFiqxOeXxDNppjq">
             </div>
 
             <!-- Consent -->
-            <label class="flex items-start gap-2 text-[11px] text-slate-500 cursor-pointer pt-1">
-              <input type="checkbox" required class="mt-0.5 rounded border-slate-300 text-[var(--color-cad-teal)]" />
+            <label
+              class="flex items-start gap-2 text-[11px] text-slate-500 cursor-pointer pt-1"
+            >
+              <input
+                type="checkbox"
+                required
+                class="mt-0.5 rounded border-slate-300 text-[var(--color-cad-teal)]"
+              />
               <span>
-                {lang === 'es' ? (
-                  <>Acepto recibir información y acepto la <a href={`/${lang}/privacy-policy`} class="underline text-[var(--color-cad-teal)] hover:text-[#0b3c61] transition-colors" target="_blank">declaración de privacidad</a>.</>
-                ) : (
-                  <>I agree to receiving information and accept the <a href={`/${lang}/privacy-policy`} class="underline text-[var(--color-cad-teal)] hover:text-[#0b3c61] transition-colors" target="_blank">data privacy statement</a>.</>
-                )}
+                {
+                  lang === "es" ? (
+                    <>
+                      Acepto recibir información y acepto la{" "}
+                      <a
+                        href={`/${lang}/privacy-policy`}
+                        class="underline text-[var(--color-cad-teal)] hover:text-[#0b3c61] transition-colors"
+                        target="_blank"
+                      >
+                        declaración de privacidad
+                      </a>
+                      .
+                    </>
+                  ) : (
+                    <>
+                      I agree to receiving information and accept the{" "}
+                      <a
+                        href={`/${lang}/privacy-policy`}
+                        class="underline text-[var(--color-cad-teal)] hover:text-[#0b3c61] transition-colors"
+                        target="_blank"
+                      >
+                        data privacy statement
+                      </a>
+                      .
+                    </>
+                  )
+                }
               </span>
             </label>
 
             <button
+              id="cad-catalog-submit"
               type="submit"
-              class="btn-cad-lime w-full text-xs font-bold uppercase tracking-wider py-2.5"
+              class="btn-cad-lime w-full text-xs font-bold uppercase tracking-wider py-2.5 disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {off.submitButton}
             </button>
 
-            <p id="cad-catalog-form-feedback" class="text-xs text-center font-medium text-emerald-600 hidden"></p>
+            <p
+              id="cad-catalog-form-feedback"
+              class="text-xs text-center font-medium text-emerald-600 hidden"
+            >
+            </p>
           </form>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
 <script>
-  function setupCatalogForm() {
-    const form = document.getElementById('cad-catalog-contact-form');
-    const feedback = document.getElementById('cad-catalog-form-feedback');
-    if (!form || !feedback) return;
+  import { actions } from "astro:actions";
 
-    form.addEventListener('submit', (e) => {
+  function setupCatalogForm() {
+    const form = document.getElementById(
+      "cad-catalog-contact-form"
+    ) as HTMLFormElement | null;
+    const feedback = document.getElementById("cad-catalog-form-feedback");
+    const submitBtn = document.getElementById(
+      "cad-catalog-submit"
+    ) as HTMLButtonElement | null;
+    if (!form || !feedback || form.dataset.bound === "true") return;
+    form.dataset.bound = "true";
+
+    const showFeedback = (message: string, isError: boolean) => {
+      feedback.textContent = message;
+      feedback.classList.remove("hidden", "text-emerald-600", "text-red-600");
+      feedback.classList.add(isError ? "text-red-600" : "text-emerald-600");
+    };
+
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      feedback.textContent = '✓ Message submitted successfully!';
-      feedback.classList.remove('hidden');
-      (form as HTMLFormElement).reset();
+
+      const defaultLabel = form.dataset.submit || submitBtn?.textContent || "";
+      const sendingLabel = form.dataset.sending || "Sending...";
+      const successMsg =
+        form.dataset.success || "✓ Message submitted successfully!";
+      const errorMsg =
+        form.dataset.error ||
+        "Could not send your message. Please check your details and try again.";
+
+      feedback.classList.add("hidden");
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = sendingLabel;
+      }
+
+      try {
+        const formData = new FormData(form);
+        const { data, error } = await actions.submitLearnMore(formData);
+
+        if (error || !data?.data?.success) {
+          showFeedback(errorMsg, true);
+          return;
+        }
+
+        showFeedback(successMsg, false);
+        form.reset();
+      } catch {
+        showFeedback(errorMsg, true);
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = defaultLabel;
+        }
+      }
     });
   }
 
   setupCatalogForm();
-  document.addEventListener('astro:page-load', setupCatalogForm);
+  document.addEventListener("astro:page-load", setupCatalogForm);
 </script>
