@@ -20,7 +20,7 @@ const { products, lang } = Astro.props;
           : "No products currently available for this brand."}
       </div>
     ) : (
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
         {products.map((product, index) => {
           const delay = ((index % 4) * 100).toString();
           return (
@@ -36,7 +36,6 @@ const { products, lang } = Astro.props;
                 src={product.image}
                 alt={product.name}
                 width="220"
-                height="300"
                 class="max-h-56 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
               />

@@ -2,568 +2,497 @@
   "products": [
     {
       "id": "cancun_drink-cancun-apple-juice-with-pulp-490ml-x-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Apple juice with pulp 490ml x 24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0283-1-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0283.png",
       "sku": "01-0283"
     },
     {
       "id": "cancun_drink-cancun-mango-juice-with-pulp-490ml-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Mango juice with pulp 490ml/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0280-1-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0280.png",
       "sku": "01-0280"
     },
     {
       "id": "cancun_drink-cancun-mango-juice-with-pulp-490ml-24-01-0284",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Mango juice with pulp 490ml/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0284-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0284.png",
       "sku": "01-0284"
     },
     {
       "id": "cancun_drink-cancun-peach-with-pulp-50-juice-490mlx24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Peach with Pulp 50% juice 490mlx24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0281-1-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0281.png",
       "sku": "01-0281"
     },
     {
       "id": "cancun_drink-cancun-pineapple-50-juice-with-pulp-490ml-x-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Pineapple 50% Juice with Pulp 490ml x 24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0282-1-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0282.png",
       "sku": "01-0282"
     },
     {
       "id": "cancun_drink-cancun-soursop-juice-with-pulp-490ml-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun soursop juice with pulp 490ml/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0279-1-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0279.png",
       "sku": "01-0279"
     },
     {
       "id": "cancun_drink-cancun-strawberry-banana-juice-with-pulp-490ml-x-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Strawberry Banana juice with pulp 490ml x 24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0285-1-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0285.png",
       "sku": "01-0285"
     },
     {
       "id": "cancun_drink-cancun-apple-juice-with-pulp-490ml-x-24-01-0314",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Apple juice with pulp 490ml x 24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0314-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0314.png",
       "sku": "01-0314"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-fresa-1-5lt-12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Fresa 1.5LT/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0305.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0305.png",
       "sku": "01-0305"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-fresa-500ml-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Fresa 500ml/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0299.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0299.png",
       "sku": "01-0299"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-kiwi-1-5lt-12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Kiwi 1.5lt/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0306.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0306.png",
       "sku": "01-0306"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-kiwi-500ml-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Kiwi 500ml/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0300.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0300.png",
       "sku": "01-0300"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-mango-1-5lt-12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Mango 1.5lt/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0268.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0268.png",
       "sku": "01-0268"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-mango-500ml-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Mango 500ml/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0264.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0264.png",
       "sku": "01-0264"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-original-1-5lt-12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Original 1.5lt/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0265.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0265.png",
       "sku": "01-0265"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-original-500ml-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Original 500ml/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0261.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0261.png",
       "sku": "01-0261"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-sandia-1-5lt-12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Sandia 1.5Lt/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0307.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0307.png",
       "sku": "01-0307"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-sandia-500ml-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Sandia 500ml/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0301.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0301.png",
       "sku": "01-0301"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-pina-1-5lt-12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Pina 1.5lt/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0266.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0266.png",
       "sku": "01-0266"
     },
     {
       "id": "cancun_drink-cancun-aloe-vera-pina-500ml-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Aloe Vera Pina 500ml/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0262.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0262.png",
       "sku": "01-0262"
     },
     {
       "id": "cancun_drink-cancun-coconut-milk-drink-with-nata-de-coco-mango-280ml-x-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun coconut milk drink with nata de Coco/Mango 280ml x 24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0329-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0329.png",
       "sku": "01-0329"
     },
     {
       "id": "cancun_drink-cancun-coconut-milk-drink-with-nata-de-coco-mango-470ml-x-12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun coconut milk drink with nata de Coco/Mango 470ml x 12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0270-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0270.png",
       "sku": "01-0270"
     },
     {
       "id": "cancun_drink-cancun-coconut-milk-drink-with-nata-de-coco-original-280ml-x-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun coconut milk drink with nata de coco/original 280ml x 24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0327-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0327.png",
       "sku": "01-0327"
     },
     {
       "id": "cancun_drink-cancun-coconut-milk-drink-with-nata-de-coco-original-470ml-x-12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun coconut milk drink with nata de coco/original 470ml x 12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0269-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0269.png",
       "sku": "01-0269"
     },
     {
       "id": "cancun_drink-cancun-coconut-milk-drink-with-nata-de-coco-strawberry-280ml-x24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun coconut milk drink with nata de Coco/Strawberry 280ml x24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0328-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0328.png",
       "sku": "01-0328"
     },
     {
       "id": "cancun_drink-cancun-coconut-milk-drink-with-nata-de-coco-strawberry-470ml-x12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun coconut milk drink with nata de Coco/Strawberry 470ml x12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0271-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0271.png",
       "sku": "01-0271"
     },
     {
       "id": "cancun_drink-cancun-coconut-water-with-pulp-290ml-24-glass",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Coconut Water with Pulp 290ml/24 glass",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0178.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0178.png",
       "sku": "01-0178"
     },
     {
       "id": "cancun_drink-cancun-coconut-water-with-pulp-490-ml-12-glass",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Coconut Water with Pulp 490 ml/12 glass",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0286.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0286.png",
       "sku": "01-0286"
     },
     {
       "id": "cancun_drink-cancun-mango-250ml-8-5-oz-24",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancún Mango 250ml 8.5 oz/24",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0183.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0183.png",
       "sku": "01-0183"
     },
     {
       "id": "cancun_drink-cancun-mango-1lt-33oz-12",
-      "brandSlug": "cancun_drink",
-      "category": "grocery",
+      "brand_slug": "cancun-drink",
       "name": "Cancun Mango 1Lt 33oz/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0182-scaled.png",
-      "sku": "01-0182"
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/13fc83ec-1a35-427a-a6cf-3c5ffd683734/products/01-0382.png",
+      "sku": "01-0382"
     },
     {
       "id": "fixion-fixion-gel-1kg-clear",
-      "brandSlug": "fixion",
-      "category": "healthandbeauty",
+      "brand_slug": "fixion",
       "name": "Fixion Gel 1kg Clear",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/10-0065.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/5fd3eee4-43ea-4636-8749-1d2ac1dfde4b/products/10-0065.png",
       "sku": "10-0065"
     },
     {
       "id": "fixion-fixion-gel-450gr-clear",
-      "brandSlug": "fixion",
-      "category": "healthandbeauty",
+      "brand_slug": "fixion",
       "name": "Fixion Gel 450gr Clear",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/10-0068.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/5fd3eee4-43ea-4636-8749-1d2ac1dfde4b/products/10-0068.png",
       "sku": "10-0068"
     },
     {
       "id": "fixion-fixion-gel-250gr-clear",
-      "brandSlug": "fixion",
-      "category": "healthandbeauty",
+      "brand_slug": "fixion",
       "name": "Fixion Gel 250gr Clear",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/10-0085.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/5fd3eee4-43ea-4636-8749-1d2ac1dfde4b/products/10-0085.png",
       "sku": "10-0085"
     },
     {
       "id": "guatelinda-guatelinda-nance-in-light-syrup-12-32oz",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Nance in Light Syrup 12/32oz",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0097.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0097.png",
       "sku": "06-0097"
     },
     {
       "id": "guatelinda-guatelinda-pacaya-12-32-oz",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Pacaya 12/32 oz",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0098.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0098.png",
       "sku": "06-0098"
     },
     {
       "id": "guatelinda-guatelinda-flor-de-izote-12-32oz",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Flor de Izote 12/32oz",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0099.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0099.png",
       "sku": "06-0099"
     },
     {
       "id": "guatelinda-guatelinda-jalapeno-en-escabeche-12-32oz",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Jalapeno en escabeche 12/32oz",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0128.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0128.png",
       "sku": "06-0128"
     },
     {
       "id": "guatelinda-guatelinda-chile-chiltepe-piquin-24-16oz",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Chile chiltepe piquin 24/16oz",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0129.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0129.png",
       "sku": "06-0129"
     },
     {
       "id": "guatelinda-guatelinda-atol-de-elote-200gr-x12",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Atol De Elote 200GR x12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0192-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0192.png",
       "sku": "06-0192"
     },
     {
       "id": "guatelinda-guatelinda-atol-de-platano-200g-x12",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Atol De Platano 200G x12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0191-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0191.png",
       "sku": "06-0191"
     },
     {
       "id": "guatelinda-guatelinda-arroz-con-chocolate-315g-x12",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda arroz con chocolate 315G x12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0196-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0196.png",
       "sku": "06-0196"
     },
     {
       "id": "guatelinda-guatelinda-atol-de-haba-210gr-x12",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Atol De Haba 210GR x12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0193-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0193.png",
       "sku": "06-0193"
     },
     {
       "id": "guatelinda-guatelinda-horchata-en-polvox12-435gr",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Horchata en polvox12 435GR",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0194-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0194.png",
       "sku": "06-0194"
     },
     {
       "id": "guatelinda-guatelinda-chocolate-clasico-guatelinda-16oz",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Chocolate clasico Guatelinda 16oz",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0134.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0115.png",
       "sku": "06-0115"
     },
     {
       "id": "guatelinda-guatelinda-jarabe-de-miel-8-oz-fl-x-12",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Jarabe de Miel 8 oz fl x 12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/06/04-0250.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/04-0250.png",
       "sku": "04-0250"
     },
     {
       "id": "guatelinda-guatelinda-champurrada-10x12-14-07oz",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Champurrada 10X12 14.07oz",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0149-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0149.png",
       "sku": "06-0149"
     },
     {
       "id": "guatelinda-guatelinda-roscas-de-feria-4x12-bag-6-17oz-it",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Roscas de Feria 4x12 Bag 6.17OZ *IT*",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0184-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0184.png",
       "sku": "06-0184"
     },
     {
       "id": "guatelinda-guatelinda-rosca-de-xela-5x12-bag-7-06-oz-it",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Rosca de Xela 5x12 Bag. 7.06 oz *IT*",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0185-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0185.png",
       "sku": "06-0185"
     },
     {
       "id": "guatelinda-guatelinda-haba-frita-chile-limon-2-5-oz-70g",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Haba frita chile limon 2.5 oz (70g)",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/02-0058-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/02-0058.png",
       "sku": "02-0058"
     },
     {
       "id": "guatelinda-haba-tostada-guatelinda-2-5-oz-70g",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Haba tostada Guatelinda 2.5 oz (70g)",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/02-0060-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/02-0060.png",
       "sku": "02-0060"
     },
     {
       "id": "guatelinda-guatelinda-haba-frita-con-sal-2-5-oz-70g",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Haba Frita con Sal 2.5 oz (70g)",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/02-0080-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/02-0080.png",
       "sku": "02-0080"
     },
     {
       "id": "guatelinda-guatelinda-mani-con-chile-limon-2-5-oz-70g",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Mani con Chile Limon 2.5 oz (70g)",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/04-0248-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/04-0248.png",
       "sku": "04-0248"
     },
     {
       "id": "guatelinda-guatelinda-mani-con-cascara-2-5-oz-70g",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Mani con Cascara 2.5 oz (70g)",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/04-0249-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/04-0249.png",
       "sku": "04-0249"
     },
     {
       "id": "guatelinda-guatelinda-mani-con-sal-2-5-oz-70g",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Mani Con Sal 2.5 oz (70g)",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/04-0246-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/04-0246.png",
       "sku": "04-0246"
     },
     {
       "id": "guatelinda-guatelinda-semilla-maranon-horneado-2-5-oz-70g",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Semilla Marañon Horneado 2.5 oz (70g)",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/04-0247.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/04-0247.png",
       "sku": "04-0247"
     },
     {
       "id": "guatelinda-guatelinda-chile-coban-grano-1-5oz-x12",
-      "brandSlug": "guatelinda",
-      "category": "grocery",
+      "brand_slug": "guate-linda",
       "name": "Guatelinda Chile Coban grano 1.5Oz X12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/06-0197.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/3c9b0c21-eafd-4999-8b66-853f65ecb490/products/06-0197.png",
       "sku": "06-0197"
     },
     {
       "id": "hidravit_usa-hidravit-suero-vitaminado-750ml-peach-x12",
-      "brandSlug": "hidravit_usa",
-      "category": "vitaminsandsupplements",
+      "brand_slug": "hidravit_usa",
       "name": "Hidravit Suero-Vitaminado 750ml Peach x12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0291.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/1b549f8f-793b-45c7-8ed4-3b4c2251cc4c/products/01-0291.png",
       "sku": "01-0291"
     },
     {
       "id": "hidravit_usa-hidravit-suero-vitaminado-strawberry-banana-750mlx12",
-      "brandSlug": "hidravit_usa",
-      "category": "vitaminsandsupplements",
+      "brand_slug": "hidravit_usa",
       "name": "Hidravit Suero-Vitaminado Strawberry Banana 750mlx12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0292-1-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/1b549f8f-793b-45c7-8ed4-3b4c2251cc4c/products/01-0292.png",
       "sku": "01-0292"
     },
     {
       "id": "hidravit_usa-hidravit-suero-vitaminado-pineapple-750ml-x12",
-      "brandSlug": "hidravit_usa",
-      "category": "vitaminsandsupplements",
+      "brand_slug": "hidravit_usa",
       "name": "Hidravit Suero-Vitaminado Pineapple 750ml x12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0293-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/1b549f8f-793b-45c7-8ed4-3b4c2251cc4c/products/01-0293.png",
       "sku": "01-0293"
     },
     {
       "id": "hidravit_usa-hidravit-suero-vitaminado-coconut-750ml-x12",
-      "brandSlug": "hidravit_usa",
-      "category": "vitaminsandsupplements",
+      "brand_slug": "hidravit_usa",
       "name": "Hidravit Suero-Vitaminado Coconut 750ml x12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/05/01-0294-1-scaled.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/1b549f8f-793b-45c7-8ed4-3b4c2251cc4c/products/01-0294.png",
       "sku": "01-0294"
     },
     {
       "id": "relox-relox-soap-aloe-y-oliva-200gr-12",
-      "brandSlug": "relox",
-      "category": "healthandbeauty",
+      "brand_slug": "relox",
       "name": "Relox Soap Aloe y Oliva 200gr/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/06/New-Project-32.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/94b25d4a-e657-4463-b2bf-7d50ff07a197/products/15-0149.png",
       "sku": "15-0149"
     },
     {
       "id": "relox-relox-soap-menta-y-eucalipto-200gr-12",
-      "brandSlug": "relox",
-      "category": "healthandbeauty",
+      "brand_slug": "relox",
       "name": "Relox Soap Menta y Eucalipto 200gr/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/06/New-Project-27.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/94b25d4a-e657-4463-b2bf-7d50ff07a197/products/15-0150.png",
       "sku": "15-0150"
     },
     {
       "id": "relox-relox-soap-yogurt-y-frutas-200gr-12",
-      "brandSlug": "relox",
-      "category": "healthandbeauty",
+      "brand_slug": "relox",
       "name": "Relox Soap Yogurt y Frutas 200gr/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/06/New-Project-28.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/94b25d4a-e657-4463-b2bf-7d50ff07a197/products/15-0151.png",
       "sku": "15-0151"
     },
     {
       "id": "relox-relox-soap-neutro-200gr-12",
-      "brandSlug": "relox",
-      "category": "healthandbeauty",
+      "brand_slug": "relox",
       "name": "Relox Soap Neutro 200gr/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/06/New-Project-29.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/94b25d4a-e657-4463-b2bf-7d50ff07a197/products/15-0152.png",
       "sku": "15-0152"
     },
     {
       "id": "relox-relox-soap-vitamina-e-y-glicerina-200gr-12",
-      "brandSlug": "relox",
-      "category": "healthandbeauty",
+      "brand_slug": "relox",
       "name": "Relox Soap Vitamina E y Glicerina 200gr/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/06/New-Project-31.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/94b25d4a-e657-4463-b2bf-7d50ff07a197/products/15-0153.png",
       "sku": "15-0153"
     },
     {
       "id": "relox-relox-soap-clasico-200gr-12",
-      "brandSlug": "relox",
-      "category": "healthandbeauty",
+      "brand_slug": "relox",
       "name": "Relox Soap Clasico 200gr/12",
-      "image": "https://cadimportinc.com/wp-content/uploads/2026/06/New-Project-26.png",
+      "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/94b25d4a-e657-4463-b2bf-7d50ff07a197/products/15-0154.png",
       "sku": "15-0154"
     },
     {
       "id": "titas-titas-limpiador-multiusos-lavender-1lt-it",
-      "brandSlug": "titas",
-      "category": "household",
+      "brand_slug": "titas",
       "name": "Titas Limpiador multiusos Lavender 1lt *IT*",
       "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/acdb47b7-0fd8-4b38-aaf5-6a72c1047747/products/43-0023.png",
       "sku": "43-0023"
     },
     {
       "id": "titas-titas-fibra-celulosa-3pk",
-      "brandSlug": "titas",
-      "category": "household",
+      "brand_slug": "titas",
       "name": "Titas Fibra CELULOSA 3PK",
       "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/acdb47b7-0fd8-4b38-aaf5-6a72c1047747/products/28-0165.png",
       "sku": "28-0165"
     },
     {
       "id": "titas-titas-fibra-esponja-multicolores-4pk",
-      "brandSlug": "titas",
-      "category": "household",
+      "brand_slug": "titas",
       "name": "Titas FIBRA ESPONJA MULTICOLORES 4PK",
       "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/acdb47b7-0fd8-4b38-aaf5-6a72c1047747/products/28-0166.png",
       "sku": "28-0166"
     },
     {
       "id": "titas-titas-fibra-verde-heavy-duty-3pk",
-      "brandSlug": "titas",
-      "category": "household",
+      "brand_slug": "titas",
       "name": "Titas FIBRA VERDE HEAVY DUTY 3PK",
       "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/acdb47b7-0fd8-4b38-aaf5-6a72c1047747/products/28-0167.png",
       "sku": "28-0167"
     },
     {
       "id": "titas-titas-fibra-esponja-multiusos-1pk",
-      "brandSlug": "titas",
-      "category": "household",
+      "brand_slug": "titas",
       "name": "Titas FIBRA ESPONJA MULTIUSOS 1PK",
       "image": "https://pub-5927920071e7461abb3ddbb3dcbff7a2.r2.dev/acdb47b7-0fd8-4b38-aaf5-6a72c1047747/products/28-0168.png",
       "sku": "28-0168"
