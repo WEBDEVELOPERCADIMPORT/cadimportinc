@@ -86,12 +86,32 @@
       "title": "nuestras marcas",
       "brands": [
         {
+          "name": "Ambar",
+          "logo": "/images/brands-carousel/ambar.png"
+        },
+        {
+          "name": "Antigrip",
+          "logo": "/images/brands-carousel/antigrip.jpg"
+        },
+        {
+          "name": "BroncoMiel",
+          "logo": "/images/brands-carousel/broncomiel.png"
+        },
+        {
+          "name": "Cancún",
+          "logo": "/images/brands-carousel/cancun.png"
+        },
+        {
+          "name": "Combisa",
+          "logo": "/images/brands-carousel/combisa.png"
+        },
+        {
           "name": "DoloDent",
           "logo": "/images/brands-carousel/dolodent.png"
         },
         {
-          "name": "Dolo-Fin",
-          "logo": "/images/brands-carousel/dolofin.png"
+          "name": "DoloEar",
+          "logo": "/images/brands-carousel/doloear.png"
         },
         {
           "name": "DOLEX",
@@ -102,36 +122,88 @@
           "logo": "/images/brands-carousel/elpiojito.png"
         },
         {
-          "name": "Jardín Verde",
-          "logo": "/images/brands-carousel/jardinverde.png"
+          "name": "Garden of the Andes",
+          "logo": "/images/brands-carousel/gardenoftheandes.png"
         },
         {
-          "name": "Grapkids",
-          "logo": "/images/brands-carousel/grapkids.png"
-        },
-        {
-          "name": "Pharmadel",
-          "logo": "/images/brands-carousel/pharmadel.png"
-        },
-        {
-          "name": "Tita's",
-          "logo": "/images/brands-carousel/titas.png"
+          "name": "Girafkids",
+          "logo": "/images/brands-carousel/girafkids.png"
         },
         {
           "name": "Guatelinda",
           "logo": "/images/brands-carousel/guatelinda.png"
         },
         {
-          "name": "Relox",
-          "logo": "/images/brands-carousel/relox.png"
+          "name": "Jaloma",
+          "logo": "/images/brands-carousel/jaloma.png"
         },
         {
-          "name": "Cancún",
-          "logo": "/images/brands-carousel/cancun.png"
+          "name": "Kingskin",
+          "logo": "/images/brands-carousel/kingskin.png"
         },
         {
-          "name": "Hidravit",
-          "logo": "/images/brands-carousel/hidravit.png"
+          "name": "Kofal",
+          "logo": "/images/brands-carousel/kofal.png"
+        },
+        {
+          "name": "Maite",
+          "logo": "/images/brands-carousel/maite.png"
+        },
+        {
+          "name": "Max Papel",
+          "logo": "/images/brands-carousel/maxpapel.png"
+        },
+        {
+          "name": "Optim V",
+          "logo": "/images/brands-carousel/optimv.png"
+        },
+        {
+          "name": "Procaps",
+          "logo": "/images/brands-carousel/procaps.png"
+        },
+        {
+          "name": "Rapidol",
+          "logo": "/images/brands-carousel/rapidol.png"
+        },
+        {
+          "name": "Salutari",
+          "logo": "/images/brands-carousel/salutari.jpg"
+        },
+        {
+          "name": "Sanatos",
+          "logo": "/images/brands-carousel/sanatos.png"
+        },
+        {
+          "name": "Shalom",
+          "logo": "/images/brands-carousel/shalom.png"
+        },
+        {
+          "name": "Sukrol",
+          "logo": "/images/brands-carousel/sukrol.png"
+        },
+        {
+          "name": "Vital Fuerte",
+          "logo": "/images/brands-carousel/vitalfuerte.png"
+        },
+        {
+          "name": "Broncolito",
+          "logo": "/images/brands-carousel/broncolito.jpg"
+        },
+        {
+          "name": "Ceresmart",
+          "logo": "/images/brands-carousel/ceresmart.jpg"
+        },
+        {
+          "name": "Parche León",
+          "logo": "/images/brands-carousel/parcheleon.jpg"
+        },
+        {
+          "name": "Tabcin",
+          "logo": "/images/brands-carousel/tabcin.jpg"
+        },
+        {
+          "name": "Urodel",
+          "logo": "/images/brands-carousel/urodel.png"
         }
       ]
     },
@@ -237,12 +309,32 @@
       "title": "nuestras marcas",
       "brands": [
         {
+          "name": "Ambar",
+          "logo": "/images/brands-carousel/ambar.png"
+        },
+        {
+          "name": "Antigrip",
+          "logo": "/images/brands-carousel/antigrip.jpg"
+        },
+        {
+          "name": "BroncoMiel",
+          "logo": "/images/brands-carousel/broncomiel.png"
+        },
+        {
+          "name": "Cancún",
+          "logo": "/images/brands-carousel/cancun.png"
+        },
+        {
+          "name": "Combisa",
+          "logo": "/images/brands-carousel/combisa.png"
+        },
+        {
           "name": "DoloDent",
           "logo": "/images/brands-carousel/dolodent.png"
         },
         {
-          "name": "Dolo-Fin",
-          "logo": "/images/brands-carousel/dolofin.png"
+          "name": "DoloEar",
+          "logo": "/images/brands-carousel/doloear.png"
         },
         {
           "name": "DOLEX",
@@ -253,36 +345,88 @@
           "logo": "/images/brands-carousel/elpiojito.png"
         },
         {
-          "name": "Jardín Verde",
-          "logo": "/images/brands-carousel/jardinverde.png"
+          "name": "Garden of the Andes",
+          "logo": "/images/brands-carousel/gardenoftheandes.png"
         },
         {
-          "name": "Grapkids",
-          "logo": "/images/brands-carousel/grapkids.png"
-        },
-        {
-          "name": "Pharmadel",
-          "logo": "/images/brands-carousel/pharmadel.png"
-        },
-        {
-          "name": "Tita's",
-          "logo": "/images/brands-carousel/titas.png"
+          "name": "Girafkids",
+          "logo": "/images/brands-carousel/girafkids.png"
         },
         {
           "name": "Guatelinda",
           "logo": "/images/brands-carousel/guatelinda.png"
         },
         {
-          "name": "Relox",
-          "logo": "/images/brands-carousel/relox.png"
+          "name": "Jaloma",
+          "logo": "/images/brands-carousel/jaloma.png"
         },
         {
-          "name": "Cancún",
-          "logo": "/images/brands-carousel/cancun.png"
+          "name": "Kingskin",
+          "logo": "/images/brands-carousel/kingskin.png"
         },
         {
-          "name": "Hidravit",
-          "logo": "/images/brands-carousel/hidravit.png"
+          "name": "Kofal",
+          "logo": "/images/brands-carousel/kofal.png"
+        },
+        {
+          "name": "Maite",
+          "logo": "/images/brands-carousel/maite.png"
+        },
+        {
+          "name": "Max Papel",
+          "logo": "/images/brands-carousel/maxpapel.png"
+        },
+        {
+          "name": "Optim V",
+          "logo": "/images/brands-carousel/optimv.png"
+        },
+        {
+          "name": "Procaps",
+          "logo": "/images/brands-carousel/procaps.png"
+        },
+        {
+          "name": "Rapidol",
+          "logo": "/images/brands-carousel/rapidol.png"
+        },
+        {
+          "name": "Salutari",
+          "logo": "/images/brands-carousel/salutari.jpg"
+        },
+        {
+          "name": "Sanatos",
+          "logo": "/images/brands-carousel/sanatos.png"
+        },
+        {
+          "name": "Shalom",
+          "logo": "/images/brands-carousel/shalom.png"
+        },
+        {
+          "name": "Sukrol",
+          "logo": "/images/brands-carousel/sukrol.png"
+        },
+        {
+          "name": "Vital Fuerte",
+          "logo": "/images/brands-carousel/vitalfuerte.png"
+        },
+        {
+          "name": "Broncolito",
+          "logo": "/images/brands-carousel/broncolito.jpg"
+        },
+        {
+          "name": "Ceresmart",
+          "logo": "/images/brands-carousel/ceresmart.jpg"
+        },
+        {
+          "name": "Parche León",
+          "logo": "/images/brands-carousel/parcheleon.jpg"
+        },
+        {
+          "name": "Tabcin",
+          "logo": "/images/brands-carousel/tabcin.jpg"
+        },
+        {
+          "name": "Urodel",
+          "logo": "/images/brands-carousel/urodel.png"
         }
       ]
     },
